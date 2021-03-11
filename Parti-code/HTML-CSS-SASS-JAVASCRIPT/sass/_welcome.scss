@@ -1,0 +1,45 @@
+$navcolor:#FFF5F2;
+$PrimaryColor:#FFFCF7;
+$secendaryColor:#E9967A;
+$footerColor:#141414;
+$colortype1:black;
+$font-lg:40px;
+$font-md2:23px;
+$font-md1:20px;
+$font-sm:16px;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+$fontfamily:'Roboto', sans-serif;
+
+
+
+.elbahja_Welcome{
+    width: 100%;
+    height: 500px;
+    background-image: url(/image/604778ff10ec3.jpg);
+    background-repeat: no-repeat;
+    background-size: 95% 500px;
+    background-position-x: center;
+    opacity: 0.7;
+    display: flex;
+    align-items: center;
+    &-para{
+        
+        &--welcome{
+            font-size: $font-md2;
+            margin-left:70px;
+            color: $colortype1;
+            
+        }
+        &--tradition{
+            font-size: $font-lg;
+            margin-left:70px;
+            color: $colortype1 ;
+            
+        }
+        
+        
+    }
+    
+    
+    
+}

@@ -53,3 +53,22 @@ nav {
       height: 50px;
       border-radius: 30px;
       box-shadow: 2px 2px 2px 2px #e6ab98af; }
+
+.elbahja_Welcome {
+  width: 100%;
+  height: 500px;
+  background-image: url(/image/604778ff10ec3.jpg);
+  background-repeat: no-repeat;
+  background-size: 95% 500px;
+  background-position-x: center;
+  opacity: 0.7;
+  display: flex;
+  align-items: center; }
+  .elbahja_Welcome-para--welcome {
+    font-size: 23px;
+    margin-left: 70px;
+    color: black; }
+  .elbahja_Welcome-para--tradition {
+    font-size: 40px;
+    margin-left: 70px;
+    color: black; }
