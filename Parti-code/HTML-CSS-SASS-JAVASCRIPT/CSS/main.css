@@ -57,18 +57,147 @@ nav {
 .elbahja_Welcome {
   width: 100%;
   height: 500px;
-  background-image: url(/image/604778ff10ec3.jpg);
+  background-image: url(/image/tajine.jpg);
   background-repeat: no-repeat;
   background-size: 95% 500px;
   background-position-x: center;
   opacity: 0.7;
   display: flex;
-  align-items: center; }
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 30px; }
   .elbahja_Welcome-para--welcome {
-    font-size: 23px;
+    font-size: 26px;
+    font-weight: 500;
     margin-left: 70px;
     color: black; }
   .elbahja_Welcome-para--tradition {
     font-size: 40px;
+    font-weight: bold;
     margin-left: 70px;
-    color: black; }
+    color: black;
+    margin-bottom: 20px; }
+  .elbahja_Welcome-button {
+    display: flex;
+    flex-direction: row; }
+    .elbahja_Welcome-button--order {
+      width: 170px;
+      height: 50px;
+      margin-left: 70px;
+      background-color: #E9967A;
+      border: none;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-self: center; }
+      .elbahja_Welcome-button--order a {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        color: white; }
+      .elbahja_Welcome-button--order:hover {
+        background-color: white; }
+        .elbahja_Welcome-button--order:hover a {
+          color: #E9967A; }
+    .elbahja_Welcome-button--book {
+      width: 170px;
+      height: 50px;
+      margin-left: 70px;
+      background-color: #E9967A;
+      border: none;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-self: center; }
+      .elbahja_Welcome-button--book a {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        color: white; }
+      .elbahja_Welcome-button--book:hover {
+        background-color: white; }
+        .elbahja_Welcome-button--book:hover a {
+          color: #E9967A; }
+
+.elbahja_bestDishes {
+  width: 100%;
+  display: flex;
+  flex-direction: row; }
+  .elbahja_bestDishes h1 {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 20px; }
+  .elbahja_bestDishes-slider {
+    margin-left: 70px;
+    position: relative;
+    width: 45%;
+    overflow: hidden; }
+    .elbahja_bestDishes-slider--images {
+      display: flex;
+      justify-content: space-between;
+      width: 100%; }
+      .elbahja_bestDishes-slider--images img {
+        width: 100%;
+        height: 500px;
+        transition: all 0.15s ease; }
+      .elbahja_bestDishes-slider--images input {
+        display: none; }
+    .elbahja_bestDishes-slider--dots {
+      display: flex;
+      justify-content: center;
+      margin: 5px; }
+      .elbahja_bestDishes-slider--dots label {
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        border: solid #f7e47c;
+        cursor: pointer;
+        transition: all 0.15s ease;
+        margin: 5px; }
+      .elbahja_bestDishes-slider--dots label:hover {
+        background: #f7e47c; }
+  .elbahja_bestDishes-historyabout {
+    width: 40%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .elbahja_bestDishes-historyabout h3 {
+      font-size: 26px;
+      font-weight: 400;
+      text-align: center; }
+    .elbahja_bestDishes-historyabout h4 {
+      margin-top: 10PX;
+      font-size: 20px;
+      font-weight: 800;
+      text-align: center;
+      margin-bottom: 10PX; }
+    .elbahja_bestDishes-historyabout p {
+      margin-bottom: 10PX;
+      font-weight: 400;
+      font-size: 20px; }
+    .elbahja_bestDishes-historyabout a {
+      text-decoration: none;
+      color: black;
+      font-size: 20px;
+      text-align: center;
+      font-weight: 400; }
+    .elbahja_bestDishes-historyabout a:hover {
+      color: #E9967A; }
+
+#img1:checked ~ .m1 {
+  margin-left: 0; }
+
+#img2:checked ~ .m2 {
+  margin-left: -100%; }
+
+#img3:checked ~ .m3 {
+  margin-left: -200%; }
+
+#img4:checked ~ .m4 {
+  margin-left: -300%; }
+
+#img5:checked ~ .m5 {
+  margin-left: -400%; }
