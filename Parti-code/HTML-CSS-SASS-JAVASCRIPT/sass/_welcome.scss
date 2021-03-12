@@ -148,19 +148,20 @@ $fontfamily:'Roboto', sans-serif;
         flex-direction: column;
         justify-content: center;
         h3{
-            font-size: $font-md2;
+            font-size: $font-lg;
             font-weight: 400;
             text-align: center;
+            margin-bottom: 20PX;
         }
         h4{
-            margin-top: 10PX;
+            margin-top: 20PX;
             font-size: $font-md1;
             font-weight: 800;
             text-align: center;
-            margin-bottom: 10PX;
+            margin-bottom: 20PX;
         }
         p{
-            margin-bottom: 10PX; 
+            margin-bottom: 40PX; 
             font-weight: 400;
             font-size: $font-md1;
         }
@@ -170,7 +171,7 @@ $fontfamily:'Roboto', sans-serif;
             font-weight: 400;
         }
         a:hover{
-            color: $secendaryColor;
+            font-size: $font-md2;
         }
     } 
 }
@@ -224,11 +225,17 @@ $fontfamily:'Roboto', sans-serif;
         transform: perspective(600px) rotateY(180deg);
     }
 }
+h2{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
 .elbahja_Menu{
     margin-top: 30px;
     margin-bottom: 30px;
     width: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     &-gridcontainer{
         display: grid;

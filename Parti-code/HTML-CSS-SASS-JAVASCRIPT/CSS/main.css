@@ -165,17 +165,18 @@ nav {
     flex-direction: column;
     justify-content: center; }
     .elbahja_bestDishes-historyabout h3 {
-      font-size: 26px;
+      font-size: 40px;
       font-weight: 400;
-      text-align: center; }
+      text-align: center;
+      margin-bottom: 20PX; }
     .elbahja_bestDishes-historyabout h4 {
-      margin-top: 10PX;
+      margin-top: 20PX;
       font-size: 20px;
       font-weight: 800;
       text-align: center;
-      margin-bottom: 10PX; }
+      margin-bottom: 20PX; }
     .elbahja_bestDishes-historyabout p {
-      margin-bottom: 10PX;
+      margin-bottom: 40PX;
       font-weight: 400;
       font-size: 20px; }
     .elbahja_bestDishes-historyabout a {
@@ -185,7 +186,7 @@ nav {
       text-align: center;
       font-weight: 400; }
     .elbahja_bestDishes-historyabout a:hover {
-      color: black; }
+      font-size: 26px; }
 
 #img1:checked ~ .m1 {
   margin-left: 0; }
@@ -202,11 +203,17 @@ nav {
 #img5:checked ~ .m5 {
   margin-left: -400%; }
 
+h2 {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px; }
+
 .elbahja_Menu {
   margin-top: 30px;
   margin-bottom: 30px;
   width: 100%;
   display: flex;
+  flex-direction: row;
   justify-content: center; }
   .elbahja_Menu-gridcontainer {
     display: grid;
