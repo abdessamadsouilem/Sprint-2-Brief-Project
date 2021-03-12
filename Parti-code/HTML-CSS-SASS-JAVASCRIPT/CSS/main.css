@@ -7,12 +7,12 @@
 body {
   width: 100%;
   height: 100%;
-  background-color: #FFFCF7;
+  background-color: white;
   font-family: "Roboto", sans-serif; }
 
 nav {
   padding-left: 30px;
-  background-color: #FFF5F2;
+  background-color: white;
   display: flex;
   flex-direction: row;
   height: 130px; }
@@ -36,7 +36,7 @@ nav {
     width: 120px;
     height: 40px;
     margin-left: 161px;
-    background-color: #E9967A;
+    background-color: black;
     border: none;
     border-radius: 20px;
     display: flex;
@@ -57,11 +57,11 @@ nav {
 .elbahja_Welcome {
   width: 100%;
   height: 500px;
-  background-image: url(/image/tajine.jpg);
+  background-image: url(image/tajine.jpg);
   background-repeat: no-repeat;
   background-size: 95% 500px;
   background-position-x: center;
-  opacity: 0.7;
+  opacity: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -84,7 +84,7 @@ nav {
       width: 170px;
       height: 50px;
       margin-left: 70px;
-      background-color: #E9967A;
+      background-color: black;
       border: none;
       border-radius: 20px;
       display: flex;
@@ -99,12 +99,12 @@ nav {
       .elbahja_Welcome-button--order:hover {
         background-color: white; }
         .elbahja_Welcome-button--order:hover a {
-          color: #E9967A; }
+          color: black; }
     .elbahja_Welcome-button--book {
       width: 170px;
       height: 50px;
       margin-left: 70px;
-      background-color: #E9967A;
+      background-color: black;
       border: none;
       border-radius: 20px;
       display: flex;
@@ -119,7 +119,7 @@ nav {
       .elbahja_Welcome-button--book:hover {
         background-color: white; }
         .elbahja_Welcome-button--book:hover a {
-          color: #E9967A; }
+          color: black; }
 
 .elbahja_bestDishes {
   width: 100%;
@@ -152,12 +152,12 @@ nav {
         height: 20px;
         width: 20px;
         border-radius: 50%;
-        border: solid #f7e47c;
+        border: solid black;
         cursor: pointer;
         transition: all 0.15s ease;
         margin: 5px; }
       .elbahja_bestDishes-slider--dots label:hover {
-        background: #f7e47c; }
+        background: white; }
   .elbahja_bestDishes-historyabout {
     width: 40%;
     padding: 40px;
@@ -185,7 +185,7 @@ nav {
       text-align: center;
       font-weight: 400; }
     .elbahja_bestDishes-historyabout a:hover {
-      color: #E9967A; }
+      color: black; }
 
 #img1:checked ~ .m1 {
   margin-left: 0; }
@@ -201,3 +201,359 @@ nav {
 
 #img5:checked ~ .m5 {
   margin-left: -400%; }
+
+.elbahja_Menu {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+  .elbahja_Menu-gridcontainer {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 300px 300px 300px;
+    gap: 70px 70px;
+    grid-template-areas: "elbahja_Menu-gridcontainer--lundi elbahja_Menu-gridcontainer--mardi elbahja_Menu-gridcontainer--mercredi" "elbahja_Menu-gridcontainer--jeudi elbahja_Menu-gridcontainer--vendredi elbahja_Menu-gridcontainer--samedi" ". elbahja_Menu-gridcontainer--dimanche ."; }
+    .elbahja_Menu-gridcontainer--lundi {
+      grid-area: elbahja_Menu-gridcontainer--lundi;
+      width: 300px;
+      height: 300px;
+      background-color: black;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 26px;
+      font-weight: 500;
+      color: white; }
+      .elbahja_Menu-gridcontainer--lundi .front, .elbahja_Menu-gridcontainer--lundi .back {
+        overflow: hidden;
+        backface-visibility: hidden;
+        position: absolute;
+        transition: transform .6s linear; }
+      .elbahja_Menu-gridcontainer--lundi .front {
+        width: 300px;
+        height: 300px;
+        background-color: black;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 26px;
+        font-weight: 500;
+        color: white; }
+      .elbahja_Menu-gridcontainer--lundi .front {
+        transform: perspective(600px) rotateY(0deg); }
+      .elbahja_Menu-gridcontainer--lundi .back {
+        width: 300px;
+        height: 300px;
+        background-color: black;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 26px;
+        font-weight: 500;
+        color: white;
+        background-color: white;
+        color: black;
+        border: solid black;
+        transform: perspective(600px) rotateY(180deg); }
+    .elbahja_Menu-gridcontainer--lundi:hover > .front {
+      transform: perspective(600px) rotateY(-180deg); }
+    .elbahja_Menu-gridcontainer--lundi:hover > .back {
+      transform: perspective(600px) rotateY(0deg); }
+    .elbahja_Menu-gridcontainer--mardi {
+      grid-area: elbahja_Menu-gridcontainer--mardi;
+      width: 300px;
+      height: 300px;
+      background-color: black;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 26px;
+      font-weight: 500;
+      color: white; }
+      .elbahja_Menu-gridcontainer--mardi .front, .elbahja_Menu-gridcontainer--mardi .back {
+        overflow: hidden;
+        backface-visibility: hidden;
+        position: absolute;
+        transition: transform .6s linear; }
+      .elbahja_Menu-gridcontainer--mardi .front {
+        width: 300px;
+        height: 300px;
+        background-color: black;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 26px;
+        font-weight: 500;
+        color: white; }
+      .elbahja_Menu-gridcontainer--mardi .front {
+        transform: perspective(600px) rotateY(0deg); }
+      .elbahja_Menu-gridcontainer--mardi .back {
+        width: 300px;
+        height: 300px;
+        background-color: black;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 26px;
+        font-weight: 500;
+        color: white;
+        background-color: white;
+        color: black;
+        border: solid black;
+        transform: perspective(600px) rotateY(180deg); }
+    .elbahja_Menu-gridcontainer--mardi:hover > .front {
+      transform: perspective(600px) rotateY(-180deg); }
+    .elbahja_Menu-gridcontainer--mardi:hover > .back {
+      transform: perspective(600px) rotateY(0deg); }
+    .elbahja_Menu-gridcontainer--mercredi {
+      grid-area: elbahja_Menu-gridcontainer--mercredi;
+      width: 300px;
+      height: 300px;
+      background-color: black;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 26px;
+      font-weight: 500;
+      color: white; }
+      .elbahja_Menu-gridcontainer--mercredi .front, .elbahja_Menu-gridcontainer--mercredi .back {
+        overflow: hidden;
+        backface-visibility: hidden;
+        position: absolute;
+        transition: transform .6s linear; }
+      .elbahja_Menu-gridcontainer--mercredi .front {
+        width: 300px;
+        height: 300px;
+        background-color: black;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 26px;
+        font-weight: 500;
+        color: white; }
+      .elbahja_Menu-gridcontainer--mercredi .front {
+        transform: perspective(600px) rotateY(0deg); }
+      .elbahja_Menu-gridcontainer--mercredi .back {
+        width: 300px;
+        height: 300px;
+        background-color: black;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 26px;
+        font-weight: 500;
+        color: white;
+        background-color: white;
+        color: black;
+        border: solid black;
+        transform: perspective(600px) rotateY(180deg); }
+    .elbahja_Menu-gridcontainer--mercredi:hover > .front {
+      transform: perspective(600px) rotateY(-180deg); }
+    .elbahja_Menu-gridcontainer--mercredi:hover > .back {
+      transform: perspective(600px) rotateY(0deg); }
+    .elbahja_Menu-gridcontainer--jeudi {
+      grid-area: elbahja_Menu-gridcontainer--jeudi;
+      width: 300px;
+      height: 300px;
+      background-color: black;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 26px;
+      font-weight: 500;
+      color: white; }
+      .elbahja_Menu-gridcontainer--jeudi .front, .elbahja_Menu-gridcontainer--jeudi .back {
+        overflow: hidden;
+        backface-visibility: hidden;
+        position: absolute;
+        transition: transform .6s linear; }
+      .elbahja_Menu-gridcontainer--jeudi .front {
+        width: 300px;
+        height: 300px;
+        background-color: black;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 26px;
+        font-weight: 500;
+        color: white; }
+      .elbahja_Menu-gridcontainer--jeudi .front {
+        transform: perspective(600px) rotateY(0deg); }
+      .elbahja_Menu-gridcontainer--jeudi .back {
+        width: 300px;
+        height: 300px;
+        background-color: black;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 26px;
+        font-weight: 500;
+        color: white;
+        background-color: white;
+        color: black;
+        border: solid black;
+        transform: perspective(600px) rotateY(180deg); }
+    .elbahja_Menu-gridcontainer--jeudi:hover > .front {
+      transform: perspective(600px) rotateY(-180deg); }
+    .elbahja_Menu-gridcontainer--jeudi:hover > .back {
+      transform: perspective(600px) rotateY(0deg); }
+    .elbahja_Menu-gridcontainer--vendredi {
+      grid-area: elbahja_Menu-gridcontainer--vendredi;
+      width: 300px;
+      height: 300px;
+      background-color: black;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 26px;
+      font-weight: 500;
+      color: white; }
+      .elbahja_Menu-gridcontainer--vendredi .front, .elbahja_Menu-gridcontainer--vendredi .back {
+        overflow: hidden;
+        backface-visibility: hidden;
+        position: absolute;
+        transition: transform .6s linear; }
+      .elbahja_Menu-gridcontainer--vendredi .front {
+        width: 300px;
+        height: 300px;
+        background-color: black;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 26px;
+        font-weight: 500;
+        color: white; }
+      .elbahja_Menu-gridcontainer--vendredi .front {
+        transform: perspective(600px) rotateY(0deg); }
+      .elbahja_Menu-gridcontainer--vendredi .back {
+        width: 300px;
+        height: 300px;
+        background-color: black;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 26px;
+        font-weight: 500;
+        color: white;
+        background-color: white;
+        color: black;
+        border: solid black;
+        transform: perspective(600px) rotateY(180deg); }
+    .elbahja_Menu-gridcontainer--vendredi:hover > .front {
+      transform: perspective(600px) rotateY(-180deg); }
+    .elbahja_Menu-gridcontainer--vendredi:hover > .back {
+      transform: perspective(600px) rotateY(0deg); }
+    .elbahja_Menu-gridcontainer--samedi {
+      grid-area: elbahja_Menu-gridcontainer--samedi;
+      width: 300px;
+      height: 300px;
+      background-color: black;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 26px;
+      font-weight: 500;
+      color: white; }
+      .elbahja_Menu-gridcontainer--samedi .front, .elbahja_Menu-gridcontainer--samedi .back {
+        overflow: hidden;
+        backface-visibility: hidden;
+        position: absolute;
+        transition: transform .6s linear; }
+      .elbahja_Menu-gridcontainer--samedi .front {
+        width: 300px;
+        height: 300px;
+        background-color: black;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 26px;
+        font-weight: 500;
+        color: white; }
+      .elbahja_Menu-gridcontainer--samedi .front {
+        transform: perspective(600px) rotateY(0deg); }
+      .elbahja_Menu-gridcontainer--samedi .back {
+        width: 300px;
+        height: 300px;
+        background-color: black;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 26px;
+        font-weight: 500;
+        color: white;
+        background-color: white;
+        color: black;
+        border: solid black;
+        transform: perspective(600px) rotateY(180deg); }
+    .elbahja_Menu-gridcontainer--samedi:hover > .front {
+      transform: perspective(600px) rotateY(-180deg); }
+    .elbahja_Menu-gridcontainer--samedi:hover > .back {
+      transform: perspective(600px) rotateY(0deg); }
+    .elbahja_Menu-gridcontainer--dimanche {
+      grid-area: elbahja_Menu-gridcontainer--dimanche;
+      width: 300px;
+      height: 300px;
+      background-color: black;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 26px;
+      font-weight: 500;
+      color: white; }
+      .elbahja_Menu-gridcontainer--dimanche .front, .elbahja_Menu-gridcontainer--dimanche .back {
+        overflow: hidden;
+        backface-visibility: hidden;
+        position: absolute;
+        transition: transform .6s linear; }
+      .elbahja_Menu-gridcontainer--dimanche .front {
+        width: 300px;
+        height: 300px;
+        background-color: black;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 26px;
+        font-weight: 500;
+        color: white; }
+      .elbahja_Menu-gridcontainer--dimanche .front {
+        transform: perspective(600px) rotateY(0deg); }
+      .elbahja_Menu-gridcontainer--dimanche .back {
+        width: 300px;
+        height: 300px;
+        background-color: black;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 26px;
+        font-weight: 500;
+        color: white;
+        background-color: white;
+        color: black;
+        border: solid black;
+        transform: perspective(600px) rotateY(180deg); }
+    .elbahja_Menu-gridcontainer--dimanche:hover > .front {
+      transform: perspective(600px) rotateY(-180deg); }
+    .elbahja_Menu-gridcontainer--dimanche:hover > .back {
+      transform: perspective(600px) rotateY(0deg); }

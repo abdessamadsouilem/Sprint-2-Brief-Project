@@ -1,6 +1,6 @@
-$navcolor:#FFF5F2;
-$PrimaryColor:#FFFCF7;
-$secendaryColor:#E9967A;
+$navcolorwhite:white;
+$PrimaryColor:white;
+$secendaryColor:black;
 $footerColor:#141414;
 $colortype1:black;
 $font-lg:40px;
@@ -26,11 +26,11 @@ $fontfamily:'Roboto', sans-serif;
 .elbahja_Welcome{
     width: 100%;
     height: 500px;
-    background-image: url(/image/tajine.jpg);
+    background-image: url(image/tajine.jpg);
     background-repeat: no-repeat;
     background-size: 95% 500px;
     background-position-x: center;
-    opacity: 0.7;
+    opacity: 1;
     display: flex;
     flex-direction:column;
     justify-content: center;
@@ -93,6 +93,8 @@ $fontfamily:'Roboto', sans-serif;
     
     margin-bottom: 30px;
 }
+
+
 .elbahja_bestDishes{
     width: 100%;
     display: flex;
@@ -128,13 +130,13 @@ $fontfamily:'Roboto', sans-serif;
                 height: 20px;
                 width: 20px;
                 border-radius: 50%;
-                border: solid rgb(247, 228, 124);
+                border: solid black;
                 cursor: pointer;
                 transition: all 0.15s ease;
                 margin: 5px;
             }
             label:hover{
-                background: rgb(247, 228, 124);
+                background: white;
             }
             
         } 
@@ -187,4 +189,134 @@ $fontfamily:'Roboto', sans-serif;
 }
 #img5:checked ~ .m5{
     margin-left: -400%;
+}
+
+@mixin boxstyle {
+    width: 300px;
+    height: 300px;
+    background-color: $secendaryColor;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: $font-md2;
+    font-weight: 500;
+    color: $PrimaryColor;
+}
+@mixin reverse {
+    .front,.back{
+        overflow: hidden;
+        backface-visibility: hidden;
+        position: absolute;
+        transition: transform .6s linear;
+    }
+    .front{
+        @include boxstyle;
+    }
+    .front{
+        transform: perspective(600px) rotateY(0deg);
+    }
+    .back{
+        @include boxstyle;
+        background-color: white;
+        color: $secendaryColor;
+        border: solid black;
+        transform: perspective(600px) rotateY(180deg);
+    }
+}
+.elbahja_Menu{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    &-gridcontainer{
+        display: grid;
+        grid-template-columns: 300px 300px 300px;
+        grid-template-rows: 300px 300px 300px;
+        gap: 70px 70px;
+        grid-template-areas:
+    "elbahja_Menu-gridcontainer--lundi elbahja_Menu-gridcontainer--mardi elbahja_Menu-gridcontainer--mercredi"
+    "elbahja_Menu-gridcontainer--jeudi elbahja_Menu-gridcontainer--vendredi elbahja_Menu-gridcontainer--samedi"
+    ". elbahja_Menu-gridcontainer--dimanche .";
+
+      &--lundi {
+        grid-area: elbahja_Menu-gridcontainer--lundi; 
+        @include boxstyle;
+        @include reverse;
+
+       }
+       &--lundi:hover> .front{
+        transform: perspective(600px) rotateY(-180deg);
+       }
+       &--lundi:hover> .back{
+        transform: perspective(600px) rotateY(0deg);
+       }
+       &--mardi {
+        grid-area: elbahja_Menu-gridcontainer--mardi; 
+        @include boxstyle;
+        @include reverse;
+       }
+       &--mardi:hover> .front{
+        transform: perspective(600px) rotateY(-180deg);
+       }
+       &--mardi:hover> .back{
+        transform: perspective(600px) rotateY(0deg);
+       }
+       &--mercredi {
+        grid-area: elbahja_Menu-gridcontainer--mercredi; 
+        @include boxstyle;
+        @include reverse;
+       }
+       &--mercredi:hover> .front{
+        transform: perspective(600px) rotateY(-180deg);
+       }
+       &--mercredi:hover> .back{
+        transform: perspective(600px) rotateY(0deg);
+       }
+       &--jeudi {
+        grid-area: elbahja_Menu-gridcontainer--jeudi; 
+        @include boxstyle;
+        @include reverse;
+       }
+       &--jeudi:hover> .front{
+        transform: perspective(600px) rotateY(-180deg);
+       }
+       &--jeudi:hover> .back{
+        transform: perspective(600px) rotateY(0deg);
+       }
+       &--vendredi {
+        grid-area: elbahja_Menu-gridcontainer--vendredi; 
+        @include boxstyle;
+        @include reverse;
+       }
+       &--vendredi:hover> .front{
+        transform: perspective(600px) rotateY(-180deg);
+       }
+       &--vendredi:hover> .back{
+        transform: perspective(600px) rotateY(0deg);
+       }
+       &--samedi {
+        grid-area: elbahja_Menu-gridcontainer--samedi; 
+        @include boxstyle;
+        @include reverse;
+       }
+       &--samedi:hover> .front{
+        transform: perspective(600px) rotateY(-180deg);
+       }
+       &--samedi:hover> .back{
+        transform: perspective(600px) rotateY(0deg);
+       }
+       &--dimanche {
+        grid-area: elbahja_Menu-gridcontainer--dimanche; 
+        @include boxstyle;
+        @include reverse;
+       }
+       &--dimanche:hover> .front{
+        transform: perspective(600px) rotateY(-180deg);
+       }
+       &--dimanche:hover> .back{
+        transform: perspective(600px) rotateY(0deg);
+       }
+    }
 }
