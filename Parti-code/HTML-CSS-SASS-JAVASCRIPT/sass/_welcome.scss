@@ -1,6 +1,6 @@
 $navcolorwhite:white;
 $PrimaryColor:white;
-$secendaryColor:black;
+$secendaryColor:#222222;
 $footerColor:#141414;
 $colortype1:black;
 $font-lg:40px;
@@ -136,7 +136,7 @@ $fontfamily:'Roboto', sans-serif;
                 margin: 5px;
             }
             label:hover{
-                background: white;
+                background:#00aaf4;
             }
             
         } 
@@ -325,5 +325,78 @@ h2{
        &--dimanche:hover> .back{
         transform: perspective(600px) rotateY(0deg);
        }
+    }
+}
+@mixin image {
+    width:800px;
+    height:400px;
+    opacity: 0.9;
+}
+@mixin button-order{
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p{
+        font-size: $font-md2;
+        font-weight: 400;
+        margin-bottom: 40px;
+    }
+    .button{
+        @include buttonstyle;
+        a{
+        @include linksstyle;
+        color: $PrimaryColor;
+    }
+    &:hover{
+        a{
+            color: $secendaryColor;
+        }
+        background-color: white
+      }
+}
+}
+.elbahja_bestDeals{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 40px;
+    &-couscous{
+        display: flex;
+        &--image{
+            img{@include image;}
+            
+        }
+        &--text{
+            @include button-order;
+        }
+            
+        
+    margin-bottom: 30px;    
+    }
+    &-taginepoulet{
+        display: flex;
+        &--image{
+            img{ @include image;}
+           
+        }
+        &--text{
+            @include button-order;
+        }
+        margin-bottom: 30px;  
+    }
+    &-ma9lapoulet{
+        display: flex;
+        &--image{
+            img{@include image;}
+            
+        }
+        &--text{
+            @include button-order;
+        }
+        margin-bottom: 30px;  
     }
 }
