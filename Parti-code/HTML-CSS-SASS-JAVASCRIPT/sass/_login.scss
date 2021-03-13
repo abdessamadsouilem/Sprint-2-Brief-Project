@@ -1,0 +1,36 @@
+$navcolorwhite:white;
+$PrimaryColor:white;
+$secendaryColor:#222222;
+$footerColor:#141414;
+$colortype1:black;
+$font-lg:40px;
+$font-md2:26px;
+$font-md1:20px;
+$font-sm:16px;
+
+
+.elbahja_login{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    label{
+        margin-top: 30px;
+       margin-bottom: 20px;
+    }
+    input{
+        margin-top: 10px;
+       margin-bottom: 20px;
+       border:2px solid black;
+       border-radius: 4px;
+       display: block;
+       width: 300px;
+       padding: 10px;
+    }
+    input:focus {
+        outline: 0;
+        border-color: #777;
+    }
+    
+}

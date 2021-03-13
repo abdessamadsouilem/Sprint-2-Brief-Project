@@ -57,7 +57,7 @@ nav {
 .elbahja_Welcome {
   width: 100%;
   height: 500px;
-  background-image: url(/image/tajine.jpg);
+  background-image: url(/HTML-CSS-SASS-JAVASCRIPT/image/tajine.jpg);
   background-repeat: no-repeat;
   background-size: 95% 550px;
   background-position-x: center;
@@ -749,7 +749,7 @@ footer {
   margin-top: 20px;
   width: 100%;
   height: 550px;
-  background-image: url(/image/604bf66ee540d.jpg);
+  background-image: url(/HTML-CSS-SASS-JAVASCRIPT/image/604bf66ee540d.jpg);
   background-repeat: no-repeat;
   opacity: 0.9;
   background-size: 95% 550px;
@@ -945,7 +945,7 @@ h1 {
   margin-top: 20px;
   width: 100%;
   height: 600px;
-  background-image: url(/image/604caeeebb6f7.jpg);
+  background-image: url(/HTML-CSS-SASS-JAVASCRIPT/image/604caeeebb6f7.jpg);
   background-repeat: no-repeat;
   opacity: 0.9;
   background-size: 95% 600px;
@@ -1030,3 +1030,24 @@ h1 {
     border-color: #2ecc71; }
   .elbahja_form .form-control.Error input {
     border-color: #e74c3c; }
+
+.elbahja_login {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .elbahja_login label {
+    margin-top: 30px;
+    margin-bottom: 20px; }
+  .elbahja_login input {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    border-radius: 4px;
+    display: block;
+    width: 300px;
+    padding: 10px; }
+  .elbahja_login input:focus {
+    outline: 0;
+    border-color: #777; }
