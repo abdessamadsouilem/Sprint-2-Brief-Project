@@ -797,7 +797,7 @@ h1 {
   .elbahja_Galery-gridcontainer {
     display: grid;
     grid-template-columns: 300px 300px 300px 300px;
-    grid-template-rows: 300px;
+    grid-template-rows: 320px;
     gap: 0px 50px;
     grid-template-areas: "elbahja_Galery-gridcontainer--plat1 elbahja_Galery-gridcontainer--plat2 elbahja_Galery-gridcontainer--plat3 elbahja_Galery-gridcontainer--plat4"; }
     .elbahja_Galery-gridcontainer--plat2 {
