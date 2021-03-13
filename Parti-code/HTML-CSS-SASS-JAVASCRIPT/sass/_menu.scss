@@ -51,3 +51,105 @@ $font-sm:16px;
     }
     margin-bottom: 50px;
 }
+@mixin stylecards{
+    img{
+        width: 100%;
+        height: 60%;
+        border-radius: 10px;
+    }
+    h3{
+        margin-top: 5px;
+        font-size: $font-md2;
+    }
+    p{ 
+       margin-top: 4px;
+       font-size: $font-md1;
+       margin-bottom: 5px;
+    }
+    button{
+       width: 120px;
+       height: 40px;
+       text-transform: uppercase;
+       letter-spacing: 1px;
+       color: $PrimaryColor;
+       background-color: $secendaryColor;
+       border: none;
+       outline: none;
+       cursor: pointer;
+       border-radius: 40px;
+    }
+    button:hover{
+       color: $secendaryColor;
+       background-color: $PrimaryColor;
+    }
+}
+h1{
+    text-align: center;
+}
+.elbahja_Galery{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    &-gridcontainer{
+        display: grid;
+        grid-template-columns: 300px 300px 300px 300px;
+        grid-template-rows: 300px;
+        gap: 0px 50px;
+        grid-template-areas:
+          "elbahja_Galery-gridcontainer--plat1 elbahja_Galery-gridcontainer--plat2 elbahja_Galery-gridcontainer--plat3 elbahja_Galery-gridcontainer--plat4";
+        &--plat2{
+             grid-area: elbahja_Galery-gridcontainer--plat2; 
+             background-color:#FFEDE6;
+             border-radius: 10px;
+             transition: transform .2s;
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+             @include stylecards;
+        }
+        &--plat2:hover{
+            transform: scale(1.2);
+        } 
+        &--plat1{
+            grid-area: elbahja_Galery-gridcontainer--plat1; 
+            background-color:#FFEDE6;
+            border-radius: 10px;
+            transition: transform .2s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @include stylecards;
+       }
+       &--plat1:hover{
+        transform: scale(1.2);
+    }
+       &--plat3{
+        grid-area: elbahja_Galery-gridcontainer--plat3; 
+        background-color:#FFEDE6;
+            border-radius: 10px;
+            transition: transform .2s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @include stylecards;
+       }
+       &--plat3:hover{
+        transform: scale(1.2);
+    } 
+       &--plat4{
+        grid-area: elbahja_Galery-gridcontainer--plat4; 
+        background-color:#FFEDE6;
+            border-radius: 10px;
+            transition: transform .2s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @include stylecards;
+    }
+    &--plat4:hover{
+        transform: scale(1.2);
+    }
+    }
+    margin-bottom: 50px;
+}

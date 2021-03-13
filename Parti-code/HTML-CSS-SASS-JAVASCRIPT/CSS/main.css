@@ -784,3 +784,159 @@ footer {
   .elbahja_Reserve button:hover {
     color: #222222;
     background-color: white; }
+
+h1 {
+  text-align: center; }
+
+.elbahja_Galery {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin-bottom: 50px; }
+  .elbahja_Galery-gridcontainer {
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-rows: 300px;
+    gap: 0px 50px;
+    grid-template-areas: "elbahja_Galery-gridcontainer--plat1 elbahja_Galery-gridcontainer--plat2 elbahja_Galery-gridcontainer--plat3 elbahja_Galery-gridcontainer--plat4"; }
+    .elbahja_Galery-gridcontainer--plat2 {
+      grid-area: elbahja_Galery-gridcontainer--plat2;
+      background-color: #FFEDE6;
+      border-radius: 10px;
+      transition: transform .2s;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .elbahja_Galery-gridcontainer--plat2 img {
+        width: 100%;
+        height: 60%;
+        border-radius: 10px; }
+      .elbahja_Galery-gridcontainer--plat2 h3 {
+        margin-top: 5px;
+        font-size: 26px; }
+      .elbahja_Galery-gridcontainer--plat2 p {
+        margin-top: 4px;
+        font-size: 20px;
+        margin-bottom: 5px; }
+      .elbahja_Galery-gridcontainer--plat2 button {
+        width: 120px;
+        height: 40px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: white;
+        background-color: #222222;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        border-radius: 40px; }
+      .elbahja_Galery-gridcontainer--plat2 button:hover {
+        color: #222222;
+        background-color: white; }
+    .elbahja_Galery-gridcontainer--plat2:hover {
+      transform: scale(1.2); }
+    .elbahja_Galery-gridcontainer--plat1 {
+      grid-area: elbahja_Galery-gridcontainer--plat1;
+      background-color: #FFEDE6;
+      border-radius: 10px;
+      transition: transform .2s;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .elbahja_Galery-gridcontainer--plat1 img {
+        width: 100%;
+        height: 60%;
+        border-radius: 10px; }
+      .elbahja_Galery-gridcontainer--plat1 h3 {
+        margin-top: 5px;
+        font-size: 26px; }
+      .elbahja_Galery-gridcontainer--plat1 p {
+        margin-top: 4px;
+        font-size: 20px;
+        margin-bottom: 5px; }
+      .elbahja_Galery-gridcontainer--plat1 button {
+        width: 120px;
+        height: 40px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: white;
+        background-color: #222222;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        border-radius: 40px; }
+      .elbahja_Galery-gridcontainer--plat1 button:hover {
+        color: #222222;
+        background-color: white; }
+    .elbahja_Galery-gridcontainer--plat1:hover {
+      transform: scale(1.2); }
+    .elbahja_Galery-gridcontainer--plat3 {
+      grid-area: elbahja_Galery-gridcontainer--plat3;
+      background-color: #FFEDE6;
+      border-radius: 10px;
+      transition: transform .2s;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .elbahja_Galery-gridcontainer--plat3 img {
+        width: 100%;
+        height: 60%;
+        border-radius: 10px; }
+      .elbahja_Galery-gridcontainer--plat3 h3 {
+        margin-top: 5px;
+        font-size: 26px; }
+      .elbahja_Galery-gridcontainer--plat3 p {
+        margin-top: 4px;
+        font-size: 20px;
+        margin-bottom: 5px; }
+      .elbahja_Galery-gridcontainer--plat3 button {
+        width: 120px;
+        height: 40px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: white;
+        background-color: #222222;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        border-radius: 40px; }
+      .elbahja_Galery-gridcontainer--plat3 button:hover {
+        color: #222222;
+        background-color: white; }
+    .elbahja_Galery-gridcontainer--plat3:hover {
+      transform: scale(1.2); }
+    .elbahja_Galery-gridcontainer--plat4 {
+      grid-area: elbahja_Galery-gridcontainer--plat4;
+      background-color: #FFEDE6;
+      border-radius: 10px;
+      transition: transform .2s;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .elbahja_Galery-gridcontainer--plat4 img {
+        width: 100%;
+        height: 60%;
+        border-radius: 10px; }
+      .elbahja_Galery-gridcontainer--plat4 h3 {
+        margin-top: 5px;
+        font-size: 26px; }
+      .elbahja_Galery-gridcontainer--plat4 p {
+        margin-top: 4px;
+        font-size: 20px;
+        margin-bottom: 5px; }
+      .elbahja_Galery-gridcontainer--plat4 button {
+        width: 120px;
+        height: 40px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: white;
+        background-color: #222222;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        border-radius: 40px; }
+      .elbahja_Galery-gridcontainer--plat4 button:hover {
+        color: #222222;
+        background-color: white; }
+    .elbahja_Galery-gridcontainer--plat4:hover {
+      transform: scale(1.2); }
