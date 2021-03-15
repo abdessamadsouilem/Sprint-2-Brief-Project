@@ -18,16 +18,18 @@
      </ul>
      
    </nav> 
-<section class="elbahja_login">
    
-   <form action="procces.php" method="POST">
+<section class="elbahja_login">
+<h1>Login</h1>
+
+   <form action="procces.php" method="GET">
     <label>Name : </label>
     <input type="text" id="name" name="name"/>
     <br>
     <label>Password : </label>
     <input type="password" id="pass" name="pass"/>
      <br>
-    <input type="submit" id="btn" value="login"/>
+    <input type="submit" id="btn" name="save" value="login">
    </form>
 </section>
 

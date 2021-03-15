@@ -11,9 +11,9 @@
    <nav class="elbahja_nav">
      <img class="elbahja_nav--logo" src="image/logo/Untitled-2.png" alt="">
      <ul class="elbahja_nav--list">
-        <li><a href="Home.html">HOME</a></li>
-        <li><a href="Menu.html">MENU</a></li>
-        <li><a href="reservation.html">RESERVATION</a></li>
+        <li><a href="Home.php">HOME</a></li>
+        <li><a href="Menu.php">MENU</a></li>
+        <li><a href="reservation.php">RESERVATION</a></li>
         <li><a href="#">ABOUT US</a></li>
      </ul>
      <div class="elbahja_nav--Login">
