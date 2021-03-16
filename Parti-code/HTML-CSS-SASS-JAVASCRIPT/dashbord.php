@@ -71,9 +71,9 @@ $rep = mysqli_query($connect,$req);
        <td><?php echo $row["Num"];   ?></td>
        <td><?php echo $row["Name"];   ?></td>
        <td><?php echo $row["Price"];   ?></td>
-       <td><?php echo '<img src=' . $row["image"] . '">'   ?></td>
+       <td><?php echo '<img src='.`\Parti-code\HTML-CSS-SASS-JAVASCRIPT\image\ `. $row["image"] . '>'   ?></td>
        <td><a href="update.php">update</a></td>
-       <td><a href="">delete</a></td>
+       <td><a href="delete.php?Num=<?php echo $row["Num"] ?>">delete</a></td>
        
      </tr>
 
