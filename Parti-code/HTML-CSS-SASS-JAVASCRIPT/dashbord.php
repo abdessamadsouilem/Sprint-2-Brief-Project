@@ -4,9 +4,8 @@
 $connect=mysqli_connect("localhost","root","","el-bahja-food")or die ("connection failed");
 $req = ("select * from food");
 $rep = mysqli_query($connect,$req);
-
-
-
+$upload_dir = 'image/';
+session_start();
 ?>
 
 
@@ -17,6 +16,7 @@ $rep = mysqli_query($connect,$req);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/main.css">
+    <link rel="shortcut icon" href="image/logo/Untitled-2.png" />
     <title>Elbahja Food</title>
     <style>
   <?php include "CSS/main.css" ?>
@@ -30,12 +30,13 @@ $rep = mysqli_query($connect,$req);
         <li><a href="Menu.php">MENU</a></li>
         <li><a href="reservation.php">RESERVATION</a></li>
         <li><a href="#">ABOUT US</a></li>
+        <li><?php
+echo"Welcome Back ".$_SESSION['name'];
+?></li>
      </ul>
 </nav> 
-<?php
-// echo"Welcome Back".
-?>
-<h1>Your Dashboard</h1>
+
+<h1>Your Dashboard </h1>
 <div class="elbahja_dashbord">
     
 <form action="add.php" method="POST">
@@ -58,7 +59,7 @@ $rep = mysqli_query($connect,$req);
       <th>Num</th>
       <th>Name</th>
       <th> Price</th>
-      <th> image</th>
+      <th class="image"> image</th>
       <th>update</th>
       <th>Delete</th>
       
@@ -71,9 +72,9 @@ $rep = mysqli_query($connect,$req);
        <td><?php echo $row["Num"];   ?></td>
        <td><?php echo $row["Name"];   ?></td>
        <td><?php echo $row["Price"];   ?></td>
-       <td><?php echo '<img src='.`\Parti-code\HTML-CSS-SASS-JAVASCRIPT\image\ `. $row["image"] . '>'   ?></td>
-       <td><a href="update.php">update</a></td>
-       <td><a href="delete.php?Num=<?php echo $row["Num"] ?>">delete</a></td>
+       <td class="imagetd"><img src="<?php echo $upload_dir.$row["image"]; ?>" ></td>
+       <td><a class="update" href="update.php">update</a></td>
+       <td><a class="delete" href="delete.php?Num=<?php echo $row["Num"] ?>">delete</a></td>
        
      </tr>
 

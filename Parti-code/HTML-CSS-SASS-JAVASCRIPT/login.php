@@ -1,3 +1,9 @@
+<?php
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,6 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/main.css">
+    <link rel="shortcut icon" href="image/logo/Untitled-2.png" />
     <title>Elbahja Food</title>
 </head>
 <body>
@@ -22,7 +29,7 @@
 <section class="elbahja_login">
 <h1>Login</h1>
 
-   <form action="procces.php" method="GET">
+   <form action="procces.php" method="POST">
     <label>Name : </label>
     <input type="text" id="name" name="name"/>
     <br>

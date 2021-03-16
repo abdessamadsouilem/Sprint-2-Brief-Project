@@ -57,7 +57,7 @@ nav {
 .elbahja_Welcome {
   width: 100%;
   height: 500px;
-  background-image: url(/HTML-CSS-SASS-JAVASCRIPT/image/tajine.jpg);
+  background-image: url(image/tajine.jpg);
   background-repeat: no-repeat;
   background-size: 95% 550px;
   background-position-x: center;
@@ -749,7 +749,7 @@ footer {
   margin-top: 20px;
   width: 100%;
   height: 550px;
-  background-image: url(/HTML-CSS-SASS-JAVASCRIPT/image/604bf66ee540d.jpg);
+  background-image: url(image/604bf66ee540d.jpg);
   background-repeat: no-repeat;
   opacity: 0.9;
   background-size: 95% 550px;
@@ -945,7 +945,7 @@ h1 {
   margin-top: 20px;
   width: 100%;
   height: 600px;
-  background-image: url(/HTML-CSS-SASS-JAVASCRIPT/image/604caeeebb6f7.jpg);
+  background-image: url(image/604caeeebb6f7.jpg);
   background-repeat: no-repeat;
   opacity: 0.9;
   background-size: 95% 600px;
@@ -1087,15 +1087,18 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #222222;
-  margin-bottom: 50px; }
+  color: #222222; }
+  .elbahja_dashbord form {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
   .elbahja_dashbord label {
     color: #222222;
     font-size: 20px;
-    margin-top: 30px;
     margin-bottom: 20px; }
   .elbahja_dashbord input {
-    margin-top: 10px;
     margin-bottom: 20px;
     border: 2px solid black;
     color: #222222;
@@ -1121,10 +1124,11 @@ h1 {
     font-size: 16px;
     padding: 10px;
     margin-top: 20px;
-    width: 320px; }
+    width: 300px;
+    margin-bottom: 100px; }
 
 table {
-  width: 800px; }
+  width: 1000px; }
 
 table, th, td {
   border-collapse: collapse;
@@ -1136,6 +1140,24 @@ td {
 
 th {
   height: 50px; }
+
+.update {
+  text-decoration: none;
+  color: green; }
+
+.delete {
+  text-decoration: none;
+  color: red; }
+
+.image {
+  width: 300px; }
+
+.imagetd {
+  width: 300px;
+  height: 200px; }
+  .imagetd img {
+    width: 300px;
+    height: 200px; }
 
 .update_form {
   margin-top: 70px;
