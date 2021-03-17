@@ -5,6 +5,7 @@ $connect=mysqli_connect("localhost","root","","el-bahja-food")or die ("connectio
 $req = ("select * from food");
 $rep = mysqli_query($connect,$req);
 $upload_dir = 'image/';
+session_start();
 
 ?>
 <!DOCTYPE html>
@@ -26,9 +27,18 @@ $upload_dir = 'image/';
            <li><a href="reservation.php">RESERVATION</a></li>
            <li><a href="#">ABOUT US</a></li>
         </ul>
-        <div class="elbahja_nav--Login">
-           <a href="login.php" >LOGIN</a>
-        </div>
+        <?php if (isset($_SESSION["loginstatus"]) && $_SESSION["loginstatus"]  === true) : ?>
+          <div class="elbahja_nav--dahbord">
+            <a href="dashbord.php">dashbord</a>
+         </div>
+         <div class="elbahja_nav--deconecter">
+            <a href="Sedeconecter.php">Se Deconecter</a>
+         </div>
+      <?php else : ?>
+         <div class="elbahja_nav--Login">
+            <a href="login.php">LOGIN</a>
+         </div>
+      <?php endif; ?>
     </nav> 
     
     <section class="elbahja_Reserve">

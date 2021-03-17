@@ -1,3 +1,8 @@
+<?php
+session_start();
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,13 +22,23 @@
            <li><a href="reservation.php">RESERVATION</a></li>
            <li><a href="#">ABOUT US</a></li>
         </ul>
-        <?php
-        
-        ?>
-        <div class="elbahja_nav--Login">
-           <a href="login.php" >LOGIN</a>
-        </div>
+        <?php if (isset($_SESSION["loginstatus"]) && $_SESSION["loginstatus"]  === true) : ?>
+        <div class="elbahja_nav--dahbord">
+            <a href="dashbord.php">dashbord</a>
+         </div>   
+         <div class="elbahja_nav--deconecter">
+            <a href="Sedeconecter.php">Se Deconecter</a>
+         </div>
+         
+      <?php else : ?>
+         <div class="elbahja_nav--Login">
+            <a href="login.php">LOGIN</a>
+         </div>
+      <?php endif; ?>
     </nav> 
+    <style>
+  <?php include "CSS/main.css" ?>
+</style>
     <section class="elbahja_Reservation">
         <h1>RESERVATIONS</h1>
         <p>Booking a table has never been so easy with free & instant online restaurant reservations, booking now!!</p>
@@ -36,28 +51,28 @@
         <h2>+212 694175174</h2>
     </section>
     <section class="elbahja_form">
-        <form action="emailRes.php" id="form" class="form" method="POST" >
-            <div class="form-control ">
+        <form action="emailRes.php" method="POST" id="form" class="form">
+            <!-- <div class="form-control "> -->
                 <label for="Name">Full-Name</label>
                 <input type="text" placeholder="Abdessamad Souilem" id="Name" name="Full-Name" />
                 <small>Error message</small>
-            </div>
-            <div class="form-control ">
+            <!-- </div> -->
+            <!-- <div class="form-control "> -->
                 <label for="Email">Email</label>
                 <input type="email" placeholder="abdessamadsouilem1@gmail.com" id="email" name="email" />
                 <small>Error message</small>
-            </div>
-            <div class="form-control ">
+            <!-- </div> -->
+            <!-- <div class="form-control "> -->
                 <label for="Date">Date</label>
                 <input type="datetime-local"  id="date" name="Date"/>
                 <small>Error message</small>
-            </div>
-            <div class="form-control ">
+            <!-- </div> -->
+            <!-- <div class="form-control "> -->
                 <label for="number">Number of persons width you :</label>
                 <input type="number"  id="number" name="number"/>
                 <small>Error message</small>
-            </div>
-            <button type="submit" name="send">MAKE RESERVATION</button>
+            <!-- </div> -->
+            <button  onclick="submit()" value="submit contact" type="submit" name="send">MAKE RESERVATION</button>
         </form>
     </section>
 

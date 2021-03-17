@@ -30,10 +30,14 @@ session_start();
         <li><a href="Menu.php">MENU</a></li>
         <li><a href="reservation.php">RESERVATION</a></li>
         <li><a href="#">ABOUT US</a></li>
-        <li><?php
-echo"Welcome Back ".$_SESSION['name'];
-?></li>
      </ul>
+     <div class="elbahja_nav--avatar">
+       <img src="image/profile.png" alt="">
+            <a href=#><?php echo"welcome ".$_SESSION['name'] ?></a>
+         </div>
+     <div class="elbahja_nav--deconecter">
+            <a href="Sedeconecter.php">Se Deconecter</a>
+         </div>
 </nav> 
 
 <h1>Your Dashboard </h1>
