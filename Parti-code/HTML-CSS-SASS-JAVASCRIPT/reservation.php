@@ -52,26 +52,26 @@ session_start();
     </section>
     <section class="elbahja_form">
         <form action="emailRes.php" method="POST" id="form" class="form">
-            <!-- <div class="form-control "> -->
+            <div class="form-control ">
                 <label for="Name">Full-Name</label>
                 <input type="text" placeholder="Abdessamad Souilem" id="Name" name="Full-Name" />
                 <small>Error message</small>
-            <!-- </div> -->
-            <!-- <div class="form-control "> -->
+            </div>
+             <div class="form-control ">
                 <label for="Email">Email</label>
                 <input type="email" placeholder="abdessamadsouilem1@gmail.com" id="email" name="email" />
                 <small>Error message</small>
-            <!-- </div> -->
-            <!-- <div class="form-control "> -->
+            </div> 
+            <div class="form-control ">
                 <label for="Date">Date</label>
                 <input type="datetime-local"  id="date" name="Date"/>
                 <small>Error message</small>
-            <!-- </div> -->
-            <!-- <div class="form-control "> -->
+            </div> 
+             <div class="form-control ">
                 <label for="number">Number of persons width you :</label>
                 <input type="number"  id="number" name="number"/>
                 <small>Error message</small>
-            <!-- </div> -->
+             </div>
             <button  onclick="submit()" value="submit contact" type="submit" name="send">MAKE RESERVATION</button>
         </form>
     </section>
@@ -79,4 +79,4 @@ session_start();
 
     <script src="reservation.js"></script>
 </body>
-</html>
+</html> -->
