@@ -1,3 +1,20 @@
+<?php
+session_start();
+
+if($_SESSION["loginstatus"] == true){
+?><style>.elbahja_nav--Login{
+   display: none !important;
+   }
+   .elbahja_nav--deconecter{
+   display: flex !important;
+   }</style><?php   
+}
+
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +26,9 @@
     <title>Elbahja Food</title>
 </head>
 <body>
+<style>
+  <?php include "CSS/main.css" ?>
+</style>
    <nav class="elbahja_nav">
      <img class="elbahja_nav--logo" src="image/logo/Untitled-2.png" alt="">
      <ul class="elbahja_nav--list">
@@ -19,6 +39,9 @@
      </ul>
      <div class="elbahja_nav--Login">
         <a href="login.php">LOGIN</a>
+     </div>
+     <div class="elbahja_nav--deconecter">
+        <a href="Sedeconecter.php">Se Deconecter</a>
      </div>
    </nav> 
    <br>
@@ -75,7 +98,7 @@
          </div>
 
       </div>
-
+<?php  error_reporting(0); ini_set('display_errors', 0); ?>
    </section>
    <h2 class="title">Menu Of The Week</h2>
    <section class="elbahja_Menu">

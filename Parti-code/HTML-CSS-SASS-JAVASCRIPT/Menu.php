@@ -1,3 +1,12 @@
+<?php
+
+
+$connect=mysqli_connect("localhost","root","","el-bahja-food")or die ("connection failed");
+$req = ("select * from food");
+$rep = mysqli_query($connect,$req);
+$upload_dir = 'image/';
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,65 +37,26 @@
         <button type="button" class="main-btn">Reservation</button>
     </section>
     <h1>DISHES</h1>
-    <section class="elbahja_Galery">
-        <div class="elbahja_Galery-gridcontainer">
-            <div class="elbahja_Galery-gridcontainer--plat2">
-                <img src="image/604c95be3a1a3.jpg" alt="">
-                <h3>Tagine Marocaine</h3>
-                <p>Price : 15 $</p>
-                <button type="button" class="main-btn">Order Now</button>
-            </div>
-            <div class="elbahja_Galery-gridcontainer--plat1">
-                <img src="image/6047793e4d86f.jpg" alt="">
-                <h3>Couscous Marocaine</h3>
-                <p>Price : 09 $</p>
-                <button type="button" class="main-btn">Order Now</button>
-            </div>
-            <div class="elbahja_Galery-gridcontainer--plat3">
-                <img src="image/604c8abc6b3f9.jpg" alt="">
-                <h3>Tagine de légume</h3>
-                <p>Price : 07 $</p>
-                <button type="button" class="main-btn">Order Now</button>
-            </div>
-            <div class="elbahja_Galery-gridcontainer--plat4">
-                <img src="image/604c96c65e298.jpg" alt="">
-                <h3>3asida Marocaine</h3>
-                <p>Price : 09 $</p>
-                <button type="button" class="main-btn">Order Now</button>
-            </div>
-          </div>
-                  
-    </section>
-    <h1>DESSERTS</h1>
-    <section class="elbahja_Galery">
-        <div class="elbahja_Galery-gridcontainer">
-            <div class="elbahja_Galery-gridcontainer--plat2">
-                <img src="image/604c9cd344007.jpg" alt="">
-                <h3>Bastila Marocaine</h3>
-                <p>Price : 20 $</p>
-                <button type="button" class="main-btn">Order Now</button>
-            </div>
-            <div class="elbahja_Galery-gridcontainer--plat1">
-                <img src="image/604c9c749cf60.jpg" alt="">
-                <h3>Royale Cake</h3>
-                <p>Price : 25 $</p>
-                <button type="button" class="main-btn">Order Now</button>
-            </div>
-            <div class="elbahja_Galery-gridcontainer--plat3">
-                <img src="image/604c9c3a299ee.jpg" alt="">
-                <h3>Desserts tradictionelles</h3>
-                <p>Price : 17 $</p>
-                <button type="button" class="main-btn">Order Now</button>
-            </div>
-            <div class="elbahja_Galery-gridcontainer--plat4">
-                <img src="image/604c967666216.jpg" alt="">
-                <h3>Desserts</h3>
-                <p>Price : 19 $</p>
-                <button type="button" class="main-btn">Order Now</button>
-            </div>
-          </div>
-                  
-    </section>
+    
+   <section class="elbahja_Dishes">
+<?php
+     while($row = mysqli_fetch_array($rep))
+     {
+?>
+     <div class="elbahja_Dishes-card">
+         <img src="<?php echo $upload_dir.$row["image"]; ?>" >
+         <h2><?php echo $row["Name"];   ?></h2>
+         <p>Price :<?php echo $row["Price"];   ?></p>
+         <button>Order Now</button>
+     </div>
+     <?php
+}
+
+?>
+   </section>
+   <style>
+  <?php include "CSS/main.css" ?>
+</style>
     <footer>
         <div class="footer_grid-container">
            <div class="footer_grid-container--logo">

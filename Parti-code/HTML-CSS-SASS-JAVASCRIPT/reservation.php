@@ -17,6 +17,9 @@
            <li><a href="reservation.php">RESERVATION</a></li>
            <li><a href="#">ABOUT US</a></li>
         </ul>
+        <?php
+        
+        ?>
         <div class="elbahja_nav--Login">
            <a href="login.php" >LOGIN</a>
         </div>
@@ -33,28 +36,28 @@
         <h2>+212 694175174</h2>
     </section>
     <section class="elbahja_form">
-        <form id="form" class="form">
+        <form action="emailRes.php" id="form" class="form" method="POST" >
             <div class="form-control ">
                 <label for="Name">Full-Name</label>
-                <input type="text" placeholder="Abdessamad Souilem" id="Name" />
+                <input type="text" placeholder="Abdessamad Souilem" id="Name" name="Full-Name" />
                 <small>Error message</small>
             </div>
             <div class="form-control ">
                 <label for="Email">Email</label>
-                <input type="email" placeholder="abdessamadsouilem1@gmail.com" id="email" />
+                <input type="email" placeholder="abdessamadsouilem1@gmail.com" id="email" name="email" />
                 <small>Error message</small>
             </div>
             <div class="form-control ">
                 <label for="Date">Date</label>
-                <input type="datetime-local"  id="date"/>
+                <input type="datetime-local"  id="date" name="Date"/>
                 <small>Error message</small>
             </div>
             <div class="form-control ">
                 <label for="number">Number of persons width you :</label>
-                <input type="number"  id="number"/>
+                <input type="number"  id="number" name="number"/>
                 <small>Error message</small>
             </div>
-            <button>MAKE RESERVATION</button>
+            <button type="submit" name="send">MAKE RESERVATION</button>
         </form>
     </section>
 
