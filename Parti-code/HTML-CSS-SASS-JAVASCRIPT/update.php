@@ -30,7 +30,7 @@
 </style>
 <h1>Update Your Information</h1>
 <div class="update_form">
-    <form action="edit.php" method="POST">
+    <form action="edit.php" method="POST" enctype="multipart/form-data">
     <label for="Num">Number Of Products :</label>
     <input type="Name" id="Num" name="Num" />
     <br>

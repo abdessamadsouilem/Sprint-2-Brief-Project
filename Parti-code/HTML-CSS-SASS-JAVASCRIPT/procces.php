@@ -9,8 +9,8 @@ $password= $_POST['pass'];
 
 
 $connect=mysqli_connect("localhost","root","","el-bahja-food")or die ("connection failed");
-$name= $_POST['name'];
-$password= $_POST['pass'];
+$name= htmlspecialchars($_POST['name']);
+$password= htmlspecialchars($_POST['pass']);
 
 
 if(!empty($_POST['save'])){

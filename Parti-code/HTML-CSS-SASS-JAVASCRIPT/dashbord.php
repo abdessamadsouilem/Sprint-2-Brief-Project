@@ -4,11 +4,11 @@
 $connect=mysqli_connect("localhost","root","","el-bahja-food")or die ("connection failed");
 $req = ("select * from food");
 $rep = mysqli_query($connect,$req);
-$upload_dir = 'image/';
+$upload_dir = 'upload/';
 session_start();
 ?>
-
-
+ <?php if (isset($_SESSION["loginstatus"]) && $_SESSION["loginstatus"]  === true) : ?>
+  
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,7 +43,7 @@ session_start();
 <h1>Your Dashboard </h1>
 <div class="elbahja_dashbord">
     
-<form action="add.php" method="POST">
+<form action="add.php" method="POST" enctype="multipart/form-data">
     <label for="Num">Number Of Products :</label>
     <input type="Name" id="Num" name="Num" />
     <br>
@@ -89,3 +89,6 @@ session_start();
 </div>
 </body>
 </html>
+<?php else : ?>
+<?php  header('location: login.php'); ?>
+<?php endif; ?>

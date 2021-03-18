@@ -7,6 +7,8 @@ const number = document.getElementById('number');
 form.addEventListener('submit',(e)=>{
     e.preventDefault();
     checkinputs();
+    
+    
 })
 
 

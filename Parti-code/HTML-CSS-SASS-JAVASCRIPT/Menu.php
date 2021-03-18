@@ -4,7 +4,7 @@
 $connect=mysqli_connect("localhost","root","","el-bahja-food")or die ("connection failed");
 $req = ("select * from food");
 $rep = mysqli_query($connect,$req);
-$upload_dir = 'image/';
+$upload_dir = 'upload/';
 session_start();
 
 ?>
@@ -54,7 +54,7 @@ session_start();
      {
 ?>
      <div class="elbahja_Dishes-card">
-         <img src="<?php echo $upload_dir.$row["image"]; ?>" >
+         <img src="<?php echo$upload_dir.$row["image"]; ?>" >
          <h2><?php echo $row["Name"];   ?></h2>
          <p>Price :<?php echo $row["Price"];   ?></p>
          <button>Order Now</button>

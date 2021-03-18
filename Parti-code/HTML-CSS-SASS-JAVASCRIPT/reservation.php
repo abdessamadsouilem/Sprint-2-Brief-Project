@@ -51,7 +51,7 @@ session_start();
         <h2>+212 694175174</h2>
     </section>
     <section class="elbahja_form">
-        <form action="emailRes.php" method="POST" id="form" class="form">
+        <form action="emailRes.php" method="POST" onsubmit="return checkinputs()" id="form" class="form">
             <div class="form-control ">
                 <label for="Name">Full-Name</label>
                 <input type="text" placeholder="Abdessamad Souilem" id="Name" name="Full-Name" />
@@ -72,7 +72,7 @@ session_start();
                 <input type="number"  id="number" name="number"/>
                 <small>Error message</small>
              </div>
-            <button  onclick="submit()" value="submit contact" type="submit" name="send">MAKE RESERVATION</button>
+            <button onsubmit="return checkinputs();"  onclick="submit()" value="submit contact" type="submit" name="send">MAKE RESERVATION</button>
         </form>
     </section>
 

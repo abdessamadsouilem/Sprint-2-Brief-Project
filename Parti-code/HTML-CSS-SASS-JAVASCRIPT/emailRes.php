@@ -3,6 +3,16 @@
 
 
 
+
+
+
+
+
+
+
+
+if(!empty($_POST['Full-Name']) && !empty($_POST['email']) && !empty($_POST['Date']) && !empty($_POST['number'])  ){
+
 $name=$_POST["Full-Name"];
 $email=$_POST["email"];
 $date=$_POST["Date"];
@@ -22,11 +32,9 @@ if($mailsent == true){
     header('location: reservation.php');
 
 }else{
-    echo"no dont sen "  ;
+    header('location: reservation.php');
 }
-
-
-
-
-
+}else{
+    header('location: reservation.php');
+}
 ?>
