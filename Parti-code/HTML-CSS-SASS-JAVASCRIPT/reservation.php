@@ -75,8 +75,7 @@ session_start();
             <button onsubmit="return checkinputs();"  onclick="submit()" value="submit contact" type="submit" name="send">MAKE RESERVATION</button>
         </form>
     </section>
-
-
+    
     <script src="reservation.js"></script>
 </body>
 </html> -->
