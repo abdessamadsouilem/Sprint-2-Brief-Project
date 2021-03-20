@@ -42,7 +42,7 @@ session_start();
       <?php endif; ?>
    </nav>
 
-
+<h1>Contact us</h1>
 
 
 </body>
