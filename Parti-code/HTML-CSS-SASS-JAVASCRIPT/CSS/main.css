@@ -956,7 +956,7 @@ h1 {
   .elbahja_form input:focus {
     outline: 0;
     border-color: #777; }
-  .elbahja_form small {
+  .elbahja_form .invalid {
     color: #e74c3c;
     visibility: hidden;
     position: absolute;
@@ -972,7 +972,7 @@ h1 {
     padding: 10px;
     margin-top: 20px;
     width: 100%; }
-  .elbahja_form .form-control.Error small {
+  .elbahja_form .invalid {
     visibility: visible; }
   .elbahja_form .form-control.sucsses input {
     border-color: #2ecc71; }

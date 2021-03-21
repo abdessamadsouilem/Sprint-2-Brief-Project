@@ -21,7 +21,7 @@
         <li><a href="Home.php">HOME</a></li>
         <li><a href="Menu.php">MENU</a></li>
         <li><a href="reservation.php">RESERVATION</a></li>
-        <li><a href="#">ABOUT US</a></li>
+        <li><a href="#">CONTACT US</a></li>
      </ul>
      
    </nav> 

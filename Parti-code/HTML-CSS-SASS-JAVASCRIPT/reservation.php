@@ -1,5 +1,37 @@
 <?php
 session_start();
+
+
+if(!empty($_POST['Full-Name']) && !empty($_POST['email']) && !empty($_POST['Date']) && !empty($_POST['number'])  ){
+
+    if(filter_var($_POST["email"],FILTER_VALIDATE_EMAIL)){
+        $name=$_POST["Full-Name"];
+        $email=$_POST["email"];
+        $date=$_POST["Date"];
+        $number=$_POST["number"];
+        $to="abdessamadsouilem1@gmail.com";
+        $messagesubject="new reservation \r\n";
+        
+        $body="";
+        
+        $body .="From ".$name. "\r\n";
+        $body .="Email ".$email. "\r\n";
+        $body .="Date of reservation ".$date. "\r\n";
+        $body .="number of person with me ".$number. "\r\n";
+        $headers=$email;
+        $mailsent= mail($to,$messagesubject,$body,$headers);
+        if($mailsent == true){
+            header('location: reservation.php');
+        
+        }else{
+            header('location: reservation.php');
+        }
+    }
+
+}else{
+    $invalid_class_name="invalid";
+}
+
 ?>
 
 
@@ -20,7 +52,7 @@ session_start();
            <li><a href="Home.php">HOME</a></li>
            <li><a href="Menu.php">MENU</a></li>
            <li><a href="reservation.php">RESERVATION</a></li>
-           <li><a href="#">ABOUT US</a></li>
+           <li><a href="#">CONTACT US</a></li>
         </ul>
         <?php if (isset($_SESSION["loginstatus"]) && $_SESSION["loginstatus"]  === true) : ?>
         <div class="elbahja_nav--dahbord">
@@ -50,11 +82,11 @@ session_start();
         <p>Sunday to Tuesday 09.00 - 24:00 Friday and Sunday 08:00 - 03.00</p>
         <h2>+212 694175174</h2>
     </section>
-    <section class="elbahja_form">
-        <form action="emailRes.php" method="POST" onsubmit="return checkinputs()" id="form" class="form">
+    <section class="elbahja_form contact-form">
+        <form method="POST"  id="contact" class="form">
             <div class="form-control ">
                 <label for="Name">Full-Name</label>
-                <input type="text" placeholder="Abdessamad Souilem" id="Name" name="Full-Name" />
+                <input type="text" placeholder="Abdessamad Souilem" id="Name" name="Full-Name"  />
                 <small>Error message</small>
             </div>
              <div class="form-control ">
@@ -69,13 +101,13 @@ session_start();
             </div> 
              <div class="form-control ">
                 <label for="number">Number of persons width you :</label>
-                <input type="number"  id="number" name="number"/>
+                <input type="number"  id="number" name="number" />
                 <small>Error message</small>
              </div>
-            <button onsubmit="return checkinputs();"  onclick="submit()" value="submit contact" type="submit" name="send">MAKE RESERVATION</button>
+            <button  value="contact"  id="submit" name="send">MAKE RESERVATION</button>
         </form>
     </section>
-    
-    <script src="reservation.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="reservation.js"></script>
 </body>
 </html> -->
