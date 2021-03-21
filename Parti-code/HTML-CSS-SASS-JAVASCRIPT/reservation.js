@@ -3,7 +3,7 @@ const Name = document.getElementById('Name');
 const email = document.getElementById('email');
 const date = document.getElementById('date');
 const number = document.getElementById('number');
-const nameformat=/^[a-zA-Z]+$/;
+const nameformat=/^[a-z-A-Z\s]+$/;
 const mailformat = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
 function checkinputs(){
     const namevalue = Name.value.trim();
