@@ -415,6 +415,13 @@ h2{
         display: flex;
         flex-direction: column;
         align-items: center;
+        &-slider{
+            width: 75%;
+        }
+        &-historyabout{
+            width: 75%;
+        }
+        
     }
     @mixin boxstyle {
         width: 600px;

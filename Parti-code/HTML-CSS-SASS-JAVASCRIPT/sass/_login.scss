@@ -60,4 +60,12 @@ $font-sm:16px;
         width: 100%;
     }
     margin-bottom: 40px;
+    p{
+        color: white;
+        font-size: $font-md1;
+        a{
+            font-size: $font-md1;
+            color: $PrimaryColor;
+        }
+    }
 }

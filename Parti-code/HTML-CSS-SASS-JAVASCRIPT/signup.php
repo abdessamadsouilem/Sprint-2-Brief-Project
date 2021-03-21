@@ -1,5 +1,6 @@
 <?php
 
+
 ?>
 
 
@@ -27,18 +28,22 @@
    </nav> 
    
 <section class="elbahja_login">
-<h1>Login</h1>
+<h1>SIGN UP</h1>
 
-   <form action="procces.php" method="POST">
+   <form action="SING.php" method="POST">
+   
     <label>Name : </label>
     <input type="text" id="name" name="name"/>
+    <br>
+    <label>Email : </label>
+    <input type="email" id="name" name="email"/>
     <br>
     <label>Password : </label>
     <input type="password" id="pass" name="pass"/>
      <br>
-    <input type="submit" id="btn" name="save" value="login">
+    <input type="submit" id="btn" name="save" value="SIGN UP">
    </form>
-   <p>D'ONT HAVE AN ACCOUNT ? <a href="signup.php">SIGN UP</a></p>
+   <p>ALREADY HAVE AN ACCOUNT ? <a href="login.php">LOGIN</a></p>
 </section>
 
 </body>
