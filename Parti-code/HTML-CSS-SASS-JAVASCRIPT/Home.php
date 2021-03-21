@@ -154,7 +154,7 @@ session_start();
          </div>
          <div class="elbahja_Menu-gridcontainer--dimanche">
             <div class="front">
-               <p>Saturday</p>
+               <p>Sunday</p>
             </div>
             <div class="back">
                <p>palt</p>

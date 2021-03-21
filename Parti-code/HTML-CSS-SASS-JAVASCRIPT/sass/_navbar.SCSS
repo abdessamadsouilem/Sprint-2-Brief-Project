@@ -77,7 +77,7 @@ nav{
     .elbahja_nav--deconecter{
         width: 160px;
         height: 40px;
-        margin-left: 50px;
+        margin-left: 10px;
         background-color: $secendaryColor;
         border: none;
         border-radius: 20px;
@@ -99,7 +99,7 @@ nav{
     .elbahja_nav--dahbord{
         width: 120px;
         height: 40px;
-        margin-left: 70px;
+        margin-left: 10px;
         background-color: $secendaryColor;
         border: none;
         border-radius: 20px;
@@ -134,3 +134,44 @@ nav{
         }
     }
 }
+@media (max-width: 1363px) {
+  nav{
+      li{
+            display: inline;
+            list-style: none;
+            margin-left: 50px !important;
+      }
+      
+  }
+}
+@media (max-width: 1072px) {
+    nav{
+        ul{
+              display: none;
+              list-style: none;
+              
+        }
+        .elbahja_nav--dahbord{
+            margin-left: 70px !important;
+        }
+        .elbahja_nav--deconecter{
+            margin-left: 70px !important;
+        } 
+    }
+  }
+
+  @media (max-width: 592px) {
+    nav{
+        ul{
+              display: none;
+              list-style: none;
+              
+        }
+        .elbahja_nav--dahbord{
+            margin-left: 40px !important;
+        }
+        .elbahja_nav--deconecter{
+            margin-left: 0px !important;
+        } 
+    }
+  }

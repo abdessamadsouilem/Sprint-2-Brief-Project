@@ -240,8 +240,8 @@ h2{
     justify-content: center;
     &-gridcontainer{
         display: grid;
-        grid-template-columns: 300px 300px 300px;
-        grid-template-rows: 300px 300px 300px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
         gap: 70px 70px;
         grid-template-areas:
     "elbahja_Menu-gridcontainer--lundi elbahja_Menu-gridcontainer--mardi elbahja_Menu-gridcontainer--mercredi"
@@ -250,7 +250,7 @@ h2{
 
       &--lundi {
         grid-area: elbahja_Menu-gridcontainer--lundi; 
-        @include boxstyle;
+        
         @include reverse;
 
        }
@@ -262,7 +262,7 @@ h2{
        }
        &--mardi {
         grid-area: elbahja_Menu-gridcontainer--mardi; 
-        @include boxstyle;
+        
         @include reverse;
        }
        &--mardi:hover> .front{
@@ -273,7 +273,7 @@ h2{
        }
        &--mercredi {
         grid-area: elbahja_Menu-gridcontainer--mercredi; 
-        @include boxstyle;
+        
         @include reverse;
        }
        &--mercredi:hover> .front{
@@ -284,7 +284,7 @@ h2{
        }
        &--jeudi {
         grid-area: elbahja_Menu-gridcontainer--jeudi; 
-        @include boxstyle;
+        
         @include reverse;
        }
        &--jeudi:hover> .front{
@@ -295,7 +295,7 @@ h2{
        }
        &--vendredi {
         grid-area: elbahja_Menu-gridcontainer--vendredi; 
-        @include boxstyle;
+        
         @include reverse;
        }
        &--vendredi:hover> .front{
@@ -306,7 +306,7 @@ h2{
        }
        &--samedi {
         grid-area: elbahja_Menu-gridcontainer--samedi; 
-        @include boxstyle;
+       
         @include reverse;
        }
        &--samedi:hover> .front{
@@ -329,7 +329,7 @@ h2{
     }
 }
 @mixin image {
-    width:800px;
+    width:90%;
     height:400px;
     opacity: 0.9;
 }
@@ -409,3 +409,78 @@ h2{
         margin-bottom: 70px;  
     }
 }
+
+@media (max-width: 984px) {
+    .elbahja_bestDishes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    @mixin boxstyle {
+        width: 600px;
+        height: 200px;
+        background-color: $secendaryColor;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: $font-md2;
+        font-weight: 500;
+        color: $PrimaryColor;
+    }
+    .elbahja_Menu{
+        margin-top: 70px;
+        margin-bottom: 70px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        &-gridcontainer{
+            display: grid;
+            grid-template-columns: 100% ;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            gap: 70px 70px;
+            grid-template-areas:
+        "elbahja_Menu-gridcontainer--lundi"
+         "elbahja_Menu-gridcontainer--mardi "
+         "elbahja_Menu-gridcontainer--mercredi"
+        "elbahja_Menu-gridcontainer--jeudi"
+         "elbahja_Menu-gridcontainer--vendredi" 
+         "elbahja_Menu-gridcontainer--samedi"
+        "elbahja_Menu-gridcontainer--dimanche";}}
+        .elbahja_bestDeals{
+            &-couscous{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                
+                &--text{
+                    width: 90% !important;
+                    text-align: center;
+                }
+            }
+            &-taginepoulet{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                
+                &--text{
+                    width: 90% !important;
+                    text-align: center;
+                }
+            }
+            &-ma9lapoulet{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                
+                &--text{
+                    width: 90% !important;
+                    text-align: center;
+                }
+            }
+        }
+  }
