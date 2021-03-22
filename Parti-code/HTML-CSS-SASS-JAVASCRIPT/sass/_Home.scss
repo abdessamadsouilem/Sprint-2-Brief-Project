@@ -219,10 +219,18 @@ $fontfamily:'Roboto', sans-serif;
     }
     .back{
         @include boxstyle;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         background-color: white;
         color: $secendaryColor;
         border: solid black;
         transform: perspective(600px) rotateY(180deg);
+        p{
+            font-size: $font-md1;
+            text-align: center;
+        }
     }
 }
 h2{

@@ -1,10 +1,22 @@
 <?php
-
-
 $connect=mysqli_connect("localhost","root","","el-bahja-food")or die ("connection failed");
 $req = ("select * from food");
 $rep = mysqli_query($connect,$req);
 $upload_dir = 'upload/';
+function total_num_users(){
+    $connect=mysqli_connect("localhost","root","","el-bahja-food")or die ("connection failed");
+    $sql = "SELECT * FROM users where Role=0";
+    $result = mysqli_query($connect,$sql);
+    $count = mysqli_num_rows($result);
+    return $count; 
+  }
+  function total_num_food(){
+    $connect=mysqli_connect("localhost","root","","el-bahja-food")or die ("connection failed");
+    $sql = "SELECT * FROM food ";
+    $result = mysqli_query($connect,$sql);
+    $count = mysqli_num_rows($result);
+    return $count; 
+  } 
 session_start();
 ?>
  <?php if (isset($_SESSION["loginstatus"]) && $_SESSION["loginstatus"]  === true) : ?>
@@ -53,52 +65,26 @@ session_start();
     </div>
 
 
-<div class="elbahja_dashbord">
+<div class="elbahja_card">
+<div class="totaluserscard">
+         
+         <img src="image/profile.png" alt="">
+         <p>Total Users : <?php
+    echo total_num_users();
+    ?></p>
+         
+</div>
+
+<div class="totaluserscard">
+         
+         <img src="image/food.png" alt="">
+         <p>Total Food : <?php
+    echo total_num_food();
+    ?></p>
+         
+</div>
     
-<form action="add.php" method="POST" enctype="multipart/form-data">
-<h2>Add New Products</h2>
-    <label for="Num">Number Of Products :</label>
-    <input type="Name" id="Num" name="Num" />
-    <br>
-    <label for="Name">Name Of Products :</label>
-    <input type="Name" id="Name" name="Name" />
-    <br>
-    <label for="Name">Price Of Products :</label>
-    <input type="Name" id="Price" name="Price"/>
-    <br>
-    <label for="img">Select image:</label>
-    <input type="file" id="image" name="image" />
-    <input type="submit" id="btn" name="save" value="Add Food">
-</form>
 
-                                                 <button><a href="update.php">Update</a></button>
-<br>
-<table >
-      <tr>
-      <th>Num</th>
-      <th>Name</th>
-      <th> Price</th>
-      <th class="image"> image</th>
-      <th>Delete</th>
-      
-      </tr>
-<?php
-     while($row = mysqli_fetch_array($rep))
-     {
-?>
-    <tr>
-       <td><?php echo $row["Num"];   ?></td>
-       <td><?php echo $row["Name"];   ?></td>
-       <td><?php echo $row["Price"];   ?></td>
-       <td class="imagetd"><img src="<?php echo $upload_dir.$row["image"]; ?>" ></td>
-       <td><a class="delete" href="delete.php?Num=<?php echo $row["Num"] ?>">delete</a></td>
-       
-     </tr>
-
- <?php
-}
-
-?>
 </div>
 </section>
 </body>

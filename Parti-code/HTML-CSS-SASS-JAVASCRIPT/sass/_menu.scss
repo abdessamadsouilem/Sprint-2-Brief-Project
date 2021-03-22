@@ -85,9 +85,11 @@ $font-sm:16px;
 }
 h1{
     text-align: center;
+    margin-bottom: 20px;
     
 }
 .elbahja_Dishes{
+    margin-top: 50px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -140,5 +142,5 @@ h1{
         transform: scale(1.2);
     }
     
-    margin-bottom: 300px;
+    margin-bottom: 100px;
 }

@@ -333,10 +333,17 @@ h2 {
         font-size: 26px;
         font-weight: 500;
         color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         background-color: white;
         color: #222222;
         border: solid black;
         transform: perspective(600px) rotateY(180deg); }
+        .elbahja_Menu-gridcontainer--lundi .back p {
+          font-size: 20px;
+          text-align: center; }
     .elbahja_Menu-gridcontainer--lundi:hover > .front {
       transform: perspective(600px) rotateY(-180deg); }
     .elbahja_Menu-gridcontainer--lundi:hover > .back {
@@ -372,10 +379,17 @@ h2 {
         font-size: 26px;
         font-weight: 500;
         color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         background-color: white;
         color: #222222;
         border: solid black;
         transform: perspective(600px) rotateY(180deg); }
+        .elbahja_Menu-gridcontainer--mardi .back p {
+          font-size: 20px;
+          text-align: center; }
     .elbahja_Menu-gridcontainer--mardi:hover > .front {
       transform: perspective(600px) rotateY(-180deg); }
     .elbahja_Menu-gridcontainer--mardi:hover > .back {
@@ -411,10 +425,17 @@ h2 {
         font-size: 26px;
         font-weight: 500;
         color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         background-color: white;
         color: #222222;
         border: solid black;
         transform: perspective(600px) rotateY(180deg); }
+        .elbahja_Menu-gridcontainer--mercredi .back p {
+          font-size: 20px;
+          text-align: center; }
     .elbahja_Menu-gridcontainer--mercredi:hover > .front {
       transform: perspective(600px) rotateY(-180deg); }
     .elbahja_Menu-gridcontainer--mercredi:hover > .back {
@@ -450,10 +471,17 @@ h2 {
         font-size: 26px;
         font-weight: 500;
         color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         background-color: white;
         color: #222222;
         border: solid black;
         transform: perspective(600px) rotateY(180deg); }
+        .elbahja_Menu-gridcontainer--jeudi .back p {
+          font-size: 20px;
+          text-align: center; }
     .elbahja_Menu-gridcontainer--jeudi:hover > .front {
       transform: perspective(600px) rotateY(-180deg); }
     .elbahja_Menu-gridcontainer--jeudi:hover > .back {
@@ -489,10 +517,17 @@ h2 {
         font-size: 26px;
         font-weight: 500;
         color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         background-color: white;
         color: #222222;
         border: solid black;
         transform: perspective(600px) rotateY(180deg); }
+        .elbahja_Menu-gridcontainer--vendredi .back p {
+          font-size: 20px;
+          text-align: center; }
     .elbahja_Menu-gridcontainer--vendredi:hover > .front {
       transform: perspective(600px) rotateY(-180deg); }
     .elbahja_Menu-gridcontainer--vendredi:hover > .back {
@@ -528,10 +563,17 @@ h2 {
         font-size: 26px;
         font-weight: 500;
         color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         background-color: white;
         color: #222222;
         border: solid black;
         transform: perspective(600px) rotateY(180deg); }
+        .elbahja_Menu-gridcontainer--samedi .back p {
+          font-size: 20px;
+          text-align: center; }
     .elbahja_Menu-gridcontainer--samedi:hover > .front {
       transform: perspective(600px) rotateY(-180deg); }
     .elbahja_Menu-gridcontainer--samedi:hover > .back {
@@ -577,10 +619,17 @@ h2 {
         font-size: 26px;
         font-weight: 500;
         color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         background-color: white;
         color: #222222;
         border: solid black;
         transform: perspective(600px) rotateY(180deg); }
+        .elbahja_Menu-gridcontainer--dimanche .back p {
+          font-size: 20px;
+          text-align: center; }
     .elbahja_Menu-gridcontainer--dimanche:hover > .front {
       transform: perspective(600px) rotateY(-180deg); }
     .elbahja_Menu-gridcontainer--dimanche:hover > .back {
@@ -851,15 +900,17 @@ footer {
     background-color: white; }
 
 h1 {
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 20px; }
 
 .elbahja_Dishes {
+  margin-top: 50px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-bottom: 300px; }
+  margin-bottom: 100px; }
   .elbahja_Dishes-card {
     width: 300px;
     height: 320px;
@@ -1047,7 +1098,7 @@ h1 {
   margin-bottom: 30px; }
 
 .elbahja_dashbord {
-  margin-top: 70px;
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1116,7 +1167,7 @@ h1 {
   background: #222222;
   color: white;
   padding: 30px 0px;
-  margin-right: 20px; }
+  margin-right: 100px; }
   .elbahja_side-bar h2 {
     text-transform: uppercase;
     text-align: center;
@@ -1169,6 +1220,28 @@ th {
   .imagetd img {
     width: 300px;
     height: 200px; }
+
+.elbahja_card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.totaluserscard {
+  margin-right: 29px;
+  width: 250px;
+  height: 200px !important;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFEDE6; }
+  .totaluserscard img {
+    margin-top: 15px;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 30px; }
+  .totaluserscard p {
+    font-size: 26px; }
 
 .update_form {
   margin-top: 70px;

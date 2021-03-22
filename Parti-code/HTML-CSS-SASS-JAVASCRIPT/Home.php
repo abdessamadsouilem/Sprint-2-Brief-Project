@@ -1,4 +1,11 @@
 <?php
+$connect=mysqli_connect("localhost","root","","el-bahja-food")or die ("connection failed");
+$req = ("select * from lundi");
+$rep = mysqli_query($connect,$req);
+$row = mysqli_fetch_array($rep);
+$req4 = ("select * from vendredi");
+$rep4 = mysqli_query($connect,$req4);
+$row4 = mysqli_fetch_array($rep4);
 session_start();
 ?>
 <!DOCTYPE html>
@@ -106,7 +113,11 @@ session_start();
                <p>Monday</p>
             </div>
             <div class="back">
-               <p>palt</p>
+               <p>Entré : <?php echo $row["entré"];?></p>
+               <br>
+               <p>Plat principal : <?php echo $row["platprincipal"];?></p>
+               <br>
+               <p>Dessert : <?php echo $row["Dessert"];?></p>
             </div>
          </div>
          <div class="elbahja_Menu-gridcontainer--mardi">
@@ -114,7 +125,11 @@ session_start();
                <p>Tuesday</p>
             </div>
             <div class="back">
-               <p>palt</p>
+            <p>Entré : </p>
+               <br>
+               <p>Plat principal : </p>
+               <br>
+               <p>Dessert : </p>
             </div>
          </div>
          <div class="elbahja_Menu-gridcontainer--mercredi">
@@ -122,7 +137,11 @@ session_start();
                <p>Wednesday </p>
             </div>
             <div class="back">
-               <p>palt</p>
+            <p>Entré : </p>
+               <br>
+               <p>Plat principal : </p>
+               <br>
+               <p>Dessert : </p>
             </div>
          </div>
          <div class="elbahja_Menu-gridcontainer--jeudi">
@@ -131,7 +150,11 @@ session_start();
                <p>Thursday</p>
             </div>
             <div class="back">
-               <p>palt</p>
+            <p>Entré : </p>
+               <br>
+               <p>Plat principal : </p>
+               <br>
+               <p>Dessert : </p>
             </div>
          </div>
          <div class="elbahja_Menu-gridcontainer--vendredi">
@@ -139,7 +162,11 @@ session_start();
                <p>Friday</p>
             </div>
             <div class="back">
-               <p>palt</p>
+            <p>Entré : <?php echo $row4["entré"];?> </p>
+               <br>
+               <p>Plat principal : <?php echo $row4["platprincipal"];?> </p>
+               <br>
+               <p>Dessert : <?php echo $row4["Dessert"];?></p>
             </div>
 
          </div>
@@ -149,7 +176,11 @@ session_start();
                <p>Saturday</p>
             </div>
             <div class="back">
-               <p>palt</p>
+            <p>Entré : </p>
+               <br>
+               <p>Plat principal : </p>
+               <br>
+               <p>Dessert : </p>
             </div>
          </div>
          <div class="elbahja_Menu-gridcontainer--dimanche">
@@ -157,7 +188,11 @@ session_start();
                <p>Sunday</p>
             </div>
             <div class="back">
-               <p>palt</p>
+            <p>Entré : </p>
+               <br>
+               <p>Plat principal : </p>
+               <br>
+               <p>Dessert : </p>
             </div>
          </div>
       </div>
