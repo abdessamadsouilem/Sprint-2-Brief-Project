@@ -39,8 +39,20 @@ session_start();
             <a href="Sedeconecter.php">Se Deconecter</a>
          </div>
 </nav> 
+<section class="elbahja_side">
+    <div class="elbahja_side-bar">
+        <h2>Dashboard</h2>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="dashbord.php">Product</a></li>
+            <li><a href="#">Users</a></li>
+            <li><a href="#">Orders</a></li>
+            
+        </ul> 
+       
+    </div>
 
-<h1>Your Dashboard </h1>
+
 <div class="elbahja_dashbord">
     
 <form action="add.php" method="POST" enctype="multipart/form-data">
@@ -57,6 +69,8 @@ session_start();
     <input type="file" id="image" name="image" />
     <input type="submit" id="btn" name="save" value="Add Food">
 </form>
+
+                                                 <button><a href="update.php">Update</a></button>
 <br>
 <table >
       <tr>
@@ -64,7 +78,6 @@ session_start();
       <th>Name</th>
       <th> Price</th>
       <th class="image"> image</th>
-      <th>update</th>
       <th>Delete</th>
       
       </tr>
@@ -77,7 +90,6 @@ session_start();
        <td><?php echo $row["Name"];   ?></td>
        <td><?php echo $row["Price"];   ?></td>
        <td class="imagetd"><img src="<?php echo $upload_dir.$row["image"]; ?>" ></td>
-       <td><a class="update" href="update.php">update</a></td>
        <td><a class="delete" href="delete.php?Num=<?php echo $row["Num"] ?>">delete</a></td>
        
      </tr>
@@ -87,6 +99,7 @@ session_start();
 
 ?>
 </div>
+</section>
 </body>
 </html>
 <?php else : ?>

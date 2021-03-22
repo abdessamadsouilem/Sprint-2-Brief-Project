@@ -1090,14 +1090,60 @@ h1 {
     padding: 10px;
     margin-top: 20px;
     width: 300px;
-    margin-bottom: 100px; }
+    margin-bottom: 30px; }
+  .elbahja_dashbord button {
+    background-color: #222222;
+    border: 2px solid #222222;
+    border-radius: 4px;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 797px;
+    width: 200px; }
+    .elbahja_dashbord button a {
+      text-decoration: none;
+      color: black;
+      font-size: 20px;
+      color: #fff; }
+
+.elbahja_side {
+  display: flex; }
+
+.elbahja_side-bar {
+  width: 200px;
+  min-height: 100% !important;
+  background: #222222;
+  color: white;
+  padding: 30px 0px;
+  margin-right: 20px; }
+  .elbahja_side-bar h2 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 26px; }
+  .elbahja_side-bar ul li {
+    padding: 15px;
+    border-bottom: 1px solid #bdb8d7;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border-top: 1px solid rgba(255, 255, 255, 0.05); }
+    .elbahja_side-bar ul li a {
+      text-decoration: none;
+      color: black;
+      font-size: 20px;
+      color: white; }
+    .elbahja_side-bar ul li:hover {
+      background-color: white; }
+      .elbahja_side-bar ul li:hover a {
+        color: #222222; }
 
 table {
   width: 1000px; }
 
 table, th, td {
   border-collapse: collapse;
-  border: 1px solid black; }
+  border: 1px solid black;
+  margin-bottom: 40px; }
 
 td {
   text-align: center;
