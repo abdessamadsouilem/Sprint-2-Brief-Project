@@ -123,12 +123,15 @@ h1{
   
 }
 table{
-    
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  
     width: 1000px;
+    
 }
 table, th, td {
     border-collapse: collapse;
     border: 1px solid black;
+    
     margin-bottom: 40px;
 }
 td{
@@ -137,6 +140,8 @@ td{
 }
 th{
     height: 50px;
+    background-color: $secendaryColor;
+    color: $PrimaryColor;
 }
 .update{
     text-decoration: none;

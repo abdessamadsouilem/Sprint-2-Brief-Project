@@ -23,6 +23,8 @@ $fontfamily:'Roboto', sans-serif;
     align-self: center;
 }
 
+
+
 .elbahja_Welcome{
     width: 100%;
     height: 500px;
@@ -209,7 +211,7 @@ $fontfamily:'Roboto', sans-serif;
         overflow: hidden;
         backface-visibility: hidden;
         position: absolute;
-        transition: transform .4s linear;
+        transition: transform .7s linear;
     }
     .front{
         @include boxstyle;
@@ -324,8 +326,7 @@ h2{
         transform: perspective(600px) rotateY(0deg);
        }
        &--dimanche {
-        grid-area: elbahja_Menu-gridcontainer--dimanche; 
-        @include boxstyle;
+        grid-area: elbahja_Menu-gridcontainer--dimanche;
         @include reverse;
        }
        &--dimanche:hover> .front{

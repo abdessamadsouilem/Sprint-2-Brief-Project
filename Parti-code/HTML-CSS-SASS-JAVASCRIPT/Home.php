@@ -24,6 +24,7 @@ session_start();
    <style>
       <?php include "CSS/main.css" ?>
    </style>
+   
    <nav class="elbahja_nav">
       <img class="elbahja_nav--logo" src="image/logo/Untitled-2.png" alt="">
       <ul class="elbahja_nav--list">
@@ -56,8 +57,8 @@ session_start();
          <p class="elbahja_Welcome-para--tradition">LOVES TRADICTIONELLES FOOD</p>
       </div>
       <div class="elbahja_Welcome-button">
-         <div class="elbahja_Welcome-button--order"><a href="Menu.html">Order Food</a></div>
-         <div class="elbahja_Welcome-button--book"><a href="reservation.html">Book a Table</a></div>
+         <div class="elbahja_Welcome-button--order"><a href="Menu.php">Order Food</a></div>
+         <div class="elbahja_Welcome-button--book"><a href="reservation.php">Book a Table</a></div>
       </div>
 
    </section>

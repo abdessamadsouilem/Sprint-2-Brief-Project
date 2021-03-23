@@ -308,7 +308,7 @@ h2 {
         overflow: hidden;
         backface-visibility: hidden;
         position: absolute;
-        transition: transform .4s linear; }
+        transition: transform .7s linear; }
       .elbahja_Menu-gridcontainer--lundi .front {
         width: 300px;
         height: 300px;
@@ -354,7 +354,7 @@ h2 {
         overflow: hidden;
         backface-visibility: hidden;
         position: absolute;
-        transition: transform .4s linear; }
+        transition: transform .7s linear; }
       .elbahja_Menu-gridcontainer--mardi .front {
         width: 300px;
         height: 300px;
@@ -400,7 +400,7 @@ h2 {
         overflow: hidden;
         backface-visibility: hidden;
         position: absolute;
-        transition: transform .4s linear; }
+        transition: transform .7s linear; }
       .elbahja_Menu-gridcontainer--mercredi .front {
         width: 300px;
         height: 300px;
@@ -446,7 +446,7 @@ h2 {
         overflow: hidden;
         backface-visibility: hidden;
         position: absolute;
-        transition: transform .4s linear; }
+        transition: transform .7s linear; }
       .elbahja_Menu-gridcontainer--jeudi .front {
         width: 300px;
         height: 300px;
@@ -492,7 +492,7 @@ h2 {
         overflow: hidden;
         backface-visibility: hidden;
         position: absolute;
-        transition: transform .4s linear; }
+        transition: transform .7s linear; }
       .elbahja_Menu-gridcontainer--vendredi .front {
         width: 300px;
         height: 300px;
@@ -538,7 +538,7 @@ h2 {
         overflow: hidden;
         backface-visibility: hidden;
         position: absolute;
-        transition: transform .4s linear; }
+        transition: transform .7s linear; }
       .elbahja_Menu-gridcontainer--samedi .front {
         width: 300px;
         height: 300px;
@@ -579,22 +579,12 @@ h2 {
     .elbahja_Menu-gridcontainer--samedi:hover > .back {
       transform: perspective(600px) rotateY(0deg); }
     .elbahja_Menu-gridcontainer--dimanche {
-      grid-area: elbahja_Menu-gridcontainer--dimanche;
-      width: 300px;
-      height: 300px;
-      background-color: #222222;
-      border-radius: 20px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 26px;
-      font-weight: 500;
-      color: white; }
+      grid-area: elbahja_Menu-gridcontainer--dimanche; }
       .elbahja_Menu-gridcontainer--dimanche .front, .elbahja_Menu-gridcontainer--dimanche .back {
         overflow: hidden;
         backface-visibility: hidden;
         position: absolute;
-        transition: transform .4s linear; }
+        transition: transform .7s linear; }
       .elbahja_Menu-gridcontainer--dimanche .front {
         width: 300px;
         height: 300px;
@@ -1189,6 +1179,7 @@ h1 {
         color: #222222; }
 
 table {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
   width: 1000px; }
 
 table, th, td {
@@ -1201,7 +1192,9 @@ td {
   height: 50px; }
 
 th {
-  height: 50px; }
+  height: 50px;
+  background-color: #222222;
+  color: white; }
 
 .update {
   text-decoration: none;
