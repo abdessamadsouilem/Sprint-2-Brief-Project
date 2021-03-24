@@ -579,7 +579,17 @@ h2 {
     .elbahja_Menu-gridcontainer--samedi:hover > .back {
       transform: perspective(600px) rotateY(0deg); }
     .elbahja_Menu-gridcontainer--dimanche {
-      grid-area: elbahja_Menu-gridcontainer--dimanche; }
+      grid-area: elbahja_Menu-gridcontainer--dimanche;
+      width: 300px;
+      height: 300px;
+      background-color: #222222;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 26px;
+      font-weight: 500;
+      color: white; }
       .elbahja_Menu-gridcontainer--dimanche .front, .elbahja_Menu-gridcontainer--dimanche .back {
         overflow: hidden;
         backface-visibility: hidden;

@@ -1,33 +1,10 @@
 <?php
 $connect=mysqli_connect("localhost","root","","el-bahja-food")or die ("connection failed");
-$req = ("select * from food");
+$req = ("select name,email,Role from users");
 $rep = mysqli_query($connect,$req);
-$upload_dir = 'upload/';
-function total_num_users(){
-    $connect=mysqli_connect("localhost","root","","el-bahja-food")or die ("connection failed");
-    $sql = "SELECT * FROM users where Role=0";
-    $result = mysqli_query($connect,$sql);
-    $count = mysqli_num_rows($result);
-    return $count; 
-  }
-  function total_num_food(){
-    $connect=mysqli_connect("localhost","root","","el-bahja-food")or die ("connection failed");
-    $sql = "SELECT * FROM food ";
-    $result = mysqli_query($connect,$sql);
-    $count = mysqli_num_rows($result);
-    return $count; 
-  } 
-  function total_num_admin(){
-    $connect=mysqli_connect("localhost","root","","el-bahja-food")or die ("connection failed");
-    $sql = "SELECT * FROM users where Role=0";
-    $result = mysqli_query($connect,$sql);
-    $count = mysqli_num_rows($result);
-    return $count; 
-  } 
 session_start();
 ?>
  <?php if (isset($_SESSION["loginstatus"]) && $_SESSION["loginstatus"]  === true) : ?>
-  
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -70,45 +47,40 @@ session_start();
         </ul> 
        
     </div>
-
-
-<div class="elbahja_card">
-<div class="totaluserscard">
-         
-         <img src="image/profile.png" alt="">
-         <p>Total Users : <?php
-    echo total_num_users();
-    ?></p>
-         
-</div>
-
-<div class="totaluserscard">
-         
-         <img src="image/food.png" alt="">
-         <p>Total Food : <?php
-    echo total_num_food();
-    ?></p>
-         
-</div>
-
-<div class="totaluserscard">
-         
-         <img src="image/profile.png" alt="">
-         <p>Total Admin : <?php
-    echo total_num_admin();
-    ?></p>
-         
-</div>
-<div class="totaluserscard">
-         
-         <img src="image/choices (1).png" alt="">
-         <p>Total Orders : 
-    </p>
-         
-</div>
+    <div class="table">
+    <h2>Your Users :</h2>
     
+<table >
+      <tr>
+      <th>name</th>
+      <th>email</th>
+      <th> Role</th>
+      <th>Delete</th>
+      </tr>
+<?php
+     while($row = mysqli_fetch_array($rep))
+     {
+?>
+    <tr>
+       <td><?php echo $row["name"];   ?></td>
+       <td><?php echo $row["email"];   ?></td>
+       <td><?php echo $row["Role"];   ?></td>
+       
+       <td><a class="delete" >delete</a></td>
+       
+     </tr>
 
-</div>
+ <?php
+}
+
+?>
+
+
+</table>  
+<h6>*(1 mean the user is an admin)</h6>
+<h6>*(0 mean the user is not an admin all users have 0)</h6>
+</div>  
+
 </section>
 </body>
 </html>
