@@ -1,9 +1,6 @@
 <?php
 session_start();
 
-
-
-
 ?>
 
 
@@ -79,7 +76,7 @@ session_start();
             <button  value="contact"  id="submit" name="send">MAKE RESERVATION</button>
         </form>
     </section>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript" src="reservation.js"></script>
 </body>
-</html> -->
+</html> 

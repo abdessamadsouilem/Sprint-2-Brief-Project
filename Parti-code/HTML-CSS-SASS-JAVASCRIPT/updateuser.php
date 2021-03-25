@@ -1,11 +1,30 @@
 <?php
-// $nameP= $_POST['Name'];
-// $Price= $_POST['Price'];
-// $image=$_POST['image'];
+
 session_start();
+$connect=mysqli_connect("localhost","root","","el-bahja-food")or die ("connection failed");
+
+
+
+if(isset($_POST['update'])){
+    if(!empty($_POST['id']) ){
+    $id= $_POST['id'];
+    $Role= $_POST['Role'];
+	
+    $query="UPDATE `users` SET `Role` = '$Role' WHERE `id` = '$id'";
+    $run = mysqli_query($connect,$query) or die("failed");
+    if($run){
+            header('location: dashborduser.php');
+    }else{
+             echo"error";
+         }
+    }else{
+        echo"all fields required";
+    }
+
+
+}
+
 ?>
-
-
 <?php if (isset($_SESSION["loginstatus"]) && $_SESSION["loginstatus"]  === true) : ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -31,18 +50,14 @@ session_start();
 </style>
 <h1>Update Your Information</h1>
 <div class="update_form">
-    <form action="edit.php" method="POST" enctype="multipart/form-data">
-    <label for="Num">Number Of Products :</label>
-    <input type="Name" id="Num" name="Num" />
+    <form action="updateuser.php" method="POST" enctype="multipart/form-data">
+    <label for="id">Id Of Users You Want Update :</label>
+    <input type="Name" id="Num" name="id" />
     <br>
-    <label for="Name">Name Of Products :</label>
-    <input type="Name" id="Name" name="Name" />
+    <label for="Name">Role Of User :</label>
+    <input type="Name" id="Name" name="Role" />
     <br>
-    <label for="Name">Price Of Products :</label>
-    <input type="Name" id="Price" name="Price" />
-    <br>
-    <label for="img">Select image:</label>
-    <input type="file" id="image" name="image" />
+    
     <input type="submit" id="btn" name="update" value="update">
 </form>
 </div>

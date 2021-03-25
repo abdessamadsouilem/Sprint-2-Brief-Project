@@ -220,7 +220,7 @@ nav {
       .elbahja_bestDishes-slider--images img {
         width: 100%;
         height: 500px;
-        transition: all 0.15s ease; }
+        transition: all 0.2s ease; }
       .elbahja_bestDishes-slider--images input {
         display: none; }
     .elbahja_bestDishes-slider--dots {
@@ -233,7 +233,7 @@ nav {
         border-radius: 50%;
         border: solid black;
         cursor: pointer;
-        transition: all 0.15s ease;
+        transition: all 0.2s ease;
         margin: 5px; }
       .elbahja_bestDishes-slider--dots label:hover {
         background: #FFEDE6; }
@@ -1245,6 +1245,51 @@ th {
     margin-bottom: 30px; }
   .totaluserscard p {
     font-size: 26px; }
+
+.bu {
+  background-color: #222222;
+  border: 2px solid #222222;
+  border-radius: 4px;
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  margin-top: 20px;
+  margin-left: 870px;
+  width: 130px; }
+  .bu a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    color: #fff; }
+
+.elbahja_dashbord-week {
+  display: flex;
+  flex-wrap: wrap; }
+  .elbahja_dashbord-week .card {
+    width: 250px;
+    height: 250px;
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    align-items: center;
+    background-color: #FFEDE6;
+    transition: transform .2s;
+    margin-bottom: 60px; }
+  .elbahja_dashbord-week .btn1 {
+    margin-top: 20px;
+    width: 120px !important;
+    height: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
+    background-color: #222222;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 40px;
+    margin-left: 0 !important; }
 
 .update_form {
   margin-top: 70px;

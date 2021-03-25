@@ -1,6 +1,6 @@
 <?php
 $connect=mysqli_connect("localhost","root","","el-bahja-food")or die ("connection failed");
-$req = ("select name,email,Role from users");
+$req = ("select id,name,email,Role from users");
 $rep = mysqli_query($connect,$req);
 session_start();
 ?>
@@ -42,6 +42,7 @@ session_start();
             <li><a href="dashbordhome.php">Home</a></li>
             <li><a href="dashbord.php">Product</a></li>
             <li><a href="dashborduser.php">Users</a></li>
+            <li><a href="week.php">Menu of the Week</a></li>
             <li><a href="#">Orders</a></li>
             
         </ul> 
@@ -49,9 +50,11 @@ session_start();
     </div>
     <div class="table">
     <h2>Your Users :</h2>
-    
+    <button class="bu"><a href="updateuser.php">Update</a></button>
+    <br>
 <table >
       <tr>
+      <th>id</th>
       <th>name</th>
       <th>email</th>
       <th> Role</th>
@@ -62,6 +65,7 @@ session_start();
      {
 ?>
     <tr>
+    <td><?php echo $row["id"];   ?></td>
        <td><?php echo $row["name"];   ?></td>
        <td><?php echo $row["email"];   ?></td>
        <td><?php echo $row["Role"];   ?></td>

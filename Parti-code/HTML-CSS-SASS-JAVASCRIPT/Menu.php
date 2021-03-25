@@ -44,7 +44,7 @@ session_start();
     <section class="elbahja_Reserve">
         <h1>Welcome</h1>
         <h2>Try Great El bahja Dishes</h2>
-        <button type="button" class="main-btn">Reservation</button>
+        <button type="button" onclick="document.location='reservation.php'" class="main-btn">Reservation</button>
     </section>
     <h1>DISHES</h1>
     

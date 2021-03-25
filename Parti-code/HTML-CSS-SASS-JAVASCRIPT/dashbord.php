@@ -46,6 +46,7 @@ session_start();
             <li><a href="dashbordhome.php">Home</a></li>
             <li><a href="dashbord.php">Product</a></li>
             <li><a href="dashborduser.php">Users</a></li>
+            <li><a href="week.php">Menu of the Week</a></li>
             <li><a href="#">Orders</a></li>
             
         </ul> 

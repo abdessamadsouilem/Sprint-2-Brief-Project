@@ -19,7 +19,7 @@ function total_num_users(){
   } 
   function total_num_admin(){
     $connect=mysqli_connect("localhost","root","","el-bahja-food")or die ("connection failed");
-    $sql = "SELECT * FROM users where Role=0";
+    $sql = "SELECT * FROM users where Role=1";
     $result = mysqli_query($connect,$sql);
     $count = mysqli_num_rows($result);
     return $count; 
@@ -65,6 +65,7 @@ session_start();
             <li><a href="dashbordhome.php">Home</a></li>
             <li><a href="dashbord.php">Product</a></li>
             <li><a href="dashborduser.php">Users</a></li>
+            <li><a href="week.php">Menu of the Week</a></li>
             <li><a href="#">Orders</a></li>
             
         </ul> 

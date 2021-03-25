@@ -187,3 +187,52 @@ th{
     }
 }
 
+.bu{
+    
+    background-color: $secendaryColor;
+    border: 2px solid $secendaryColor;
+    border-radius: 4px;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    margin-top: 20px;
+    margin-left: 870px;
+    width: 130px;
+    a{
+        @include linksstyle;
+        color: #fff ;
+    }
+}
+.elbahja_dashbord-week{
+    display: flex;
+    flex-wrap: wrap;
+    .card{
+        width:250px;
+        height:250px;
+        margin-left: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 10px;
+        align-items: center;
+        background-color:#FFEDE6;
+        transition: transform .2s;
+        margin-bottom: 60px;
+    }
+    .btn1{
+        margin-top: 20px;
+        width: 120px !important;
+        height: 40px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: $PrimaryColor;
+        background-color: $secendaryColor;
+       
+        border: none;
+        outline: none;
+        cursor: pointer;
+        border-radius: 40px;
+        margin-left: 0 !important;
+    }
+}
+
