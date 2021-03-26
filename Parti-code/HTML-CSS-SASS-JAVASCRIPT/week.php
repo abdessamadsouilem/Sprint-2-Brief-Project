@@ -136,7 +136,7 @@ session_start();
 <p>Plat principal : <?php echo $row4["platprincipal"];?></p>
 <br>
 <p>Dessert : <?php echo $row4["Dessert"];?></p> 
-<button class="btn1"  onclick="document.location='updatelundi.php'">Update</button>
+<button class="btn1"  onclick="document.location='updatevendredi.php'">Update</button>
 </div>
  
 
@@ -148,7 +148,7 @@ session_start();
 <p>Plat principal : <?php echo $row5["platprincipal"];?></p>
 <br>
 <p>Dessert : <?php echo $row5["Dessert"];?></p> 
-<button class="btn1"  onclick="document.location='updatelundi.php'">Update</button>
+<button class="btn1"  onclick="document.location='updatesamedi.php'">Update</button>
 </div>
  
 
@@ -160,7 +160,7 @@ session_start();
 <p>Plat principal : <?php echo $row6["platprincipal"];?></p>
 <br>
 <p>Dessert : <?php echo $row6["Dessert"];?></p> 
-<button class="btn1"  onclick="document.location='updatelundi.php'">Update</button>
+<button class="btn1"  onclick="document.location='updatedimanche.php'">Update</button>
 </div>
  
 </div>

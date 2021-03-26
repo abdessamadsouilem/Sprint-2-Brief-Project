@@ -9,7 +9,7 @@ if(isset($_POST['update'])){
     $platprincipal= $_POST['platprincipal'];
     $Dessert=$_POST["Dessert"];
 	
-        $query="UPDATE `mardi` SET `entré` = '$entré', `platprincipal` = '$platprincipal', `Dessert` = '$Dessert'";
+        $query="UPDATE `vendredi` SET `entré` = '$entré', `platprincipal` = '$platprincipal', `Dessert` = '$Dessert'";
         $run = mysqli_query($connect,$query) or die("failed");
          if($run){
             header('location: week.php');
@@ -49,9 +49,9 @@ session_start();
 <style>
   <?php include "CSS/main.css" ?>
 </style>
-<h1>Update Your Information for Tuesday</h1>
+<h1>Update Your Information For Friday</h1>
 <div class="update_form">
-    <form action="updatemardi.php" method="POST" enctype="multipart/form-data">
+    <form action="updatevendredi.php" method="POST" enctype="multipart/form-data">
     <label for="Num">Entré :</label>
     <input type="Name" id="Num" name="entré" />
     <br>

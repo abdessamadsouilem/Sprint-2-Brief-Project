@@ -49,7 +49,7 @@ session_start();
 <style>
   <?php include "CSS/main.css" ?>
 </style>
-<h1>Update Your Information</h1>
+<h1>Update Your Information for Wednesday</h1>
 <div class="update_form">
     <form action="updatemercredi.php" method="POST" enctype="multipart/form-data">
     <label for="Num">Entré :</label>
