@@ -33,6 +33,16 @@ $font-sm:16px;
        width: 300px;
        padding: 10px;
     }
+    select{
+        margin-top: 10px;
+       margin-bottom: 20px;
+       border:2px solid rgb(0, 0, 0);
+       color: $secendaryColor;
+       border-radius: 4px;
+       display: block;
+       width: 323px;
+       padding: 10px;
+    }
     #image{
         margin-left: 10px;
         width: auto;

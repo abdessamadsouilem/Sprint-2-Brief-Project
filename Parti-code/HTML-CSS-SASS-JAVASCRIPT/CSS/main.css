@@ -1313,6 +1313,15 @@ th {
     display: block;
     width: 300px;
     padding: 10px; }
+  .update_form select {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    color: #222222;
+    border-radius: 4px;
+    display: block;
+    width: 323px;
+    padding: 10px; }
   .update_form #image {
     margin-left: 10px;
     width: auto;

@@ -3,6 +3,9 @@
 // $Price= $_POST['Price'];
 // $image=$_POST['image'];
 session_start();
+$connect=mysqli_connect("localhost","root","","el-bahja-food")or die ("connection failed");
+$query1="select Num from food order by Num";
+$rep = mysqli_query($connect,$query1);
 ?>
 
 
@@ -34,7 +37,17 @@ session_start();
 <div class="update_form">
     <form action="edit.php" method="POST" enctype="multipart/form-data">
     <label for="Num">Number Of Products :</label>
-    <input type="Name" id="Num" name="Num" />
+    <select name="Num" id="">
+    <?php
+     while($row = mysqli_fetch_array($rep))
+     {
+?>
+     <option value="<?php echo($row["Num"]) ?>"><?php echo($row["Num"])  ?></option>
+     <?php
+}
+
+?>
+    </select>
     <br>
     <label for="Name">Name Of Products :</label>
     <input type="Name" id="Name" name="Name" />

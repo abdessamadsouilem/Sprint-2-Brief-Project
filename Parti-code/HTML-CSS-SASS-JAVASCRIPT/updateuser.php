@@ -2,6 +2,8 @@
 
 session_start();
 $connect=mysqli_connect("localhost","root","","el-bahja-food")or die ("connection failed");
+$query1="select id from users";
+$rep = mysqli_query($connect,$query1);
 
 
 
@@ -53,7 +55,18 @@ if(isset($_POST['update'])){
 <div class="update_form">
     <form action="updateuser.php" method="POST" enctype="multipart/form-data">
     <label for="id">Id Of Users You Want Update :</label>
-    <input type="Name" id="Num" name="id" />
+    <!-- <input type="Name" id="Num" name="id" /> -->
+    <select name="id" id="">
+    <?php
+     while($row = mysqli_fetch_array($rep))
+     {
+?>
+     <option value="<?php echo($row["id"]) ?>"><?php echo($row["id"])  ?></option>
+     <?php
+}
+
+?>
+    </select>
     <br>
     <label for="Name">Role Of User :</label>
     <input type="Name" id="Name" name="Role" />
