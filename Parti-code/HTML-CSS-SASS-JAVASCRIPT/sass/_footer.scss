@@ -30,6 +30,9 @@ footer{
                        @include linksstyle;
                        color: $PrimaryColor;
                    }
+                   a:hover{
+                    color:#1E90FF ;
+                }
                }
            }
          }
@@ -42,7 +45,12 @@ footer{
                 a{
                     @include linksstyle;
                     color: $PrimaryColor;
+                    
                 }
+                a:hover{
+                    color:#1E90FF ;
+                }
+                
             }
         }
          }
@@ -59,6 +67,13 @@ footer{
                #facebook:hover{
                fill: #1E90FF;
             }
+            
+            #instagram:hover{
+                fill: #1E90FF;
+             }
+             #twiter:hover{
+                fill: #1E90FF;
+             }
            }
            
            }

@@ -589,7 +589,8 @@ h2 {
       align-items: center;
       font-size: 26px;
       font-weight: 500;
-      color: white; }
+      color: white;
+      background-color: white !important; }
       .elbahja_Menu-gridcontainer--dimanche .front, .elbahja_Menu-gridcontainer--dimanche .back {
         overflow: hidden;
         backface-visibility: hidden;
@@ -846,6 +847,8 @@ footer {
         color: black;
         font-size: 20px;
         color: white; }
+      .footer_grid-container--pages ul li a:hover {
+        color: #1E90FF; }
   .footer_grid-container--about {
     grid-area: footer_grid-container--about;
     align-self: center; }
@@ -856,6 +859,8 @@ footer {
         color: black;
         font-size: 20px;
         color: white; }
+      .footer_grid-container--about ul li a:hover {
+        color: #1E90FF; }
   .footer_grid-container--social-media {
     grid-area: footer_grid-container--social-media;
     display: flex;
@@ -866,6 +871,10 @@ footer {
       height: 40px;
       margin-right: 20px; }
       .footer_grid-container--social-media a svg #facebook:hover {
+        fill: #1E90FF; }
+      .footer_grid-container--social-media a svg #instagram:hover {
+        fill: #1E90FF; }
+      .footer_grid-container--social-media a svg #twiter:hover {
         fill: #1E90FF; }
 
 .elbahja_Reserve {
@@ -1355,11 +1364,10 @@ th {
   width: 100%;
   min-height: 100%;
   background-image: url(image/6049eb032f0b2.jpg);
-  background-size: cover;
-  margin-bottom: 40px; }
+  background-size: cover; }
   .elbahja_contactus .background {
     width: 100%;
-    height: 854px;
+    height: 824px;
     background-color: rgba(0, 0, 0, 0.397);
     background-size: cover;
     position: absolute; }
@@ -1367,7 +1375,8 @@ th {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    margin-bottom: 0 !important; }
     .elbahja_contactus .elbahja_form h2 {
       margin-bottom: 0 !important;
       color: white;
@@ -1375,7 +1384,6 @@ th {
     .elbahja_contactus .elbahja_form .paragraf {
       margin-top: 10px !important;
       font-size: 20px;
-      margin-bottom: 50px;
       z-index: 1; }
     .elbahja_contactus .elbahja_form label {
       margin-top: 30px;

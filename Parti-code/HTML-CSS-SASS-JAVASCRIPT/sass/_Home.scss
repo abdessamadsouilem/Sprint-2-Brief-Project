@@ -330,6 +330,7 @@ h2{
        &--dimanche {
         grid-area: elbahja_Menu-gridcontainer--dimanche;
         @include boxstyle;
+        background-color: white !important;
         @include reverse;
        }
        &--dimanche:hover> .front{
