@@ -25,7 +25,7 @@ session_start();
         <li><a href="Home.php">HOME</a></li>
         <li><a href="Menu.php">MENU</a></li>
         <li><a href="reservation.php">RESERVATION</a></li>
-        <li><a href="#">CONTACT US</a></li>
+        <li><a href="contactus.php">CONTACT US</a></li>
      </ul>
      <div class="elbahja_nav--avatar">
        <img src="image/profile.png" alt="">

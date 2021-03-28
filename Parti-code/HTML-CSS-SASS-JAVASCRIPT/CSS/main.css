@@ -857,7 +857,16 @@ footer {
         font-size: 20px;
         color: white; }
   .footer_grid-container--social-media {
-    grid-area: footer_grid-container--social-media; }
+    grid-area: footer_grid-container--social-media;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .footer_grid-container--social-media a svg {
+      width: 40px;
+      height: 40px;
+      margin-right: 20px; }
+      .footer_grid-container--social-media a svg #facebook:hover {
+        fill: #1E90FF; }
 
 .elbahja_Reserve {
   margin-top: 20px;
@@ -1341,3 +1350,58 @@ th {
     padding: 10px;
     margin-top: 20px;
     width: 320px; }
+
+.elbahja_contactus {
+  width: 100%;
+  min-height: 100%;
+  background-image: url(image/6049eb032f0b2.jpg);
+  background-size: cover;
+  margin-bottom: 40px; }
+  .elbahja_contactus .background {
+    width: 100%;
+    height: 854px;
+    background-color: rgba(0, 0, 0, 0.397);
+    background-size: cover;
+    position: absolute; }
+  .elbahja_contactus .elbahja_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .elbahja_contactus .elbahja_form h2 {
+      margin-bottom: 0 !important;
+      color: white;
+      z-index: 1; }
+    .elbahja_contactus .elbahja_form .paragraf {
+      margin-top: 10px !important;
+      font-size: 20px;
+      margin-bottom: 50px;
+      z-index: 1; }
+    .elbahja_contactus .elbahja_form label {
+      margin-top: 30px;
+      margin-bottom: 20px;
+      color: white; }
+    .elbahja_contactus .elbahja_form p {
+      margin-top: 30px;
+      margin-bottom: 20px;
+      color: white; }
+    .elbahja_contactus .elbahja_form input {
+      background-color: rgba(255, 250, 250, 0.384);
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border-radius: 4px;
+      display: block;
+      width: 300px;
+      padding: 10px;
+      border: none; }
+    .elbahja_contactus .elbahja_form input:focus {
+      outline: 0;
+      border: none; }
+    .elbahja_contactus .elbahja_form textarea {
+      padding: 10px;
+      margin-bottom: 40px;
+      background-color: rgba(255, 250, 250, 0.384);
+      border: none; }
+    .elbahja_contactus .elbahja_form textarea:focus {
+      outline: 0;
+      border: none; }

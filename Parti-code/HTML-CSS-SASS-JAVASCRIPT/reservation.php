@@ -21,7 +21,7 @@ session_start();
            <li><a href="Home.php">HOME</a></li>
            <li><a href="Menu.php">MENU</a></li>
            <li><a href="reservation.php">RESERVATION</a></li>
-           <li><a href="#">CONTACT US</a></li>
+           <li><a href="contactus.php">CONTACT US</a></li>
         </ul>
         <?php if (isset($_SESSION["loginstatus"]) && $_SESSION["loginstatus"]  === true) : ?>
         <div class="elbahja_nav--dahbord">
@@ -48,7 +48,7 @@ session_start();
         <h4> Welcome to Elbahja Food</h4>
         <h1>MAKE A RESERVATION</h1>
         <h4>Open Hours</h4>
-        <p>Sunday to Tuesday 09.00 - 24:00 Friday and Sunday 08:00 - 03.00</p>
+        <p >Sunday to Tuesday 09.00 - 24:00 Friday and Sunday 08:00 - 03.00</p>
         <h2>+212 694175174</h2>
     </section>
     <section class="elbahja_form contact-form">

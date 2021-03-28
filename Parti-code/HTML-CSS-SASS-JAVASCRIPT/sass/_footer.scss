@@ -48,5 +48,20 @@ footer{
          }
       &--social-media {
            grid-area: footer_grid-container--social-media;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           a{svg{
+               width: 40px;
+               height: 40px;
+               margin-right: 20px;
+               
+               #facebook:hover{
+               fill: #1E90FF;
+            }
+           }
+           
+           }
+           
          }
 }

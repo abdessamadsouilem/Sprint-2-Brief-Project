@@ -1,5 +1,39 @@
 <?php
 session_start();
+
+
+if(!empty($_POST['Full-Name']) && !empty($_POST['email']) && !empty($_POST['object']) && !empty($_POST['message'])  ){
+
+    if(filter_var($_POST["email"],FILTER_VALIDATE_EMAIL)  && !preg_match('/[0-9]+/', $_POST["Full-Name"])){
+        $name=$_POST["Full-Name"];
+        $email=$_POST["email"];
+        $object=$_POST["object"];
+        $message=$_POST["message"];
+        $to="abdessamadsouilem1@gmail.com";
+        $messagesubject="new message from contact us page \r\n";
+        
+        $body="";
+        
+        $body .="From : ".$name. "\r\n";
+        $body .="Email : ".$email. "\r\n";
+        $body .="object : ".$object. "\r\n";
+        $body .="message : \r\n".$message. "\r\n";
+        $headers=$email;
+        $mailsent= mail($to,$messagesubject,$body,$headers);
+        if($mailsent == true){
+            echo "<script>alert('message sending successfully')</script>";
+        
+        }else{
+         echo "<script>alert('Sorry but the message not send')</script>";
+        }
+    }else{
+      echo "<script>alert('please all field are required')</script>";
+     }
+
+}else{
+   
+  }
+
 ?>
 
 
@@ -41,8 +75,38 @@ session_start();
          </div>
       <?php endif; ?>
    </nav>
+   <h1>Contact us</h1>
+<section class="elbahja_contactus">
+   <div class="background"></div>
+   <div class="elbahja_form">
+      <br>
+      <h2>We’d love to hear from you</h2>
+      <p class="paragraf">Whether you have a question about features, trials, pricing, need a demo, or anything else, our team is ready to answer all your questions</p>
+      <form action="contactus.php" method="POST">
+   <div class="form-control ">
+   <label for="Name">Full-Name :</label>
+   <input type="text" placeholder="Abdessamad Souilem" id="Name" name="Full-Name"  />
+   </div>
+   <br>
+   <div class="form-control ">
+   <label for="Name">Email :</label>
+   <input type="email" placeholder="abdessamadsouilem1@gmail.com" id="email" name="email" />
+   </div>
+   <br>
+   <div class="form-control ">
+   <label for="Name">Object :</label>
+   <input type="text" placeholder="Your Object" id="object" name="object"  />
+   </div>
+   
+   <div class="form-control ">
+   <p for="Name">Your Message :</p>
+   <textarea type="text" rows="9" cols="50" placeholder="Enter Your Message Here" id="message" name="message"  ></textarea>
+   <button  value="contact"  id="submit" name="send">send</button>
+   </form>
+   </div>
+   </div>
+</section>
 
-<h1>Contact us</h1>
 
 
 </body>

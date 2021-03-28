@@ -1,0 +1,65 @@
+.elbahja_contactus{
+    width: 100%;
+    min-height: 100%;
+    .background{
+        width: 100%;
+        height: 854px;
+        background-color: rgba(0, 0, 0, 0.397);
+        background-size: cover;
+        position: absolute;
+    }
+   background-image: url(image/6049eb032f0b2.jpg);
+   background-size: cover;
+    .elbahja_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2{
+        margin-bottom: 0 !important;
+        color: $PrimaryColor;
+        z-index: 1;
+    }
+    .paragraf{
+        margin-top: 10px !important;
+        font-size: $font-md1;
+        margin-bottom: 50px;
+        z-index: 1;
+    }
+   label{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: $PrimaryColor;
+    }
+    p{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: $PrimaryColor;
+    }
+    input{
+        background-color:rgba(255, 250, 250, 0.384);
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+        display: block;
+        width: 300px;
+        padding: 10px;
+        border: none;
+    }
+    input:focus {
+    outline: 0;
+    border: none;
+    }
+    textarea{
+        padding: 10px;
+        margin-bottom: 40px;
+        background-color:rgba(255, 250, 250, 0.384);
+        border: none;
+    } 
+    textarea:focus{
+        outline: 0;
+        border: none;
+    }      
+    }
+    margin-bottom: 40px;
+}
