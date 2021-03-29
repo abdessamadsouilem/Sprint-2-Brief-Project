@@ -52,7 +52,7 @@ session_start();
         <h2>+212 694175174</h2>
     </section>
     <section class="elbahja_form contact-form">
-        <form method="POST"  id="contact" class="form">
+        <form   method="POST"  id="contact" class="form">
             <div class="form-control ">
                 <label for="Name">Full-Name</label>
                 <input type="text" placeholder="Abdessamad Souilem" id="Name" name="Full-Name"  />
@@ -76,6 +76,9 @@ session_start();
             <button  value="contact"  id="submit" name="send">MAKE RESERVATION</button>
         </form>
     </section>
+
+    <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Restaurant%20El%20Bahja%20Food,%20Jemaa%20el-Fna,%20Marrakesh&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:100%;}</style><a href="https://www.embedgooglemap.net">embedding google maps on website</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%;}</style></div></div>
+
     <footer>
       <div class="footer_grid-container">
          <div class="footer_grid-container--logo">

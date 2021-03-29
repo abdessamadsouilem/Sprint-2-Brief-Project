@@ -3,6 +3,8 @@ $connect=mysqli_connect("localhost","root","","el-bahja-food")or die ("connectio
 $req = ("select id,name,email,Role from users");
 $rep = mysqli_query($connect,$req);
 session_start();
+
+
 ?>
  <?php if (isset($_SESSION["loginstatus"]) && $_SESSION["loginstatus"]  === true) : ?>
 <!DOCTYPE html>
@@ -70,7 +72,7 @@ session_start();
        <td><?php echo $row["email"];   ?></td>
        <td><?php echo $row["Role"];   ?></td>
        
-       <td><a class="delete" >delete</a></td>
+       <td><a class="delete" href="deletuser.php?id=<?php echo $row["id"] ?>" >delete</a></td>
        
      </tr>
 

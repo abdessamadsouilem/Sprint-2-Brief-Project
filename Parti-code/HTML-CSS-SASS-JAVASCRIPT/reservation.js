@@ -58,3 +58,20 @@ function setSuccessFor(input){
 }
 
 
+
+
+    $('#submit').click(function(){
+        checkinputs();
+       
+        $.post("emailRes.php", $("#contact").serialize(),  function(response) {
+            
+
+        });
+
+        return false ;
+
+
+
+
+
+    });

@@ -41,7 +41,7 @@ session_start();
   <?php include "CSS/main.css" ?>
 </style>
 <section class="elbahja_presentation">
-<h1>Our Story</h1>
+<h1 class="tupe1">Our Story</h1>
 <div class="presentation">
     <img src="image/606211768ab15.jpg" alt="">
 
@@ -49,8 +49,11 @@ session_start();
     welcome
     </p>
 </div>
-
+<div class="slide">
+   <h1>Gallery</h1>
 <img name="slide" src="image/" alt="">
+
+</div>
 </section>
 
 

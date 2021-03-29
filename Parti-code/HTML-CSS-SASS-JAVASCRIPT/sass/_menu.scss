@@ -110,6 +110,8 @@ h1{
             width:300px;
             height:170px; 
             border-radius: 10px;
+            border-end-end-radius: 0px !important;
+            border-end-start-radius: 0px !important;
         }
         h2{
             margin-top: 5px;
