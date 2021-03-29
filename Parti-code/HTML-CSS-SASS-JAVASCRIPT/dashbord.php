@@ -18,7 +18,7 @@ session_start();
     <link rel="stylesheet" href="CSS/main.css">
     <link rel="shortcut icon" href="image/logo/Untitled-2.png" />
     <title>Elbahja Food</title>
-    <style>
+<style>
   <?php include "CSS/main.css" ?>
 </style>
 </head>
