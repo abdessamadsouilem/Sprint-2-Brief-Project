@@ -15,7 +15,7 @@ if(isset($_GET['Num']))
              }
              else
              {
-                 echo ' Please Check Your Query ';
+                 echo ' error ';
              }
         }
          else

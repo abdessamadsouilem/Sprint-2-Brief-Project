@@ -1,7 +1,5 @@
 <?php
-// $nameP= $_POST['Name'];
-// $Price= $_POST['Price'];
-// $image=$_POST['image'];
+
 session_start();
 $connect=mysqli_connect("localhost","root","","el-bahja-food")or die ("connection failed");
 $query1="select Num from food order by Num";

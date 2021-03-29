@@ -253,7 +253,7 @@ session_start();
          </div>
          <div class="footer_grid-container--about">
             <ul>
-               <li><a href="#"> About us</a></li>
+               <li><a href="aboutus.php"> About us</a></li>
                <br>
                <li><a href="contactus.php">CONTACT US</a></li>
             </ul>
