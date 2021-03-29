@@ -62,16 +62,14 @@ nav{
         justify-content: center;
         align-items: center;
         align-self: center;
+        transition: transform .5s;
        
         a{
             @include linksstyle;
             color:white;
         }
         &:hover{
-        width: 130px;
-        height: 50px;
-        border-radius: 30px;
-        box-shadow: 2px 2px 2px 2px #e6ab98af;
+            transform: scale(1.15);
         
         }
     
@@ -87,15 +85,13 @@ nav{
         justify-content: center;
         align-items: center;
         align-self: center;
+        transition: transform .5s;
         a{
             @include linksstyle;
             color:white;
         }
         &:hover{
-        width: 160px;
-        height: 50px;
-        border-radius: 30px;
-        box-shadow: 2px 2px 2px 2px #e6ab98af;
+            transform: scale(1.15);
         }
     }
     .elbahja_nav--dahbord{

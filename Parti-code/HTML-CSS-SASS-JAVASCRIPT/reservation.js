@@ -58,22 +58,3 @@ function setSuccessFor(input){
 }
 
 
-$(document).ready(function(){
-
-    $('#submit').click(function(){
-        checkinputs();
-        $('#success').hide(1);
-        $.post("emailRes.php", $("#contact").serialize(),  function(response) {
-            $('#success').html(response);
-            $('#success').show(1000);
-            
-        });
-        
-        return false ;
-       
-        
-        
-        
-      
-    });
-});

@@ -40,17 +40,15 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    align-self: center; }
+    align-self: center;
+    transition: transform .5s; }
     nav .elbahja_nav--Login a {
       text-decoration: none;
       color: black;
       font-size: 20px;
       color: white; }
     nav .elbahja_nav--Login:hover {
-      width: 130px;
-      height: 50px;
-      border-radius: 30px;
-      box-shadow: 2px 2px 2px 2px #e6ab98af; }
+      transform: scale(1.15); }
   nav .elbahja_nav--deconecter {
     width: 160px;
     height: 40px;
@@ -61,17 +59,15 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    align-self: center; }
+    align-self: center;
+    transition: transform .5s; }
     nav .elbahja_nav--deconecter a {
       text-decoration: none;
       color: black;
       font-size: 20px;
       color: white; }
     nav .elbahja_nav--deconecter:hover {
-      width: 160px;
-      height: 50px;
-      border-radius: 30px;
-      box-shadow: 2px 2px 2px 2px #e6ab98af; }
+      transform: scale(1.15); }
   nav .elbahja_nav--dahbord {
     width: 120px;
     height: 40px;
@@ -139,26 +135,39 @@ nav {
   background-repeat: no-repeat;
   background-size: 95% 550px;
   background-position-x: center;
-  opacity: 0.7;
+  opacity: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-bottom: 30px; }
-  .elbahja_Welcome-para--welcome {
-    font-size: 26px;
-    font-weight: 500;
-    margin-left: 70px;
-    color: black; }
-  .elbahja_Welcome-para--tradition {
-    font-size: 40px;
-    font-weight: bold;
-    margin-left: 70px;
-    color: white;
-    margin-bottom: 20px;
-    text-shadow: 0px 0px 5px #ddc9c9; }
+  .elbahja_Welcome-background {
+    width: 95%;
+    height: 500px;
+    margin-left: 37px;
+    background-color: rgba(0, 0, 0, 0.438);
+    background-position-x: center;
+    background-size: cover;
+    position: absolute; }
+  .elbahja_Welcome-para {
+    z-index: 1; }
+    .elbahja_Welcome-para--welcome {
+      font-size: 26px;
+      font-weight: 500;
+      margin-left: 70px;
+      color: white;
+      z-index: 1; }
+    .elbahja_Welcome-para--tradition {
+      font-size: 40px;
+      font-weight: bold;
+      margin-left: 70px;
+      color: white;
+      margin-bottom: 20px;
+      text-shadow: 0px 0px 5px #ddc9c9;
+      z-index: 1; }
   .elbahja_Welcome-button {
     display: flex;
-    flex-direction: row; }
+    flex-direction: row;
+    z-index: 1; }
     .elbahja_Welcome-button--order {
       width: 170px;
       height: 50px;
@@ -176,9 +185,11 @@ nav {
         font-size: 20px;
         color: white; }
       .elbahja_Welcome-button--order:hover {
-        background-color: white; }
+        background-color: white;
+        transition: all 0.3s ease-in; }
         .elbahja_Welcome-button--order:hover a {
-          color: #222222; }
+          color: #222222;
+          transition: all 0.3s ease-in; }
     .elbahja_Welcome-button--book {
       width: 170px;
       height: 50px;
@@ -196,9 +207,11 @@ nav {
         font-size: 20px;
         color: white; }
       .elbahja_Welcome-button--book:hover {
-        background-color: white; }
+        background-color: white;
+        transition: all 0.3s ease-in; }
         .elbahja_Welcome-button--book:hover a {
-          color: #222222; }
+          color: #222222;
+          transition: all 0.3s ease-in; }
 
 .elbahja_bestDishes {
   width: 100%;
@@ -265,8 +278,9 @@ nav {
       text-align: center;
       font-weight: 400; }
     .elbahja_bestDishes-historyabout a:hover {
-      font-size: 26px;
-      text-shadow: 0px 0px 2px #252424; }
+      font-size: 20px;
+      text-shadow: 0px 0px 2px #252424;
+      transition: all 0.3s ease-in; }
 
 #img1:checked ~ .m1 {
   margin-left: 0; }
@@ -1001,20 +1015,6 @@ h1 {
       background-color: white; }
   .elbahja_Dishes-card:hover {
     transform: scale(1.2); }
-
-#loadmore {
-  margin: 5px auto;
-  padding: 8px 0;
-  width: 50%;
-  background: #c12b2b;
-  text-align: center;
-  color: #fff;
-  display: block;
-  text-decoration: none;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out; }
 
 .elbahja_Reservation {
   margin-top: 20px;
