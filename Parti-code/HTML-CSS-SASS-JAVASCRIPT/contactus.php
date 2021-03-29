@@ -80,8 +80,9 @@ if(!empty($_POST['Full-Name']) && !empty($_POST['email']) && !empty($_POST['obje
    <div class="background"></div>
    <div class="elbahja_form">
       <br>
-      <h2>We’d love to hear from you</h2>
-      <p class="paragraf">Whether you have a question about features, trials, pricing, need a demo, or anything else, our team is ready to answer all your questions</p>
+      <h2>Get in touch</h2>
+      <p class="paragraf">Want to get in touch? We'd love to hear from you.
+          Here's how you can reach us...</p>
       <form action="contactus.php" method="POST">
    <div class="form-control ">
    <label for="Name">Full-Name :</label>

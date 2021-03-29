@@ -63,7 +63,10 @@ session_start();
 }
 
 ?>
+
+   
    </section>
+   
    <style>
   <?php include "CSS/main.css" ?>
 </style>
@@ -106,6 +109,6 @@ session_start();
          </div>
       </div>
    </footer>
-
+<script src="loadmore.js"></script>
 </body>
 </html>

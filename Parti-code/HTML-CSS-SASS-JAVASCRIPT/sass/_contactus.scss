@@ -3,7 +3,7 @@
     min-height: 100%;
     .background{
         width: 100%;
-        height: 824px;
+        height: 878px;
         background-color: rgba(0, 0, 0, 0.397);
         background-size: cover;
         position: absolute;
@@ -17,12 +17,13 @@
     align-items: center;
     h2{
         margin-bottom: 0 !important;
+        font-size: $font-lg*2;
         color: $PrimaryColor;
         z-index: 1;
     }
     .paragraf{
         margin-top: 10px !important;
-        font-size: $font-md1;
+        font-size: $font-md2;
        
         z-index: 1;
     }
@@ -45,6 +46,7 @@
         width: 300px;
         padding: 10px;
         border: none;
+        color: $PrimaryColor;
     }
     input:focus {
     outline: 0;

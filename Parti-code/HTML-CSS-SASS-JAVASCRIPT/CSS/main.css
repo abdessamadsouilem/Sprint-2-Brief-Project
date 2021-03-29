@@ -820,7 +820,7 @@ h2 {
       text-align: center; } }
 
 footer {
-  padding: 30px;
+  width: 100%;
   background-color: #222222;
   color: white; }
 
@@ -876,6 +876,39 @@ footer {
         fill: #1E90FF; }
       .footer_grid-container--social-media a svg #twiter:hover {
         fill: #1E90FF; }
+
+@media (max-width: 1526px) {
+  .footer_grid-container {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 400px 350px;
+    grid-template-rows: 350px 350px;
+    gap: 10px 10px;
+    grid-template-areas: "footer_grid-container--logo footer_grid-container--pages" "footer_grid-container--about footer_grid-container--social-media"; } }
+
+@media (max-width: 820px) {
+  .footer_grid-container {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 400px;
+    grid-template-rows: 350px 350px 350px 350px;
+    gap: 10px 10px;
+    grid-template-areas: "footer_grid-container--logo " "footer_grid-container--pages" "footer_grid-container--about"  "footer_grid-container--social-media"; } }
+
+@media (max-width: 586px) {
+  .footer_grid-container {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 300px;
+    grid-template-rows: 250px 250px 250px 250px;
+    gap: 10px 10px;
+    grid-template-areas: "footer_grid-container--logo " "footer_grid-container--pages" "footer_grid-container--about"  "footer_grid-container--social-media"; } }
 
 .elbahja_Reserve {
   margin-top: 20px;
@@ -968,6 +1001,20 @@ h1 {
       background-color: white; }
   .elbahja_Dishes-card:hover {
     transform: scale(1.2); }
+
+#loadmore {
+  margin: 5px auto;
+  padding: 8px 0;
+  width: 50%;
+  background: #c12b2b;
+  text-align: center;
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; }
 
 .elbahja_Reservation {
   margin-top: 20px;
@@ -1367,7 +1414,7 @@ th {
   background-size: cover; }
   .elbahja_contactus .background {
     width: 100%;
-    height: 824px;
+    height: 878px;
     background-color: rgba(0, 0, 0, 0.397);
     background-size: cover;
     position: absolute; }
@@ -1379,11 +1426,12 @@ th {
     margin-bottom: 0 !important; }
     .elbahja_contactus .elbahja_form h2 {
       margin-bottom: 0 !important;
+      font-size: 80px;
       color: white;
       z-index: 1; }
     .elbahja_contactus .elbahja_form .paragraf {
       margin-top: 10px !important;
-      font-size: 20px;
+      font-size: 26px;
       z-index: 1; }
     .elbahja_contactus .elbahja_form label {
       margin-top: 30px;
@@ -1401,7 +1449,8 @@ th {
       display: block;
       width: 300px;
       padding: 10px;
-      border: none; }
+      border: none;
+      color: white; }
     .elbahja_contactus .elbahja_form input:focus {
       outline: 0;
       border: none; }
