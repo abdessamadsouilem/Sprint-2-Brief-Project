@@ -118,9 +118,9 @@ session_start();
          </div>
          <div class="footer_grid-container--pages">
             <ul>
-               <li><a href="Menu.html">Menu</a></li>
+               <li><a href="Menu.php">Menu</a></li>
                <br>
-               <li><a href="reservation.html">Reservation</a></li>
+               <li><a href="reservation.php">Reservation</a></li>
                <br>
                <li><a href="#">Orders</a></li>
             </ul>

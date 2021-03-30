@@ -9,6 +9,11 @@ $font-md1:20px;
 $font-sm:16px;
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 $fontfamily:'Roboto', sans-serif;
+:root{
+    --primary-color: rgba(13, 110, 139, 0.75);
+--overlay-color: rgba(24, 39, 51 , 0.85);
+--menu-speed: 0.75s;
+}
 
 *{
     padding: 0;

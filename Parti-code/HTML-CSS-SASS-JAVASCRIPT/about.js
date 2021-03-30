@@ -14,3 +14,6 @@ var typed = new Typed('.tupe', {
     strings: ["welcome","<strong>El Bahja Food</strong> : <br><br> In the heart of the medina where tradition and modernity blend, an authentic restaurant has several years of perfectly preserved stories,El Bahja Food, enjoyed the refinements of Moroccan cuisine, The restaurant El Bahja Food is the ideal place for your gala evenings, conferences, family celebrations ..."],
     typeSpeed:40,
   });
+
+
+

@@ -33,6 +33,8 @@ session_start();
          <li><a href="reservation.php">RESERVATION</a></li>
          <li><a href="contactus.php">CONTACT US</a></li>
       </ul>
+     
+    
 
 
       <?php if (isset($_SESSION["loginstatus"]) && $_SESSION["loginstatus"]  === true) : ?>
@@ -98,7 +100,7 @@ session_start();
             Ad enim similique molestiae ea ipsa eveniet omnis, deleniti
             sed possimus repellendus optio cumque nobis quae harum dolores dolor.
             Animi, consequuntur possimus?</p>
-         <a href="#">More About Our Restaurant ></a>
+         <a href="aboutus.php">More About Our Restaurant ></a>
 
       </div>
 
@@ -244,9 +246,9 @@ session_start();
          </div>
          <div class="footer_grid-container--pages">
             <ul>
-               <li><a href="Menu.html">Menu</a></li>
+               <li><a href="Menu.php">Menu</a></li>
                <br>
-               <li><a href="reservation.html">Reservation</a></li>
+               <li><a href="reservation.php">Reservation</a></li>
                <br>
                <li><a href="#">Orders</a></li>
             </ul>

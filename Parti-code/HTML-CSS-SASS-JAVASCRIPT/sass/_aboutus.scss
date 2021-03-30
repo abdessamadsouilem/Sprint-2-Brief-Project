@@ -46,6 +46,45 @@
     }
     
     }
-    
+    .ourteam{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        .boxcheif{
+            width: 300px;
+            height: 520px;
+            border-radius: 20px;
+            background-color: #C0C0C0;
+            display: flex;
+            flex-direction: column;
+            margin-left: 60px;
+            transition: transform .5s;
+            .chef1{
+                width: 300px;
+                height: 322px;
+                border-radius: 20px;
+                border-top-right-radius: 0px !important;
+                border-end-end-radius: 0px !important;
+                border-end-start-radius: 0px !important;
+            }
+            h3{
+            font-family: 'Dancing Script', cursive;
+            font-size: $font-lg*1.5;
+            }
+            p{   width: 100%;
+                font-size: $font-sm;  
+                margin-bottom: 20px; 
+            }
+        }
+        .boxcheif:hover{
+            transform: scale(1.15);
+            box-shadow: 8px 8px 50px #0f0e129e;
+            border-end-start-radius: 0px !important;
+            border-top-right-radius: 0px !important;
+        }
+        margin-bottom: 100px;
+    }
   
 }

@@ -65,16 +65,16 @@ $rep = mysqli_query($connect,$query1);
          </div>
          <div class="footer_grid-container--pages">
             <ul>
-               <li><a href="Menu.html">Menu</a></li>
+               <li><a href="Menu.php">Menu</a></li>
                <br>
-               <li><a href="reservation.html">Reservation</a></li>
+               <li><a href="reservation.php">Reservation</a></li>
                <br>
                <li><a href="#">Orders</a></li>
             </ul>
          </div>
          <div class="footer_grid-container--about">
             <ul>
-               <li><a href="#"> About us</a></li>
+               <li><a href="aboutus.php"> About us</a></li>
                <br>
                <li><a href="contactus.php">CONTACT US</a></li>
             </ul>
