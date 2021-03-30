@@ -16,6 +16,7 @@ session_start();
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="CSS/main.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
    <link rel="shortcut icon" href="image/logo/Untitled-2.png" />
    <title>Elbahja Food</title>
 </head>
@@ -27,7 +28,7 @@ session_start();
    
    <nav class="elbahja_nav">
       <img class="elbahja_nav--logo" src="image/logo/Untitled-2.png" alt="">
-      <ul class="elbahja_nav--list">
+      <ul class="elbahja_nav--list ">
          <li><a href="Home.php">HOME</a></li>
          <li><a href="Menu.php">MENU</a></li>
          <li><a href="reservation.php">RESERVATION</a></li>
@@ -48,8 +49,26 @@ session_start();
          <div class="elbahja_nav--Login">
             <a href="login.php">LOGIN</a>
          </div>
+         
       <?php endif; ?>
-   </nav>
+      <div class="toggle">
+          <i class="fas fa-bars"></i>
+   </div>
+      
+      </nav>
+      
+   <div class="togglelist">
+      <div class="backtog">
+
+      </div>
+   <ul class="elbahja_nav--list1 ">
+         <li><a href="Home.php">HOME</a></li>
+         <li><a href="Menu.php">MENU</a></li>
+         <li><a href="reservation.php">RESERVATION</a></li>
+         <li><a href="contactus.php">CONTACT US</a></li>
+   </ul>
+   </div>
+   
    <br>
    <br>
    <section class="elbahja_Welcome">
@@ -283,7 +302,7 @@ session_start();
          </div>
       </div>
    </footer>
-
+<script src="toggle.js"></script>
 </body>
 
 </html>

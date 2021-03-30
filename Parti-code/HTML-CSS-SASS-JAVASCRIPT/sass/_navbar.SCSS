@@ -140,7 +140,7 @@ nav{
 @media (max-width: 1363px) {
   nav{
       li{
-            display: inline;
+            display: flex;
             list-style: none;
             margin-left: 50px !important;
       }
@@ -167,7 +167,6 @@ nav{
     nav{
         ul{
               display: none;
-              list-style: none;
               
         }
         .elbahja_nav--dahbord{
@@ -177,4 +176,58 @@ nav{
             margin-left: 0px !important;
         } 
     }
+  }
+  .toggle {
+    display: none;
+    color:white;
+    float: right;
+    height: 5rem;
+    line-height: 4rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+    @media (max-width: 1074px) {
+    display: block;
+    color: black;
+    margin-left: 30px;
+    margin-top: 30px;
+    }
+  }
+  .active{
+    visibility: visible !important;
+    position: absolute;
+    width: 100%;
+    
+    background-color: rgba(3, 3, 3, 0.753);
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .togglelist{
+      visibility: hidden;
+      position: relative;
+      width: 0 ;
+      height: 0;
+      width: 100%;
+      .elbahja_nav--list1{
+        display: flex;
+        flex-direction: column;
+        z-index: 2;
+        li{
+        display: block;
+        list-style: none;
+        margin-left: 140px;
+        margin-bottom: 12px;
+        a{
+           @include linksstyle;
+           font-size: $font-md2;
+           color: white;
+           margin-bottom: 9px;
+           transition: transform .5s;
+        }
+        &:hover{
+            transform: scale(1.15);
+        }
+        }
+      }
   }

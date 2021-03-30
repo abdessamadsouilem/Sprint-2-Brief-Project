@@ -72,7 +72,7 @@ session_start();
     <input type="submit" id="btn" name="save" value="Add Food">
 </form>
 
-                                                 <button><a href="update.php">Update</a></button>
+                                                 
 <br>
 <table >
       <tr>
@@ -80,6 +80,7 @@ session_start();
       <th>Name</th>
       <th> Price</th>
       <th class="image"> image</th>
+      <th>update</th>
       <th>Delete</th>
       
       </tr>
@@ -92,6 +93,7 @@ session_start();
        <td><?php echo $row["Name"];   ?></td>
        <td><?php echo $row["Price"];   ?></td>
        <td class="imagetd"><img src="<?php echo $upload_dir.$row["image"]; ?>" ></td>
+       <td><a href="update.php?Num=<?php echo $row["Num"] ?>">Update</a></td>
        <td><a class="delete" href="delete.php?Num=<?php echo $row["Num"] ?>">delete</a></td>
        
      </tr>

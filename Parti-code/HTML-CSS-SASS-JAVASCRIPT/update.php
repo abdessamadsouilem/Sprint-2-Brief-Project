@@ -1,9 +1,15 @@
 <?php
 
 session_start();
+$Num=$_GET['Num'];
 $connect=mysqli_connect("localhost","root","","el-bahja-food")or die ("connection failed");
-$query1="select Num from food order by Num";
+$query1="select Num from food where Num= '$Num'";
 $rep = mysqli_query($connect,$query1);
+$query2="select * from food where Num='$Num'";
+$rep2 = mysqli_query($connect,$query2);
+$row1 = mysqli_fetch_array($rep2);
+$upload_dir = 'upload/';
+
 ?>
 
 
@@ -43,18 +49,19 @@ $rep = mysqli_query($connect,$query1);
      <option value="<?php echo($row["Num"]) ?>"><?php echo($row["Num"])  ?></option>
      <?php
 }
-
+    
 ?>
+
     </select>
     <br>
     <label for="Name">Name Of Products :</label>
-    <input type="Name" id="Name" name="Name" />
+    <input value="<?php echo $row1["Name"];?>" type="Name" id="Name" name="Name" />
     <br>
     <label for="Name">Price Of Products :</label>
-    <input type="Name" id="Price" name="Price" />
+    <input value="<?php echo $row1["Price"];?>" type="Name" id="Price" name="Price" />
     <br>
     <label for="img">Select image:</label>
-    <input type="file" id="image" name="image" />
+    <input  type="file" id="image" name="image" />
     <input type="submit" id="btn" name="update" value="update">
 </form>
 </div>
