@@ -1,10 +1,10 @@
 <?php
 $connect=mysqli_connect("localhost","root","","el-bahja-food")or die ("connection failed");
-$req = ("select * from lundi");
-$rep = mysqli_query($connect,$req);
+$req = ("SELECT * from week  WHERE `week`.`jour` = 'lundi' ");
+$rep = mysqli_query($connect,$req) or die("faile");;
 $row = mysqli_fetch_array($rep);
-$req4 = ("select * from vendredi");
-$rep4 = mysqli_query($connect,$req4);
+$req4 = ("SELECT * from week WHERE `week`.`jour` = 'vendredi'");
+$rep4 = mysqli_query($connect,$req4) or die("faile");
 $row4 = mysqli_fetch_array($rep4);
 session_start();
 ?>

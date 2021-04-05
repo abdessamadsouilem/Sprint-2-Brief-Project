@@ -25,7 +25,17 @@
      </ul>
      
    </nav> 
-   
+   <div class="togglelist">
+      <div class="backtog">
+
+      </div>
+   <ul class="elbahja_nav--list1 ">
+         <li><a href="Home.php">HOME</a></li>
+         <li><a href="Menu.php">MENU</a></li>
+         <li><a href="reservation.php">RESERVATION</a></li>
+         <li><a href="contactus.php">CONTACT US</a></li>
+   </ul>
+   </div>
 <section class="elbahja_login">
 <h1>Login</h1>
 

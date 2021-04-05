@@ -192,17 +192,17 @@ nav{
     margin-left: 30px;
     margin-top: 30px;
     }
+    @media (max-width: 376px) {
+        display: block;
+        color: black;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 30px;
+        }
   }
-  .active{
-    visibility: visible !important;
-    position: absolute;
-    width: 100%;
-    
-    background-color: rgba(3, 3, 3, 0.753);
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
-
+  
+  
+ 
   .togglelist{
       visibility: hidden;
       position: relative;
@@ -230,4 +230,40 @@ nav{
         }
         }
       }
+  }
+  @media (max-width: 1074px) {.active{
+    visibility: visible !important;
+    position: absolute;
+    width: 100%;
+    
+    background-color: rgba(3, 3, 3, 0.753);
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }}
+
+  @media (max-width: 376px){
+    .elbahja_nav--Login{
+        width: 120px;
+        height: 40px;
+        margin-left: 68px !important;
+        background-color: $secendaryColor;
+        border: none;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        transition: transform .5s;
+       
+        a{
+            color: white;
+            padding: 12px;
+            font-size: 14px !important;
+        }
+        &:hover{
+            transform: scale(1.15);
+        
+        }
+    
+    }
   }

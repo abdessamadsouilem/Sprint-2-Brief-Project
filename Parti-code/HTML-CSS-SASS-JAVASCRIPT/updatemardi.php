@@ -9,7 +9,7 @@ if(isset($_POST['update'])){
     $platprincipal= $_POST['platprincipal'];
     $Dessert=$_POST["Dessert"];
 	
-        $query="UPDATE `mardi` SET `entré` = '$entré', `platprincipal` = '$platprincipal', `Dessert` = '$Dessert'";
+        $query="UPDATE `week` SET `entré` = '$entré', `platprincipal` = '$platprincipal', `Dessert` = '$Dessert' WHERE `week`.`jour` = 'mardi';";
         $run = mysqli_query($connect,$query) or die("failed");
          if($run){
             header('location: week.php');

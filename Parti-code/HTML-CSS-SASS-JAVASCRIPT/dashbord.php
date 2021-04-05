@@ -72,7 +72,7 @@ session_start();
     <input type="submit" id="btn" name="save" value="Add Food">
 </form>
 
-                                                 
+                                        
 <br>
 <table >
       <tr>

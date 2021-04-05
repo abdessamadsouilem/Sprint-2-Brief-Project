@@ -27,9 +27,9 @@ if(!empty($_POST['save'])){
 
       if (count($errors) == 0) {
         $password = md5($password);
-  
-        $query = "INSERT INTO users (name, email, password) 
-                  VALUES('$name', '$email', '$password')";
+  $date=date("Y/m/d");
+        $query = "INSERT INTO users (name, email, password,logindate) 
+                  VALUES('$name', '$email', '$password','$date')";
         mysqli_query($connect, $query);
         $_SESSION['name'] = $name;
         

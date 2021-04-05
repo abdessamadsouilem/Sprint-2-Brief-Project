@@ -22,10 +22,22 @@ function total_num_users(){
     $sql = "SELECT * FROM users where Role=1";
     $result = mysqli_query($connect,$sql);
     $count = mysqli_num_rows($result);
+    
     return $count; 
   } 
+  $connect=mysqli_connect("localhost","root","","el-bahja-food")or die ("connection failed");
+  $sql1="SELECT MONTHNAME(logindate) as monthname, COUNT(id) as total FROM users GROUP BY MONTH(logindate)";
+  $result = mysqli_query($connect,$sql1);
+  $chart_data="";
+  while($row = mysqli_fetch_array($result))
+     {
+  $monthname[]  = $row['monthname']  ;
+  $total[] = $row['total'];
+     }
+  
 session_start();
 ?>
+
  <?php if (isset($_SESSION["loginstatus"]) && $_SESSION["loginstatus"]  === true) : ?>
   
 <!DOCTYPE html>
@@ -74,6 +86,7 @@ session_start();
 
 
 <div class="elbahja_card">
+   <div class="div-card">
 <div class="totaluserscard">
          
          <img src="image/profile.png" alt="">
@@ -107,9 +120,15 @@ session_start();
     </p>
          
 </div>
-    
+   </div>
 
-</div>
+ 
+ 
+ <h2 class="page-header" >Analytics users </h2>
+ <div> users </div>
+ <canvas  id="chartjs_bar"></canvas> 
+</div>    
+
 </section>
 <footer>
       <div class="footer_grid-container">
@@ -157,6 +176,43 @@ session_start();
    </footer>
 
 </body>
+<script src="//code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+<script type="text/javascript">
+      var ctx = document.getElementById("chartjs_bar").getContext('2d');
+                var myChart = new Chart(ctx, {
+                    type: 'pie',
+                    data: {
+                        labels:<?php echo json_encode($monthname); ?>,
+                        datasets: [{
+                            backgroundColor: [
+                               "#5969ff",
+                                "#ff407b",
+                                "#25d5f2",
+                                "#ffc750",
+                                "#2ec551",
+                                "#7040fa",
+                                "#ff004e"
+                            ],
+                            data:<?php echo json_encode($total); ?>,
+                        }]
+                    },
+                    options: {
+                           legend: {
+                        display: true,
+                        position: 'bottom',
+ 
+                        labels: {
+                            fontColor: '#71748d',
+                            fontFamily: 'Circular Std Book',
+                            fontSize: 14,
+                        }
+                    },
+ 
+ 
+                }
+                });
+    </script>
 </html>
 <?php else : ?>
 <?php  header('location: login.php'); ?>

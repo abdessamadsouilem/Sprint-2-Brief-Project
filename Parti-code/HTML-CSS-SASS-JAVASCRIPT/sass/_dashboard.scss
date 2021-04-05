@@ -164,10 +164,17 @@ th{
 }
 .elbahja_card{
     display: flex;
-    flex: wrap;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    .div-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    }
 }
+
 .totaluserscard{
     margin-right: 29px;
     width: 250px;
@@ -186,6 +193,8 @@ th{
     p{
         font-size: $font-md2;
     }
+    margin-bottom: 30px;
+
 }
 
 .bu{
@@ -237,3 +246,7 @@ th{
     }
 }
 
+#chartjs_bar{
+    width: 700px !important;
+    height: 700px !important;
+}

@@ -1,30 +1,30 @@
 <?php
 $connect=mysqli_connect("localhost","root","","el-bahja-food")or die ("connection failed");
-$req = ("select * from lundi");
+$req = ("SELECT * from week  WHERE `week`.`jour` = 'lundi'");
 $rep = mysqli_query($connect,$req);
 $row = mysqli_fetch_array($rep);
 
-$req1 = ("select * from mardi");
+$req1 = ("SELECT * from week  WHERE `week`.`jour` = 'mardi'");
 $rep1 = mysqli_query($connect,$req1);
 $row1 = mysqli_fetch_array($rep1);
 
-$req2 = ("select * from mercredi");
+$req2 = ("SELECT * from week  WHERE `week`.`jour` = 'mercredi'");
 $rep2 = mysqli_query($connect,$req2);
 $row2 = mysqli_fetch_array($rep2);
 
-$req3 = ("select * from jeudi");
+$req3 = ("SELECT * from week  WHERE `week`.`jour` = 'jeudi'");
 $rep3 = mysqli_query($connect,$req3);
 $row3 = mysqli_fetch_array($rep3);
 
-$req4 = ("select * from vendredi");
+$req4 = ("SELECT * from week  WHERE `week`.`jour` = 'vendredi'");
 $rep4 = mysqli_query($connect,$req4);
 $row4 = mysqli_fetch_array($rep4);
 
-$req5 = ("select * from samedi");
+$req5 = ("SELECT * from week  WHERE `week`.`jour` = 'samedi'");
 $rep5 = mysqli_query($connect,$req5);
 $row5 = mysqli_fetch_array($rep5);
 
-$req6 = ("select * from dimanche");
+$req6 = ("SELECT * from week  WHERE `week`.`jour` = 'dimanche' ");
 $rep6 = mysqli_query($connect,$req6);
 $row6 = mysqli_fetch_array($rep6);
 

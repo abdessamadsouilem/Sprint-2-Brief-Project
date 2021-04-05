@@ -89,7 +89,7 @@ footer{
                align-items: center;
                grid-template-columns: 400px 350px ;
                grid-template-rows: 350px 350px;
-               gap: 10px 10px;
+               gap: 5px 5px;
                grid-template-areas:
                  "footer_grid-container--logo footer_grid-container--pages"
                 "footer_grid-container--about footer_grid-container--social-media";
@@ -101,9 +101,9 @@ footer{
                display: grid;
                justify-content: center;
                align-items: center;
-               grid-template-columns: 400px;
-               grid-template-rows: 350px 350px 350px 350px;
-               gap: 10px 10px;
+               grid-template-columns: 150px;
+               grid-template-rows: 100px 100px 100px 100px;
+               gap: 0px 0px;
                grid-template-areas:
                  "footer_grid-container--logo "
                  "footer_grid-container--pages"

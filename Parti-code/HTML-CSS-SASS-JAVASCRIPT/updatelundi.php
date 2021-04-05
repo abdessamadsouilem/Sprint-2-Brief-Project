@@ -1,7 +1,9 @@
 <?php
 $connect=mysqli_connect("localhost","root","","el-bahja-food")or die ("connection failed");
 
-
+$req = ("SELECT * from week  WHERE `week`.`jour` = 'lundi'");
+$rep = mysqli_query($connect,$req);
+$row = mysqli_fetch_array($rep);
 
 if(isset($_POST['update'])){
     if(!empty($_POST['entré']) && !empty($_POST['platprincipal']) && !empty($_POST['Dessert']) ){
@@ -9,7 +11,7 @@ if(isset($_POST['update'])){
     $platprincipal= $_POST['platprincipal'];
     $Dessert=$_POST["Dessert"];
 	
-        $query="UPDATE `lundi` SET `entré` = '$entré', `platprincipal` = '$platprincipal', `Dessert` = '$Dessert'";
+        $query="UPDATE `week` SET `entré` = '$entré', `platprincipal` = '$platprincipal', `Dessert` = '$Dessert' WHERE `week`.`jour` = 'lundi';";
         $run = mysqli_query($connect,$query) or die("failed");
          if($run){
             header('location: week.php');
@@ -54,13 +56,13 @@ session_start();
 <div class="update_form">
     <form action="updatelundi.php" method="POST" enctype="multipart/form-data">
     <label for="Num">Entré :</label>
-    <input type="Name" id="Num" name="entré" />
+    <input value="<?php echo $row["entré"];?>" type="Name" id="Num" name="entré" />
     <br>
     <label for="Name">Plat principal :</label>
-    <input type="Name" id="Name" name="platprincipal" />
+    <input value="<?php echo $row["platprincipal"];?>" type="Name" id="Name" name="platprincipal" />
     <br>
     <label for="Name">Dessert :</label>
-    <input type="Name" id="Price" name="Dessert" />
+    <input value=" <?php echo $row["Dessert"];?>" type="Name" id="Price" name="Dessert" />
     <br>
     <input type="submit" id="btn" name="update" value="update">
 </form>
