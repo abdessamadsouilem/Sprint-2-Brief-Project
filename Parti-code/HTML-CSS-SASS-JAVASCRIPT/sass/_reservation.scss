@@ -120,6 +120,39 @@ $font-sm:16px;
 
 
 
+@media (max-width: 550px){
 
+    .elbahja_Reservation{
+        
+        h1{
+            
+            font-size: $font-lg !important;
+            
+        }
+        p{
+            
+            font-size: $font-md1 !important;
+            
+        }
+    }
+
+    .elbahja_Makereser{
+        
+        h4{
+            
+            font-size: $font-md1*1.5;
+            
+        }
+        h1{
+            font-size: $font-md2*1.5;
+        }
+        p{
+            font-size: $font-md1; 
+        }
+        margin-bottom: 50px;
+    }
+
+
+}
 
 

@@ -151,7 +151,8 @@ nav {
     .toggle {
       display: block;
       color: black;
-      margin-left: 17px;
+      margin-left: 5px;
+      margin-right: 5px;
       margin-top: 30px; } }
 
 .togglelist {
@@ -1278,6 +1279,20 @@ h1 {
     border-color: #2ecc71; }
   .elbahja_form .form-control.Error input {
     border-color: #e74c3c; }
+
+@media (max-width: 550px) {
+  .elbahja_Reservation h1 {
+    font-size: 40px !important; }
+  .elbahja_Reservation p {
+    font-size: 20px !important; }
+  .elbahja_Makereser {
+    margin-bottom: 50px; }
+    .elbahja_Makereser h4 {
+      font-size: 30px; }
+    .elbahja_Makereser h1 {
+      font-size: 39px; }
+    .elbahja_Makereser p {
+      font-size: 20px; } }
 
 .elbahja_login {
   margin-top: 30px;
