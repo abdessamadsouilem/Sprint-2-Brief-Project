@@ -1,0 +1,1723 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+:root {
+  --primary-color: rgba(13, 110, 139, 0.75);
+  --overlay-color: rgba(24, 39, 51 , 0.85);
+  --menu-speed: 0.75s; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  font-family: "Roboto", sans-serif; }
+
+nav {
+  padding-left: 30px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  height: 130px; }
+  nav img {
+    width: 130px;
+    height: 130px; }
+  nav ul {
+    display: flex;
+    align-items: center; }
+    nav ul li {
+      display: inline;
+      list-style: none;
+      margin-left: 140px; }
+      nav ul li a {
+        text-decoration: none;
+        color: black;
+        font-size: 20px; }
+  nav .elbahja_nav--Login {
+    width: 120px;
+    height: 40px;
+    margin-left: 161px;
+    background-color: #222222;
+    border: none;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    transition: transform .5s; }
+    nav .elbahja_nav--Login a {
+      text-decoration: none;
+      color: black;
+      font-size: 20px;
+      color: white; }
+    nav .elbahja_nav--Login:hover {
+      transform: scale(1.15); }
+  nav .elbahja_nav--deconecter {
+    width: 160px;
+    height: 40px;
+    margin-left: 10px;
+    background-color: #222222;
+    border: none;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    transition: transform .5s; }
+    nav .elbahja_nav--deconecter a {
+      text-decoration: none;
+      color: black;
+      font-size: 20px;
+      color: white; }
+    nav .elbahja_nav--deconecter:hover {
+      transform: scale(1.15); }
+  nav .elbahja_nav--dahbord {
+    width: 120px;
+    height: 40px;
+    margin-left: 10px;
+    background-color: #222222;
+    border: none;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center; }
+    nav .elbahja_nav--dahbord a {
+      text-decoration: none;
+      color: black;
+      font-size: 20px;
+      color: white; }
+  nav .elbahja_nav--avatar {
+    width: 210px;
+    height: 50px;
+    margin-left: 35px;
+    border: none;
+    border-radius: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center; }
+    nav .elbahja_nav--avatar img {
+      width: 50px;
+      height: 50px; }
+    nav .elbahja_nav--avatar a {
+      text-decoration: none;
+      color: black;
+      font-size: 20px;
+      text-align: center;
+      margin-left: 5px; }
+
+@media (max-width: 1363px) {
+  nav li {
+    display: flex;
+    list-style: none;
+    margin-left: 50px !important; } }
+
+@media (max-width: 1072px) {
+  nav ul {
+    display: none;
+    list-style: none; }
+  nav .elbahja_nav--dahbord {
+    margin-left: 70px !important; }
+  nav .elbahja_nav--deconecter {
+    margin-left: 70px !important; } }
+
+@media (max-width: 592px) {
+  nav ul {
+    display: none; }
+  nav .elbahja_nav--dahbord {
+    margin-left: 40px !important; }
+  nav .elbahja_nav--deconecter {
+    margin-left: 0px !important; } }
+
+.toggle {
+  display: none;
+  color: white;
+  float: right;
+  height: 5rem;
+  line-height: 4rem;
+  font-size: 1.5rem;
+  cursor: pointer; }
+  @media (max-width: 1074px) {
+    .toggle {
+      display: block;
+      color: black;
+      margin-left: 30px;
+      margin-top: 30px; } }
+  @media (max-width: 376px) {
+    .toggle {
+      display: block;
+      color: black;
+      margin-left: 17px;
+      margin-top: 30px; } }
+
+.togglelist {
+  visibility: hidden;
+  position: relative;
+  width: 0;
+  height: 0;
+  width: 100%; }
+  .togglelist .elbahja_nav--list1 {
+    display: flex;
+    flex-direction: column;
+    z-index: 2; }
+    .togglelist .elbahja_nav--list1 li {
+      display: block;
+      list-style: none;
+      margin-left: 140px;
+      margin-bottom: 12px; }
+      .togglelist .elbahja_nav--list1 li a {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        font-size: 23px;
+        color: white;
+        margin-bottom: 9px;
+        transition: transform .5s; }
+      .togglelist .elbahja_nav--list1 li:hover {
+        transform: scale(1.15); }
+
+@media (max-width: 1074px) {
+  .active {
+    visibility: visible !important;
+    position: absolute;
+    width: 100%;
+    background-color: rgba(3, 3, 3, 0.753);
+    padding-top: 100px;
+    padding-bottom: 100px; } }
+
+@media (max-width: 376px) {
+  .elbahja_nav--Login {
+    width: 120px;
+    height: 40px;
+    margin-left: 68px !important;
+    background-color: #222222;
+    border: none;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    transition: transform .5s; }
+    .elbahja_nav--Login a {
+      color: white;
+      padding: 12px;
+      font-size: 14px !important; }
+    .elbahja_nav--Login:hover {
+      transform: scale(1.15); } }
+
+.elbahja_Welcome {
+  width: 100%;
+  height: 500px;
+  background-image: url(image/tajine.jpg);
+  background-repeat: no-repeat;
+  background-size: 95% 550px;
+  background-position-x: center;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 30px; }
+  .elbahja_Welcome-background {
+    width: 95%;
+    height: 500px;
+    margin-left: 37px;
+    background-color: rgba(0, 0, 0, 0.438);
+    background-position-x: center;
+    background-size: cover;
+    position: absolute; }
+  .elbahja_Welcome-para {
+    z-index: 1; }
+    .elbahja_Welcome-para--welcome {
+      font-size: 26px;
+      font-weight: 500;
+      margin-left: 70px;
+      color: white;
+      z-index: 1; }
+    .elbahja_Welcome-para--tradition {
+      font-size: 40px;
+      font-weight: bold;
+      margin-left: 70px;
+      color: white;
+      margin-bottom: 20px;
+      text-shadow: 0px 0px 5px #ddc9c9;
+      z-index: 1; }
+  .elbahja_Welcome-button {
+    display: flex;
+    flex-direction: row;
+    z-index: 1; }
+    .elbahja_Welcome-button--order {
+      width: 170px;
+      height: 50px;
+      margin-left: 70px;
+      background-color: #222222;
+      border: none;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-self: center; }
+      .elbahja_Welcome-button--order a {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        color: white; }
+      .elbahja_Welcome-button--order:hover {
+        background-color: white;
+        transition: all 0.3s ease-in; }
+        .elbahja_Welcome-button--order:hover a {
+          color: #222222;
+          transition: all 0.3s ease-in; }
+    .elbahja_Welcome-button--book {
+      width: 170px;
+      height: 50px;
+      margin-left: 70px;
+      background-color: #222222;
+      border: none;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-self: center; }
+      .elbahja_Welcome-button--book a {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        color: white; }
+      .elbahja_Welcome-button--book:hover {
+        background-color: white;
+        transition: all 0.3s ease-in; }
+        .elbahja_Welcome-button--book:hover a {
+          color: #222222;
+          transition: all 0.3s ease-in; }
+
+.elbahja_bestDishes {
+  width: 100%;
+  display: flex;
+  flex-direction: row; }
+  .elbahja_bestDishes h1 {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 20px; }
+  .elbahja_bestDishes-slider {
+    margin-left: 70px;
+    position: relative;
+    width: 45%;
+    overflow: hidden; }
+    .elbahja_bestDishes-slider--images {
+      display: flex;
+      justify-content: space-between;
+      width: 100%; }
+      .elbahja_bestDishes-slider--images img {
+        width: 100%;
+        height: 500px;
+        transition: all 0.2s ease; }
+      .elbahja_bestDishes-slider--images input {
+        display: none; }
+    .elbahja_bestDishes-slider--dots {
+      display: flex;
+      justify-content: center;
+      margin: 5px; }
+      .elbahja_bestDishes-slider--dots label {
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        border: solid black;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        margin: 5px; }
+      .elbahja_bestDishes-slider--dots label:hover {
+        background: #FFEDE6; }
+  .elbahja_bestDishes-historyabout {
+    width: 40%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .elbahja_bestDishes-historyabout h3 {
+      font-size: 40px;
+      font-weight: 400;
+      text-align: center;
+      margin-bottom: 20PX; }
+    .elbahja_bestDishes-historyabout h4 {
+      margin-top: 20PX;
+      font-size: 20px;
+      font-weight: 800;
+      text-align: center;
+      margin-bottom: 20PX; }
+    .elbahja_bestDishes-historyabout p {
+      margin-bottom: 40PX;
+      font-weight: 400;
+      font-size: 20px; }
+    .elbahja_bestDishes-historyabout a {
+      text-decoration: none;
+      color: black;
+      font-size: 20px;
+      text-align: center;
+      font-weight: 400; }
+    .elbahja_bestDishes-historyabout a:hover {
+      font-size: 20px;
+      text-shadow: 0px 0px 2px #252424;
+      transition: all 0.3s ease-in; }
+
+#img1:checked ~ .m1 {
+  margin-left: 0; }
+
+#img2:checked ~ .m2 {
+  margin-left: -100%; }
+
+#img3:checked ~ .m3 {
+  margin-left: -200%; }
+
+#img4:checked ~ .m4 {
+  margin-left: -300%; }
+
+#img5:checked ~ .m5 {
+  margin-left: -400%; }
+
+h2 {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px; }
+
+.elbahja_Menu {
+  margin-top: 70px;
+  margin-bottom: 70px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  .elbahja_Menu-gridcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 70px 70px;
+    grid-template-areas: "elbahja_Menu-gridcontainer--lundi elbahja_Menu-gridcontainer--mardi elbahja_Menu-gridcontainer--mercredi" "elbahja_Menu-gridcontainer--jeudi elbahja_Menu-gridcontainer--vendredi elbahja_Menu-gridcontainer--samedi" ". elbahja_Menu-gridcontainer--dimanche ."; }
+    .elbahja_Menu-gridcontainer--lundi {
+      grid-area: elbahja_Menu-gridcontainer--lundi; }
+      .elbahja_Menu-gridcontainer--lundi .front, .elbahja_Menu-gridcontainer--lundi .back {
+        overflow: hidden;
+        backface-visibility: hidden;
+        position: absolute;
+        transition: transform .7s linear; }
+      .elbahja_Menu-gridcontainer--lundi .front {
+        width: 300px;
+        height: 300px;
+        background-color: #222222;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 26px;
+        font-weight: 500;
+        color: white; }
+      .elbahja_Menu-gridcontainer--lundi .front {
+        transform: perspective(600px) rotateY(0deg); }
+      .elbahja_Menu-gridcontainer--lundi .back {
+        width: 300px;
+        height: 300px;
+        background-color: #222222;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 26px;
+        font-weight: 500;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        color: #222222;
+        border: solid black;
+        transform: perspective(600px) rotateY(180deg); }
+        .elbahja_Menu-gridcontainer--lundi .back p {
+          font-size: 20px;
+          text-align: center; }
+    .elbahja_Menu-gridcontainer--lundi:hover > .front {
+      transform: perspective(600px) rotateY(-180deg); }
+    .elbahja_Menu-gridcontainer--lundi:hover > .back {
+      transform: perspective(600px) rotateY(0deg); }
+    .elbahja_Menu-gridcontainer--mardi {
+      grid-area: elbahja_Menu-gridcontainer--mardi; }
+      .elbahja_Menu-gridcontainer--mardi .front, .elbahja_Menu-gridcontainer--mardi .back {
+        overflow: hidden;
+        backface-visibility: hidden;
+        position: absolute;
+        transition: transform .7s linear; }
+      .elbahja_Menu-gridcontainer--mardi .front {
+        width: 300px;
+        height: 300px;
+        background-color: #222222;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 26px;
+        font-weight: 500;
+        color: white; }
+      .elbahja_Menu-gridcontainer--mardi .front {
+        transform: perspective(600px) rotateY(0deg); }
+      .elbahja_Menu-gridcontainer--mardi .back {
+        width: 300px;
+        height: 300px;
+        background-color: #222222;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 26px;
+        font-weight: 500;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        color: #222222;
+        border: solid black;
+        transform: perspective(600px) rotateY(180deg); }
+        .elbahja_Menu-gridcontainer--mardi .back p {
+          font-size: 20px;
+          text-align: center; }
+    .elbahja_Menu-gridcontainer--mardi:hover > .front {
+      transform: perspective(600px) rotateY(-180deg); }
+    .elbahja_Menu-gridcontainer--mardi:hover > .back {
+      transform: perspective(600px) rotateY(0deg); }
+    .elbahja_Menu-gridcontainer--mercredi {
+      grid-area: elbahja_Menu-gridcontainer--mercredi; }
+      .elbahja_Menu-gridcontainer--mercredi .front, .elbahja_Menu-gridcontainer--mercredi .back {
+        overflow: hidden;
+        backface-visibility: hidden;
+        position: absolute;
+        transition: transform .7s linear; }
+      .elbahja_Menu-gridcontainer--mercredi .front {
+        width: 300px;
+        height: 300px;
+        background-color: #222222;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 26px;
+        font-weight: 500;
+        color: white; }
+      .elbahja_Menu-gridcontainer--mercredi .front {
+        transform: perspective(600px) rotateY(0deg); }
+      .elbahja_Menu-gridcontainer--mercredi .back {
+        width: 300px;
+        height: 300px;
+        background-color: #222222;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 26px;
+        font-weight: 500;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        color: #222222;
+        border: solid black;
+        transform: perspective(600px) rotateY(180deg); }
+        .elbahja_Menu-gridcontainer--mercredi .back p {
+          font-size: 20px;
+          text-align: center; }
+    .elbahja_Menu-gridcontainer--mercredi:hover > .front {
+      transform: perspective(600px) rotateY(-180deg); }
+    .elbahja_Menu-gridcontainer--mercredi:hover > .back {
+      transform: perspective(600px) rotateY(0deg); }
+    .elbahja_Menu-gridcontainer--jeudi {
+      grid-area: elbahja_Menu-gridcontainer--jeudi; }
+      .elbahja_Menu-gridcontainer--jeudi .front, .elbahja_Menu-gridcontainer--jeudi .back {
+        overflow: hidden;
+        backface-visibility: hidden;
+        position: absolute;
+        transition: transform .7s linear; }
+      .elbahja_Menu-gridcontainer--jeudi .front {
+        width: 300px;
+        height: 300px;
+        background-color: #222222;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 26px;
+        font-weight: 500;
+        color: white; }
+      .elbahja_Menu-gridcontainer--jeudi .front {
+        transform: perspective(600px) rotateY(0deg); }
+      .elbahja_Menu-gridcontainer--jeudi .back {
+        width: 300px;
+        height: 300px;
+        background-color: #222222;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 26px;
+        font-weight: 500;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        color: #222222;
+        border: solid black;
+        transform: perspective(600px) rotateY(180deg); }
+        .elbahja_Menu-gridcontainer--jeudi .back p {
+          font-size: 20px;
+          text-align: center; }
+    .elbahja_Menu-gridcontainer--jeudi:hover > .front {
+      transform: perspective(600px) rotateY(-180deg); }
+    .elbahja_Menu-gridcontainer--jeudi:hover > .back {
+      transform: perspective(600px) rotateY(0deg); }
+    .elbahja_Menu-gridcontainer--vendredi {
+      grid-area: elbahja_Menu-gridcontainer--vendredi; }
+      .elbahja_Menu-gridcontainer--vendredi .front, .elbahja_Menu-gridcontainer--vendredi .back {
+        overflow: hidden;
+        backface-visibility: hidden;
+        position: absolute;
+        transition: transform .7s linear; }
+      .elbahja_Menu-gridcontainer--vendredi .front {
+        width: 300px;
+        height: 300px;
+        background-color: #222222;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 26px;
+        font-weight: 500;
+        color: white; }
+      .elbahja_Menu-gridcontainer--vendredi .front {
+        transform: perspective(600px) rotateY(0deg); }
+      .elbahja_Menu-gridcontainer--vendredi .back {
+        width: 300px;
+        height: 300px;
+        background-color: #222222;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 26px;
+        font-weight: 500;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        color: #222222;
+        border: solid black;
+        transform: perspective(600px) rotateY(180deg); }
+        .elbahja_Menu-gridcontainer--vendredi .back p {
+          font-size: 20px;
+          text-align: center; }
+    .elbahja_Menu-gridcontainer--vendredi:hover > .front {
+      transform: perspective(600px) rotateY(-180deg); }
+    .elbahja_Menu-gridcontainer--vendredi:hover > .back {
+      transform: perspective(600px) rotateY(0deg); }
+    .elbahja_Menu-gridcontainer--samedi {
+      grid-area: elbahja_Menu-gridcontainer--samedi; }
+      .elbahja_Menu-gridcontainer--samedi .front, .elbahja_Menu-gridcontainer--samedi .back {
+        overflow: hidden;
+        backface-visibility: hidden;
+        position: absolute;
+        transition: transform .7s linear; }
+      .elbahja_Menu-gridcontainer--samedi .front {
+        width: 300px;
+        height: 300px;
+        background-color: #222222;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 26px;
+        font-weight: 500;
+        color: white; }
+      .elbahja_Menu-gridcontainer--samedi .front {
+        transform: perspective(600px) rotateY(0deg); }
+      .elbahja_Menu-gridcontainer--samedi .back {
+        width: 300px;
+        height: 300px;
+        background-color: #222222;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 26px;
+        font-weight: 500;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        color: #222222;
+        border: solid black;
+        transform: perspective(600px) rotateY(180deg); }
+        .elbahja_Menu-gridcontainer--samedi .back p {
+          font-size: 20px;
+          text-align: center; }
+    .elbahja_Menu-gridcontainer--samedi:hover > .front {
+      transform: perspective(600px) rotateY(-180deg); }
+    .elbahja_Menu-gridcontainer--samedi:hover > .back {
+      transform: perspective(600px) rotateY(0deg); }
+    .elbahja_Menu-gridcontainer--dimanche {
+      grid-area: elbahja_Menu-gridcontainer--dimanche;
+      width: 300px;
+      height: 300px;
+      background-color: #222222;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 26px;
+      font-weight: 500;
+      color: white;
+      background-color: white !important; }
+      .elbahja_Menu-gridcontainer--dimanche .front, .elbahja_Menu-gridcontainer--dimanche .back {
+        overflow: hidden;
+        backface-visibility: hidden;
+        position: absolute;
+        transition: transform .7s linear; }
+      .elbahja_Menu-gridcontainer--dimanche .front {
+        width: 300px;
+        height: 300px;
+        background-color: #222222;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 26px;
+        font-weight: 500;
+        color: white; }
+      .elbahja_Menu-gridcontainer--dimanche .front {
+        transform: perspective(600px) rotateY(0deg); }
+      .elbahja_Menu-gridcontainer--dimanche .back {
+        width: 300px;
+        height: 300px;
+        background-color: #222222;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 26px;
+        font-weight: 500;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        color: #222222;
+        border: solid black;
+        transform: perspective(600px) rotateY(180deg); }
+        .elbahja_Menu-gridcontainer--dimanche .back p {
+          font-size: 20px;
+          text-align: center; }
+    .elbahja_Menu-gridcontainer--dimanche:hover > .front {
+      transform: perspective(600px) rotateY(-180deg); }
+    .elbahja_Menu-gridcontainer--dimanche:hover > .back {
+      transform: perspective(600px) rotateY(0deg); }
+
+.elbahja_bestDeals {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 40px; }
+  .elbahja_bestDeals-couscous {
+    display: flex;
+    margin-bottom: 30px; }
+    .elbahja_bestDeals-couscous--image img {
+      width: 90%;
+      height: 400px;
+      opacity: 0.9; }
+    .elbahja_bestDeals-couscous--text {
+      width: 50%;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .elbahja_bestDeals-couscous--text h3 {
+        font-size: 40px;
+        font-weight: bold;
+        margin-bottom: 40px;
+        text-align: center; }
+      .elbahja_bestDeals-couscous--text p {
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 40px; }
+      .elbahja_bestDeals-couscous--text .button {
+        width: 170px;
+        height: 50px;
+        margin-left: 70px;
+        background-color: #222222;
+        border: none;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center; }
+        .elbahja_bestDeals-couscous--text .button a {
+          text-decoration: none;
+          color: black;
+          font-size: 20px;
+          color: white; }
+        .elbahja_bestDeals-couscous--text .button:hover {
+          background-color: white; }
+          .elbahja_bestDeals-couscous--text .button:hover a {
+            color: #222222; }
+  .elbahja_bestDeals-taginepoulet {
+    display: flex;
+    margin-bottom: 30px; }
+    .elbahja_bestDeals-taginepoulet--image img {
+      width: 90%;
+      height: 400px;
+      opacity: 0.9; }
+    .elbahja_bestDeals-taginepoulet--text {
+      width: 50%;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .elbahja_bestDeals-taginepoulet--text h3 {
+        font-size: 40px;
+        font-weight: bold;
+        margin-bottom: 40px;
+        text-align: center; }
+      .elbahja_bestDeals-taginepoulet--text p {
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 40px; }
+      .elbahja_bestDeals-taginepoulet--text .button {
+        width: 170px;
+        height: 50px;
+        margin-left: 70px;
+        background-color: #222222;
+        border: none;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center; }
+        .elbahja_bestDeals-taginepoulet--text .button a {
+          text-decoration: none;
+          color: black;
+          font-size: 20px;
+          color: white; }
+        .elbahja_bestDeals-taginepoulet--text .button:hover {
+          background-color: white; }
+          .elbahja_bestDeals-taginepoulet--text .button:hover a {
+            color: #222222; }
+  .elbahja_bestDeals-ma9lapoulet {
+    display: flex;
+    margin-bottom: 70px; }
+    .elbahja_bestDeals-ma9lapoulet--image img {
+      width: 90%;
+      height: 400px;
+      opacity: 0.9; }
+    .elbahja_bestDeals-ma9lapoulet--text {
+      width: 50%;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .elbahja_bestDeals-ma9lapoulet--text h3 {
+        font-size: 40px;
+        font-weight: bold;
+        margin-bottom: 40px;
+        text-align: center; }
+      .elbahja_bestDeals-ma9lapoulet--text p {
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 40px; }
+      .elbahja_bestDeals-ma9lapoulet--text .button {
+        width: 170px;
+        height: 50px;
+        margin-left: 70px;
+        background-color: #222222;
+        border: none;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center; }
+        .elbahja_bestDeals-ma9lapoulet--text .button a {
+          text-decoration: none;
+          color: black;
+          font-size: 20px;
+          color: white; }
+        .elbahja_bestDeals-ma9lapoulet--text .button:hover {
+          background-color: white; }
+          .elbahja_bestDeals-ma9lapoulet--text .button:hover a {
+            color: #222222; }
+
+@media (max-width: 984px) {
+  .elbahja_bestDishes {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .elbahja_bestDishes-slider {
+      width: 75%; }
+    .elbahja_bestDishes-historyabout {
+      width: 75%; }
+  .elbahja_Menu {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    .elbahja_Menu-gridcontainer {
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      gap: 70px 70px;
+      grid-template-areas: "elbahja_Menu-gridcontainer--lundi" "elbahja_Menu-gridcontainer--mardi " "elbahja_Menu-gridcontainer--mercredi" "elbahja_Menu-gridcontainer--jeudi" "elbahja_Menu-gridcontainer--vendredi"  "elbahja_Menu-gridcontainer--samedi" "elbahja_Menu-gridcontainer--dimanche"; }
+  .elbahja_bestDeals-couscous {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .elbahja_bestDeals-couscous--text {
+      width: 90% !important;
+      text-align: center; }
+  .elbahja_bestDeals-taginepoulet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .elbahja_bestDeals-taginepoulet--text {
+      width: 90% !important;
+      text-align: center; }
+  .elbahja_bestDeals-ma9lapoulet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .elbahja_bestDeals-ma9lapoulet--text {
+      width: 90% !important;
+      text-align: center; } }
+
+@media (max-width: 376px) {
+  .elbahja_Welcome-background {
+    width: 95%;
+    height: 500px;
+    margin-left: 10px;
+    background-color: rgba(0, 0, 0, 0.438);
+    background-position-x: center;
+    background-size: cover;
+    position: absolute; }
+  .elbahja_Welcome-para {
+    z-index: 1; }
+    .elbahja_Welcome-para--welcome {
+      font-size: 20px;
+      font-weight: 400;
+      margin-left: 30px;
+      color: white;
+      z-index: 1; }
+    .elbahja_Welcome-para--tradition {
+      font-size: 26px;
+      font-weight: 500;
+      margin-left: 30px;
+      color: white;
+      margin-bottom: 20px;
+      text-shadow: 0px 0px 5px #ddc9c9;
+      z-index: 1; }
+  .elbahja_Welcome-button {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    z-index: 1; }
+    .elbahja_Welcome-button--order {
+      width: 170px;
+      height: 50px;
+      margin-left: 70px;
+      background-color: #222222;
+      border: none;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-self: center;
+      margin-left: 20px !important;
+      width: 134px;
+      height: 35px; }
+    .elbahja_Welcome-button--book {
+      margin-left: 20px !important;
+      width: 134px;
+      height: 35px; }
+  .elbahja_bestDishes-slider {
+    margin-left: 0px !important; }
+  .elbahja_bestDeals {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5px; }
+    .elbahja_bestDeals-couscous {
+      display: flex; }
+      .elbahja_bestDeals-couscous--image img {
+        width: 90%;
+        height: 400px;
+        opacity: 0.9;
+        margin-left: 25px; }
+      .elbahja_bestDeals-couscous--text {
+        padding: 1px; }
+        .elbahja_bestDeals-couscous--text .button {
+          margin-left: 0px !important; }
+    .elbahja_bestDeals-taginepoulet {
+      display: flex; }
+      .elbahja_bestDeals-taginepoulet--image img {
+        width: 90%;
+        height: 400px;
+        opacity: 0.9;
+        margin-left: 25px; }
+      .elbahja_bestDeals-taginepoulet--text {
+        padding: 1px; }
+        .elbahja_bestDeals-taginepoulet--text .button {
+          margin-left: 0px !important; }
+    .elbahja_bestDeals-ma9lapoulet {
+      display: flex; }
+      .elbahja_bestDeals-ma9lapoulet--image img {
+        width: 90%;
+        height: 400px;
+        opacity: 0.9;
+        margin-left: 25px; }
+      .elbahja_bestDeals-ma9lapoulet--text {
+        padding: 1px; }
+        .elbahja_bestDeals-ma9lapoulet--text .button {
+          margin-left: 0px !important; } }
+
+footer {
+  width: 100%;
+  background-color: #222222;
+  color: white; }
+
+.footer_grid-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 400px 350px 350px 350px;
+  grid-template-rows: 250px;
+  gap: 0px 10px;
+  grid-template-areas: "footer_grid-container--logo footer_grid-container--pages footer_grid-container--about footer_grid-container--social-media"; }
+  .footer_grid-container--logo {
+    grid-area: footer_grid-container--logo;
+    align-self: center; }
+    .footer_grid-container--logo img {
+      width: 130px;
+      height: 130px; }
+  .footer_grid-container--pages {
+    grid-area: footer_grid-container--pages;
+    align-self: center; }
+    .footer_grid-container--pages ul {
+      list-style: none; }
+      .footer_grid-container--pages ul li a {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        color: white; }
+      .footer_grid-container--pages ul li a:hover {
+        color: #1E90FF; }
+  .footer_grid-container--about {
+    grid-area: footer_grid-container--about;
+    align-self: center; }
+    .footer_grid-container--about ul {
+      list-style: none; }
+      .footer_grid-container--about ul li a {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        color: white; }
+      .footer_grid-container--about ul li a:hover {
+        color: #1E90FF; }
+  .footer_grid-container--social-media {
+    grid-area: footer_grid-container--social-media;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .footer_grid-container--social-media a svg {
+      width: 40px;
+      height: 40px;
+      margin-right: 20px; }
+      .footer_grid-container--social-media a svg #facebook:hover {
+        fill: #1E90FF; }
+      .footer_grid-container--social-media a svg #instagram:hover {
+        fill: #1E90FF; }
+      .footer_grid-container--social-media a svg #twiter:hover {
+        fill: #1E90FF; }
+
+@media (max-width: 1526px) {
+  .footer_grid-container {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 400px 350px;
+    grid-template-rows: 350px 350px;
+    gap: 5px 5px;
+    grid-template-areas: "footer_grid-container--logo footer_grid-container--pages" "footer_grid-container--about footer_grid-container--social-media"; } }
+
+@media (max-width: 820px) {
+  .footer_grid-container {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 150px;
+    grid-template-rows: 100px 100px 100px 100px;
+    gap: 0px 0px;
+    grid-template-areas: "footer_grid-container--logo " "footer_grid-container--pages" "footer_grid-container--about"  "footer_grid-container--social-media"; } }
+
+@media (max-width: 586px) {
+  .footer_grid-container {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 300px;
+    grid-template-rows: 250px 250px 250px 250px;
+    gap: 10px 10px;
+    grid-template-areas: "footer_grid-container--logo " "footer_grid-container--pages" "footer_grid-container--about"  "footer_grid-container--social-media"; } }
+
+.elbahja_Reserve {
+  margin-top: 20px;
+  width: 100%;
+  height: 550px;
+  background-image: url(image/604bf66ee540d.jpg);
+  background-repeat: no-repeat;
+  opacity: 0.9;
+  background-size: 95% 550px;
+  background-position-x: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px; }
+  .elbahja_Reserve h1 {
+    color: white;
+    font-size: 80px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-shadow: 0px 0px 7px #222222; }
+  .elbahja_Reserve h2 {
+    color: white;
+    font-size: 52px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    text-shadow: 0px 0px 7px #222222; }
+  .elbahja_Reserve button {
+    width: 170px;
+    height: 45px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
+    background-color: #222222;
+    border: none;
+    outline: none;
+    cursor: pointer; }
+  .elbahja_Reserve button:hover {
+    color: #222222;
+    background-color: white; }
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px; }
+
+.elbahja_Dishes {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px; }
+  .elbahja_Dishes-card {
+    width: 300px;
+    height: 320px;
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    align-items: center;
+    background-color: #FFEDE6;
+    transition: transform .2s;
+    margin-bottom: 60px; }
+    .elbahja_Dishes-card img {
+      width: 300px;
+      height: 170px;
+      border-radius: 10px;
+      border-end-end-radius: 0px !important;
+      border-end-start-radius: 0px !important; }
+    .elbahja_Dishes-card h2 {
+      margin-top: 5px;
+      font-size: 26px;
+      margin-bottom: 5px; }
+    .elbahja_Dishes-card p {
+      margin-top: 4px;
+      font-size: 20px;
+      margin-bottom: 10px; }
+    .elbahja_Dishes-card button {
+      width: 120px;
+      height: 40px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: white;
+      background-color: #222222;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      border-radius: 40px; }
+    .elbahja_Dishes-card button:hover {
+      color: #222222;
+      background-color: white; }
+  .elbahja_Dishes-card:hover {
+    transform: scale(1.2); }
+
+.elbahja_Reservation {
+  margin-top: 20px;
+  width: 100%;
+  height: 600px;
+  background-image: url(image/604caeeebb6f7.jpg);
+  background-repeat: no-repeat;
+  opacity: 0.9;
+  background-size: 95% 600px;
+  background-position-x: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px; }
+  .elbahja_Reservation h1 {
+    color: white;
+    font-size: 80px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-shadow: 0px 0px 7px #222222; }
+  .elbahja_Reservation p {
+    color: white;
+    font-size: 26px;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 40px;
+    text-shadow: 0px 0px 7px #222222; }
+
+.elbahja_Makereser {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px; }
+  .elbahja_Makereser h4 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-weight: 400; }
+  .elbahja_Makereser h1 {
+    font-size: 52px; }
+  .elbahja_Makereser p {
+    font-size: 30px; }
+
+.elbahja_form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px; }
+  .elbahja_form .form-control {
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    position: relative; }
+  .elbahja_form label {
+    margin-top: 30px;
+    margin-bottom: 20px; }
+  .elbahja_form input {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    border-radius: 4px;
+    display: block;
+    width: 300px;
+    padding: 10px; }
+  .elbahja_form input:focus {
+    outline: 0;
+    border-color: #777; }
+  .elbahja_form small {
+    color: #e74c3c;
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+  .elbahja_form button {
+    background-color: #222222;
+    border: 2px solid #222222;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%; }
+  .elbahja_form .form-control.Error small {
+    visibility: visible; }
+  .elbahja_form .form-control.sucsses input {
+    border-color: #2ecc71; }
+  .elbahja_form .form-control.Error input {
+    border-color: #e74c3c; }
+
+.elbahja_login {
+  margin-top: 30px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(image/6049f610c72c5.jpg);
+  background-repeat: no-repeat;
+  background-size: 95% 600px;
+  background-position-x: center;
+  margin-bottom: 40px; }
+  .elbahja_login h1 {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 40px; }
+  .elbahja_login label {
+    color: white;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-shadow: 0px 0px 5px black; }
+  .elbahja_login input {
+    background-color: rgba(112, 112, 112, 0.384);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 2px solid white;
+    color: white;
+    border-radius: 4px;
+    display: block;
+    width: 300px;
+    padding: 10px; }
+  .elbahja_login input:focus {
+    outline: 0;
+    border-color: #777; }
+  .elbahja_login #btn {
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 4px;
+    color: #222222;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%; }
+  .elbahja_login p {
+    color: white;
+    font-size: 20px; }
+    .elbahja_login p a {
+      font-size: 20px;
+      color: white; }
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px; }
+
+.elbahja_dashbord {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #222222; }
+  .elbahja_dashbord form {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .elbahja_dashbord label {
+    color: #222222;
+    font-size: 20px;
+    margin-bottom: 20px; }
+  .elbahja_dashbord input {
+    margin-bottom: 20px;
+    border: 2px solid black;
+    color: #222222;
+    border-radius: 4px;
+    display: block;
+    width: 300px;
+    padding: 10px; }
+  .elbahja_dashbord #image {
+    margin-left: 10px;
+    width: auto;
+    padding: 0;
+    border: none;
+    display: inline; }
+  .elbahja_dashbord input:focus {
+    outline: 0;
+    border-color: #777; }
+  .elbahja_dashbord #btn {
+    background-color: #222222;
+    border: 2px solid #222222;
+    border-radius: 4px;
+    color: white;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 300px;
+    margin-bottom: 30px; }
+  .elbahja_dashbord button {
+    background-color: #222222;
+    border: 2px solid #222222;
+    border-radius: 4px;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 797px;
+    width: 200px; }
+    .elbahja_dashbord button a {
+      text-decoration: none;
+      color: black;
+      font-size: 20px;
+      color: #fff; }
+
+.elbahja_side {
+  display: flex; }
+
+.elbahja_side-bar {
+  width: 200px;
+  min-height: 100% !important;
+  background: #222222;
+  color: white;
+  padding: 30px 0px;
+  margin-right: 100px; }
+  .elbahja_side-bar h2 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 26px; }
+  .elbahja_side-bar ul li {
+    padding: 15px;
+    border-bottom: 1px solid #bdb8d7;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border-top: 1px solid rgba(255, 255, 255, 0.05); }
+    .elbahja_side-bar ul li a {
+      text-decoration: none;
+      color: black;
+      font-size: 20px;
+      color: white; }
+    .elbahja_side-bar ul li:hover {
+      background-color: white; }
+      .elbahja_side-bar ul li:hover a {
+        color: #222222; }
+
+table {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  width: 1000px; }
+
+table, th, td {
+  border-collapse: collapse;
+  border: 1px solid black;
+  margin-bottom: 40px; }
+
+td {
+  text-align: center;
+  height: 50px; }
+
+th {
+  height: 50px;
+  background-color: #222222;
+  color: white; }
+
+.update {
+  text-decoration: none;
+  color: green; }
+
+.delete {
+  text-decoration: none;
+  color: red; }
+
+.image {
+  width: 300px; }
+
+.imagetd {
+  width: 300px;
+  height: 200px; }
+  .imagetd img {
+    width: 300px;
+    height: 200px; }
+
+.elbahja_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; }
+  .elbahja_card .div-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; }
+
+.totaluserscard {
+  margin-right: 29px;
+  width: 250px;
+  height: 200px !important;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFEDE6;
+  margin-bottom: 30px; }
+  .totaluserscard img {
+    margin-top: 15px;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 30px; }
+  .totaluserscard p {
+    font-size: 26px; }
+
+.bu {
+  background-color: #222222;
+  border: 2px solid #222222;
+  border-radius: 4px;
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  margin-top: 20px;
+  margin-left: 870px;
+  width: 130px; }
+  .bu a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    color: #fff; }
+
+.elbahja_dashbord-week {
+  display: flex;
+  flex-wrap: wrap; }
+  .elbahja_dashbord-week .card {
+    width: 250px;
+    height: 250px;
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    align-items: center;
+    background-color: #FFEDE6;
+    transition: transform .2s;
+    margin-bottom: 60px; }
+  .elbahja_dashbord-week .btn1 {
+    margin-top: 20px;
+    width: 120px !important;
+    height: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
+    background-color: #222222;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 40px;
+    margin-left: 0 !important; }
+
+#chartjs_bar {
+  width: 700px !important;
+  height: 700px !important; }
+
+.update_form {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #222222;
+  margin-bottom: 50px; }
+  .update_form label {
+    color: #222222;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px; }
+  .update_form input {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    color: #222222;
+    border-radius: 4px;
+    display: block;
+    width: 300px;
+    padding: 10px; }
+  .update_form select {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    color: #222222;
+    border-radius: 4px;
+    display: block;
+    width: 323px;
+    padding: 10px; }
+  .update_form #image {
+    margin-left: 10px;
+    width: auto;
+    padding: 0;
+    border: none;
+    display: inline; }
+  .update_form input:focus {
+    outline: 0;
+    border-color: #777; }
+  .update_form #btn {
+    background-color: #222222;
+    border: 2px solid #222222;
+    border-radius: 4px;
+    color: white;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 320px; }
+
+.elbahja_contactus {
+  width: 100%;
+  min-height: 100%;
+  background-image: url(image/6049eb032f0b2.jpg);
+  background-size: cover; }
+  .elbahja_contactus .background {
+    width: 100%;
+    height: 878px;
+    background-color: rgba(0, 0, 0, 0.397);
+    background-size: cover;
+    position: absolute; }
+  .elbahja_contactus .elbahja_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0 !important; }
+    .elbahja_contactus .elbahja_form h2 {
+      margin-bottom: 0 !important;
+      font-size: 80px;
+      color: white;
+      z-index: 1; }
+    .elbahja_contactus .elbahja_form .paragraf {
+      margin-top: 10px !important;
+      font-size: 26px;
+      z-index: 1; }
+    .elbahja_contactus .elbahja_form label {
+      margin-top: 30px;
+      margin-bottom: 20px;
+      color: white; }
+    .elbahja_contactus .elbahja_form p {
+      margin-top: 30px;
+      margin-bottom: 20px;
+      color: white; }
+    .elbahja_contactus .elbahja_form input {
+      background-color: rgba(255, 250, 250, 0.384);
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border-radius: 4px;
+      display: block;
+      width: 300px;
+      padding: 10px;
+      border: none;
+      color: white; }
+    .elbahja_contactus .elbahja_form input:focus {
+      outline: 0;
+      border: none; }
+    .elbahja_contactus .elbahja_form textarea {
+      padding: 10px;
+      margin-bottom: 40px;
+      background-color: rgba(255, 250, 250, 0.384);
+      border: none; }
+    .elbahja_contactus .elbahja_form textarea:focus {
+      outline: 0;
+      border: none; }
+
+.elbahja_presentation {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .elbahja_presentation div {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 !important;
+    margin-bottom: 10px; }
+    .elbahja_presentation div img {
+      width: 49%;
+      height: 500px;
+      margin-bottom: 10px !important;
+      box-shadow: none; }
+    .elbahja_presentation div p {
+      padding: 10px;
+      width: 45%;
+      font-family: 'Dancing Script', cursive;
+      font-size: 40px;
+      text-align: center; }
+  .elbahja_presentation h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px; }
+  .elbahja_presentation .slide {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .elbahja_presentation .slide img {
+      width: 95%;
+      height: 500px;
+      margin-bottom: 50px;
+      box-shadow: 8px 8px 50px #0f0e129e;
+      border-radius: 20px; }
+  .elbahja_presentation .ourteam {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px; }
+    .elbahja_presentation .ourteam .boxcheif {
+      width: 300px;
+      height: 520px;
+      border-radius: 20px;
+      background-color: #C0C0C0;
+      display: flex;
+      flex-direction: column;
+      margin-left: 60px;
+      transition: transform .5s; }
+      .elbahja_presentation .ourteam .boxcheif .chef1 {
+        width: 300px;
+        height: 322px;
+        border-radius: 20px;
+        border-top-right-radius: 0px !important;
+        border-end-end-radius: 0px !important;
+        border-end-start-radius: 0px !important; }
+      .elbahja_presentation .ourteam .boxcheif h3 {
+        font-family: 'Dancing Script', cursive;
+        font-size: 60px; }
+      .elbahja_presentation .ourteam .boxcheif p {
+        width: 100%;
+        font-size: 16px;
+        margin-bottom: 20px; }
+    .elbahja_presentation .ourteam .boxcheif:hover {
+      transform: scale(1.15);
+      box-shadow: 8px 8px 50px #0f0e129e;
+      border-end-start-radius: 0px !important;
+      border-top-right-radius: 0px !important; }

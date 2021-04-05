@@ -1,0 +1,15 @@
+{
+  "name": "HTML-CSS-SASS-JAVASCRIPT",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "node-sass -o css sass/main.scss -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "typed.js": "^2.0.12"
+  }
+}

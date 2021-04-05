@@ -1,0 +1,148 @@
+$navcolorwhite:white;
+$PrimaryColor:white;
+$secendaryColor:#222222;
+$footerColor:#141414;
+$colortype1:black;
+$font-lg:40px;
+$font-md2:26px;
+$font-md1:20px;
+$font-sm:16px;
+.elbahja_Reserve{
+    margin-top: 20px;
+    width: 100%;
+    height: 550px;
+    background-image: url(image/604bf66ee540d.jpg);
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    background-size: 95% 550px;
+    background-position-x: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1{
+        color: $PrimaryColor;
+        font-size: $font-lg*2;
+        font-weight: 500;
+        margin-bottom: 20px;
+        text-shadow: 0px 0px 7px $secendaryColor;
+    }
+    h2{
+        color: $PrimaryColor;
+        font-size: $font-md2*2;
+        font-weight: 500; 
+        margin-bottom: 40px;
+        text-shadow: 0px 0px 7px $secendaryColor;
+    }
+    button{
+        width: 170px;
+        height: 45px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: $PrimaryColor;
+        background-color: $secendaryColor;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+    button:hover{
+        color: $secendaryColor;
+        background-color: $PrimaryColor;
+    }
+    margin-bottom: 50px;
+}
+@mixin stylecards{
+    img{
+        width: 100%;
+        height: 60%;
+        border-radius: 10px;
+    }
+    h3{
+        margin-top: 5px;
+        font-size: $font-md2;
+    }
+    p{ 
+       margin-top: 4px;
+       font-size: $font-md1;
+       margin-bottom: 5px;
+    }
+    button{
+       width: 120px;
+       height: 40px;
+       text-transform: uppercase;
+       letter-spacing: 1px;
+       color: $PrimaryColor;
+       background-color: $secendaryColor;
+       border: none;
+       outline: none;
+       cursor: pointer;
+       border-radius: 40px;
+    }
+    button:hover{
+       color: $secendaryColor;
+       background-color: $PrimaryColor;
+    }
+}
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+.elbahja_Dishes{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+      &-card{
+        width:300px;
+        height:320px;
+        margin-left: 60px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        align-items: center;
+        background-color:#FFEDE6;
+        transition: transform .2s;
+        margin-bottom: 60px;
+        img{
+            width:300px;
+            height:170px; 
+            border-radius: 10px;
+            border-end-end-radius: 0px !important;
+            border-end-start-radius: 0px !important;
+        }
+        h2{
+            margin-top: 5px;
+            font-size: $font-md2;
+            margin-bottom: 5px;
+        }
+        p{ 
+           margin-top: 4px;
+           font-size: $font-md1;
+           margin-bottom: 10px;
+        }
+        button{
+           width: 120px;
+           height: 40px;
+           text-transform: uppercase;
+           letter-spacing: 1px;
+           color: $PrimaryColor;
+           background-color: $secendaryColor;
+           border: none;
+           outline: none;
+           cursor: pointer;
+           border-radius: 40px;
+        }
+        button:hover{
+           color: $secendaryColor;
+           background-color: $PrimaryColor;
+        }
+    }
+    &-card:hover{
+        transform: scale(1.2);
+    }
+    
+    margin-bottom: 100px;
+}

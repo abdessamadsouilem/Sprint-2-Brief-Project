@@ -1,0 +1,71 @@
+$navcolorwhite:white;
+$PrimaryColor:white;
+$secendaryColor:#222222;
+$footerColor:#141414;
+$colortype1:black;
+$font-lg:40px;
+$font-md2:26px;
+$font-md1:20px;
+$font-sm:16px;
+
+
+.elbahja_login{
+    margin-top: 30px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(image/6049f610c72c5.jpg);
+    background-repeat: no-repeat;
+    background-size: 95% 600px;
+    background-position-x: center;
+    
+    h1{
+        color: $PrimaryColor;
+        font-size: $font-lg;
+        margin-bottom: 40px;
+    }
+    label{
+        color: $PrimaryColor;
+        font-size: $font-md1;
+        margin-top: 30px;
+       margin-bottom: 20px;
+       text-shadow: 0px 0px 5px black;
+    }
+    input{
+        background-color:rgba(112, 112, 112, 0.384);
+        margin-top: 10px;
+       margin-bottom: 20px;
+       border:2px solid rgb(255, 255, 255);
+       color: $PrimaryColor;
+       border-radius: 4px;
+       display: block;
+       width: 300px;
+       padding: 10px;
+    }
+    input:focus {
+        outline: 0;
+        border-color: #777;
+    }
+    #btn{
+        background-color: $PrimaryColor;
+	    border: 2px solid $PrimaryColor;
+	    border-radius: 4px;
+        color: $secendaryColor;
+        display: block;
+        font-size: 16px;
+        padding: 10px;
+        margin-top: 20px;
+        width: 100%;
+    }
+    margin-bottom: 40px;
+    p{
+        color: white;
+        font-size: $font-md1;
+        a{
+            font-size: $font-md1;
+            color: $PrimaryColor;
+        }
+    }
+}

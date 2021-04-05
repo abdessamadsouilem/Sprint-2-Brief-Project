@@ -1,0 +1,69 @@
+$navcolorwhite:white;
+$PrimaryColor:white;
+$secendaryColor:#222222;
+$footerColor:#141414;
+$colortype1:black;
+$font-lg:40px;
+$font-md2:26px;
+$font-md1:20px;
+$font-sm:16px;
+
+.update_form{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    color: $secendaryColor;
+    label{
+        color: $secendaryColor;
+        font-size: $font-md1;
+        margin-top: 30px;
+       margin-bottom: 20px;
+       
+    }
+    input{
+        
+       margin-top: 10px;
+       margin-bottom: 20px;
+       border:2px solid rgb(0, 0, 0);
+       color: $secendaryColor;
+       border-radius: 4px;
+       display: block;
+       width: 300px;
+       padding: 10px;
+    }
+    select{
+        margin-top: 10px;
+       margin-bottom: 20px;
+       border:2px solid rgb(0, 0, 0);
+       color: $secendaryColor;
+       border-radius: 4px;
+       display: block;
+       width: 323px;
+       padding: 10px;
+    }
+    #image{
+        margin-left: 10px;
+        width: auto;
+        padding: 0;
+        border: none;
+        display: inline;
+    }
+    input:focus {
+        outline: 0;
+        border-color: #777;
+    }
+    #btn{
+        background-color: $secendaryColor;
+	    border: 2px solid $secendaryColor;
+	    border-radius: 4px;
+        color: $PrimaryColor;
+        display: block;
+        font-size: 16px;
+        padding: 10px;
+        margin-top: 20px;
+        width: 320px;
+    }
+    margin-bottom: 50px;
+}

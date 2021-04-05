@@ -1,0 +1,252 @@
+$navcolorwhite:white;
+$PrimaryColor:white;
+$secendaryColor:#222222;
+$footerColor:#141414;
+$colortype1:black;
+$font-lg:40px;
+$font-md2:26px;
+$font-md1:20px;
+$font-sm:16px;
+h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.elbahja_dashbord{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    color: $secendaryColor;
+    form{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    }
+   
+    label{
+        color: $secendaryColor;
+        font-size: $font-md1;
+       
+        margin-bottom: 20px;
+       
+    }
+    input{
+        
+       
+       margin-bottom: 20px;
+       border:2px solid rgb(0, 0, 0);
+       color: $secendaryColor;
+       border-radius: 4px;
+       display: block;
+       width: 300px;
+       padding: 10px;
+    }
+    #image{
+        margin-left: 10px;
+        width: auto;
+        padding: 0;
+        border: none;
+        display: inline;
+    }
+    input:focus {
+        outline: 0;
+        border-color: #777;
+    }
+    #btn{
+        background-color: $secendaryColor;
+	    border: 2px solid $secendaryColor;
+	    border-radius: 4px;
+        color: $PrimaryColor;
+        display: block;
+        font-size: 16px;
+        padding: 10px;
+        margin-top: 20px;
+        width: 300px;
+        margin-bottom: 30px;
+
+    }
+    button{
+        background-color: $secendaryColor;
+        border: 2px solid $secendaryColor;
+        border-radius: 4px;
+        display: block;
+        font-size: 16px;
+        padding: 10px;
+        margin-top: 20px;
+        margin-left: 797px;
+        width: 200px;
+        a{
+            @include linksstyle;
+            color: #fff ;
+        }
+       }
+    
+}
+.elbahja_side{
+    display: flex;
+}
+.elbahja_side-bar{
+  width: 200px;
+  min-height: 100% !important;
+
+  background: $secendaryColor;
+  color: $PrimaryColor;
+  padding: 30px 0px;
+  margin-right: 100px;
+  h2{
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: $font-md2;
+  }
+  ul{
+      li{
+        padding: 15px;
+        border-bottom: 1px solid #bdb8d7;
+        border-bottom: 1px solid rgba(0,0,0,0.05);
+        border-top: 1px solid rgba(255,255,255,0.05);
+        a{
+            @include linksstyle;
+            color: $PrimaryColor;
+        }
+           &:hover{
+               background-color: $PrimaryColor;
+              a{
+                  color: $secendaryColor;
+              }
+           }
+      }
+  }
+  
+}
+table{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  
+    width: 1000px;
+    
+}
+table, th, td {
+    border-collapse: collapse;
+    border: 1px solid black;
+    
+    margin-bottom: 40px;
+}
+td{
+    text-align: center;
+    height: 50px;
+}
+th{
+    height: 50px;
+    background-color: $secendaryColor;
+    color: $PrimaryColor;
+}
+.update{
+    text-decoration: none;
+    color: green;
+}
+.delete{
+    text-decoration: none;
+    color: red;
+}
+.image{
+    width: 300px;
+}
+.imagetd{
+    width: 300px;
+    height: 200px;
+    img{
+        width: 300px;
+        height: 200px; 
+    }
+}
+.elbahja_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    .div-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    }
+}
+
+.totaluserscard{
+    margin-right: 29px;
+    width: 250px;
+    height: 200px !important;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFEDE6;
+    img{
+        margin-top: 15px;
+        width: 100px;
+        height: 100px;
+        margin-bottom: 30px;
+    }
+    p{
+        font-size: $font-md2;
+    }
+    margin-bottom: 30px;
+
+}
+
+.bu{
+    
+    background-color: $secendaryColor;
+    border: 2px solid $secendaryColor;
+    border-radius: 4px;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    margin-top: 20px;
+    margin-left: 870px;
+    width: 130px;
+    a{
+        @include linksstyle;
+        color: #fff ;
+    }
+}
+.elbahja_dashbord-week{
+    display: flex;
+    flex-wrap: wrap;
+    .card{
+        width:250px;
+        height:250px;
+        margin-left: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 10px;
+        align-items: center;
+        background-color:#FFEDE6;
+        transition: transform .2s;
+        margin-bottom: 60px;
+    }
+    .btn1{
+        margin-top: 20px;
+        width: 120px !important;
+        height: 40px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: $PrimaryColor;
+        background-color: $secendaryColor;
+       
+        border: none;
+        outline: none;
+        cursor: pointer;
+        border-radius: 40px;
+        margin-left: 0 !important;
+    }
+}
+
+#chartjs_bar{
+    width: 700px !important;
+    height: 700px !important;
+}
