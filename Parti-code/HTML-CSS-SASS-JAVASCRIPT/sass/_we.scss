@@ -1,0 +1,13 @@
+.work{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1{
+        font-size: $font-lg*3;
+    }
+    p{
+        font-size: $font-lg*1.5;
+    }
+}

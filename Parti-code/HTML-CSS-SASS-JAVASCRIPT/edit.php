@@ -25,7 +25,7 @@ if(isset($_POST['update'])){
          if($run){
             header('location: dashbord.php');
          }else{
-             echo"error";
+             header('location:error.php');
          }
     }else{
         $Num=$_POST['Num'];
@@ -34,14 +34,21 @@ if(isset($_POST['update'])){
          if($run){
             header('location: dashbord.php');
          }else{
-             echo"error";
+            header('location:error.php');
          }
     }
    
-    }else{
-        echo"all fields required";
     }
+    else{
+        $Num=$_POST['Num'];
+        echo"<script>alert('all fieled are requeired')</script>";
+        echo "<p><a text-decoration='none' href='update.php?Num=$Num'>go back</a></p>";
+        
+        
+    } 
 
-
+ 
 }
+
 ?>
+

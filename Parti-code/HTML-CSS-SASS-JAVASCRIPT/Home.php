@@ -40,17 +40,26 @@ session_start();
 
       <?php if (isset($_SESSION["loginstatus"]) && $_SESSION["loginstatus"]  === true) : ?>
          <div class="elbahja_nav--dahbord">
-            <a href="dashbord.php">dashbord</a>
+            <a href="dashbordhome.php">dashbord</a>
          </div>
          <div class="elbahja_nav--deconecter">
             <a href="Sedeconecter.php">Se Deconecter</a>
          </div>
+      <?php elseif  (isset($_SESSION["loginstatu"]) && $_SESSION["loginstatu"]  === true) : ?>   
+            <div class="elbahja_nav--dahbord">
+            <a href="dashbordw.php">dashbord</a>
+         </div>
+         <div class="elbahja_nav--deconecter">
+            <a href="Sedeconecter.php">Se Deconecter</a>
+         </div>
+         
       <?php else : ?>
          <div class="elbahja_nav--Login">
             <a href="login.php">LOGIN</a>
          </div>
          
       <?php endif; ?>
+      
       <div class="toggle">
           <i class="fas fa-bars"></i>
    </div>
@@ -306,3 +315,4 @@ session_start();
 </body>
 
 </html>
+

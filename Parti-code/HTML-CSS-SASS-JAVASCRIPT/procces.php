@@ -20,7 +20,10 @@ if(!empty($_POST['save'])){
     $result=mysqli_query($connect,$query);
     $count=mysqli_num_rows($result);
     if($count>0){
-        echo"login success Welcome ".$name;
+        session_start();
+        $_SESSION['name']=$name;
+        $_SESSION['loginstatu']=true;
+        header('location: dashbordw.php');
         
     }else {
         echo"login not success";
@@ -35,7 +38,7 @@ if(!empty($_POST['save'])){
         session_start();
         $_SESSION['name']=$name;
         $_SESSION['loginstatus']=true;
-        header('location: dashbord.php');
+        header('location: dashbordhome.php');
     }
 }
 
